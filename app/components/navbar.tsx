@@ -1,15 +1,14 @@
 'use client'
-import { Fragment, useState, useEffect} from 'react';
-import Link from 'next/link';
+import { useState, useEffect} from 'react';
 
   const logo = [
-    'https://github.com/dhanavadh/iconroof/blob/main/public/icon/icon-b.svg',
+    'https://xn--72ca6bng5c5ell7l.com/wp-content/uploads/2024/12/icon-b.svg',
+    'https://xn--72ca6bng5c5ell7l.com/wp-content/uploads/2024/12/icon-c.svg',
+    'https://xn--72ca6bng5c5ell7l.com/wp-content/uploads/2024/12/icon-c.svg'
   ]
   const btnDec = [
-    `flex px-2 py-1 border-2 btn underline-thickness-1 hover:underline hover:bg-[#F2F2F2] hover:text-[#1F1F1F]
-    cursor-pointer transition-colors duration-300`,
-    `flex px-2 py-1 border-2 btn-active underline-thickness-1 hover:underline hover:bg-[#1F1F1F] hover:text-[#F2F2F2]
-    cursor-pointer transition-colors duration-300`
+    `btn-primary`,
+    `btn-primary-dark`
   ]
   const navtext = [
     `flex font-medium text-[#F2F2F2] underline-thickness-1 underline-offset-4 hover:underline 
@@ -25,40 +24,11 @@ import Link from 'next/link';
 
 const isBrowser = () => typeof window !== 'undefined';
 
-function Navbar() {
-    let [isOpen, setIsOpen] = useState(false)
-  
-    function closeModal() {
-      setIsOpen(false)
-    }
-  
-    function openModal() {
-      setIsOpen(true)
-    }
-    //MoNav
-    let [isStart, setIsStart] = useState(false)
-  
-    function closeModal1() {
-        setIsStart(false)
-    }
-  
-    function openModal1() {
-        setIsStart(true)
-    }
-    //MoError
-    let [isError, setIsError] = useState(false)
-  
-    function closeError() {
-        setIsError(false)
-    }
-  
-    function openError() {
-        setIsError(true)
-    }
+function Navbar() {    
     //NavCo
     const [color, setColor ] = useState(false);
     const changeColor = () => {
-        if(window.scrollY >= 300){
+        if(window.scrollY >= 150){
             setColor(true)
         }else {
             setColor(false)
@@ -72,40 +42,47 @@ function Navbar() {
     return (
         <div>
             <div className="flex flex-col items-center justify-center">
-                <div className="flex flex-col">
-                    
-                    {/* <div class="fixed inset-x-0 top-0 z-50 h-0.5 mt-0.5
-                        bg-blue-500"></div> */}
-
-                    
+                <div className="flex flex-col">                    
                     <nav className={color ? 'navbar-active' : 'navbar'}>
 
                     
                         <div className="flex items-center transition-colors duration-300">
                             <a className="cursor-pointer" href='/'>
-                                    <img className="h-12 object-cover"
-                                        src={color ? logo[1] : logo[0]} alt="Artsgoz">
+                                    <img className="h-8 object-cover"
+                                        src={color ? logo[1] : logo[0]} alt="Iconroof">
                                     </img>
                             </a>
                         </div>
 
                     
                         <div className="items-center hidden space-x-8 lg:flex">
-                            <a className={color ? navtext[1] : navtext[0]} href='/'>
+                            <a className={color ? navtext[1] : navtext[1]} href='/'>
                                 หน้าแรก
+                            </a>
+                            <a className={color ? navtext[1] : navtext[1]} href='/'>
+                                สินค้า
+                            </a>
+                            <a className={color ? navtext[1] : navtext[1]} href='/'>
+                                ผลงาน
+                            </a>
+                            <a className={color ? navtext[1] : navtext[1]} href='/'>
+                                ช่างทำระแนง
+                            </a>
+                            <a className={color ? navtext[1] : navtext[1]} href='/'>
+                                บทความ
                             </a>
                         </div>
 
                         <div className="items-center hidden space-x-5 lg:flex">
 
-                            <a className={color ? btnDec[1] : btnDec[0]}>
-                                เข้าสู่ระบบ
+                            <a className={color ? btnDec[1] : btnDec[1]} >
+                                สั่งซื้อสินค้า →
                             </a>
                         </div>
                         <div className="lg:hidden flex items-center space-x-5">
                                 <button
                                 type="button"
-                                className={color ? btnDec[1] : btnDec[0]}                 
+                                className={color ? btnDec[1] : btnDec[1]}                                         
                                 >
                                 <span className="sr-only">Open menu</span>
                                 {/* Heroicon name: outline/menu */}                                

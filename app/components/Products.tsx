@@ -12,9 +12,9 @@ const services = [
 
 const Products = () => {
   return (
-    <div className=''>
+    <div className='bg-white'>
         <div className=''>
-            <p className='mx-20 h1'>รายการสินค้า</p>
+            <p className='mx-20 heading'>รายการสินค้า</p>
         </div>
         <div className="w-full overflow-x-auto bg-red">
             <div className="whitespace-nowrap">
@@ -26,7 +26,7 @@ const Products = () => {
                                 <div className='grid justify-items-start mt-4 mb-6 ml-3 px-3'>
                                     <p className='h4'>{item.name}</p>
                                     <p className='p'>ราคา {item.des}</p>                                    
-                                    <a href='https://line.me/ti/p/@plk2013' target='_blank' className='p-sm mb-1 mt-4 link text-white rounded-full bg-green-600 mx- px-2 py-1 '>ซื้อผ่านไลน์</a>
+                                    <a href='https://line.me/ti/p/@plk2013' target='_blank' className='btn-primary-dark-sm p-sm mb-1 mt-4 px-2 py-1 '>ซื้อผ่านไลน์</a>
                                 </div>
                             </div>
                         </li>

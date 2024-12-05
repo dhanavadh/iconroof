@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import NavHeading from "./components/NavHeading";
 import Footer from "./components/footer";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 
 const notoSans = localFont({
   src: "./fonts/NotoSansThai.ttf",
@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${notoSans.variable} ${geistMono.variable} antialiased`}
-      >
+      >        
         <Navbar />
         {children}
         <Footer />
