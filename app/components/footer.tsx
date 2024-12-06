@@ -15,7 +15,7 @@ const Footer = () => {
                 <p className='h4 mb-2'>ช่องทางการติดต่อ</p>
                 <div className='grid ml-2'>
                     <div className='flex gap-2 mb-2'>
-                        <img src='./icon/Facebook.svg' className='w-8'></img> 
+                        <img src='./icon/fb.svg' className='w-8'></img> 
                         <Link href='https://www.facebook.com/PLK2013/' target='_blank' className='link'>แผ่นหลังคาการช่าง หลังคากันสาดทุกชนิด </Link>
                     </div>
                     <div className='flex gap-2 mb-2'>
@@ -23,8 +23,8 @@ const Footer = () => {
                         <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='link'>แผ่นหลังคาการช่าง</Link>
                     </div>
                     <div className='flex gap-2 mb-2'>
-                        <img src='./icon/Tiktok.svg' className='w-8'></img> 
-                        <Link href='https://www.facebook.com/PLK2013/' target='_blank' className='link'>แผ่นหลังคาการช่าง หลังคากันสาดทุกชนิด </Link>
+                        <img src='./icon/tt.svg' className='w-8'></img> 
+                        <Link href='https://www.tiktok.com/@iconroof_official1' target='_blank' className='link'>แผ่นหลังคาการช่าง หลังคากันสาดทุกชนิด </Link>
                     </div>
                 </div>
             </div>
