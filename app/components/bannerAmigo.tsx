@@ -1,7 +1,20 @@
+"use client"
 import Link from 'next/link'
 import React from 'react'
+import { Description, Dialog, DialogPanel, DialogTitle } from '@headlessui/react'
+import { useState } from 'react'
 
 const BannerAmigo = () => {
+    let [isOpen, setIsOpen] = useState(false)
+
+    function open() {
+        setIsOpen(true)
+      }
+    
+      function close() {
+        setIsOpen(false)
+      }
+
   return (
     <div>
         <div>
@@ -11,22 +24,90 @@ const BannerAmigo = () => {
                         <p className='grid h1 text-white'>ไม้ระแนงไวนิล AMIGO</p>
                         <div className='flex flex-row gap-3 items-end'>
                             <p className='basis-5/6 h4 text-white mt-2 mr-10'>เป็นไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด</p>
+                            {/* Btn */}
                             <div className='basis-1/6'>
-                            <div className='grid justify-items-end'>
-                                <div className='flex items-center'>
-                                    <Link href='/' target='_blank' type='button' className='hidden lg:flex btn-primary'>                                    
-                                    ดูเพิ่มเติม →
-                                    </Link>
-                                    <Link href='/' target='_blank' type='button' className='lg:hidden flex btn-primary'>                                    
-                                        <b>&gt;</b>
-                                    </Link>
-                                </div>
-                            </div>                            
+                                <div className='hidden md:grid justify-items-end'>
+                                    <div className='flex items-center'>
+                                        <button onClick={open} type='button' className='hidden lg:flex btn-primary'>                                    
+                                        ดูเพิ่มเติม →
+                                        </button>
+                                        <button onClick={open}  type='button' className='lg:hidden flex btn-primary'>                                    
+                                            <b>→</b>
+                                        </button>
+                                    </div>
+                                </div>                           
                             </div>
+                        </div>
+                        <div className='md:hidden mt-10'>
+                        <button onClick={open} type='button' className='btn-primary'>                                    
+                                    ดูเพิ่มเติม →
+                            </button>
                         </div>
                     </div>                    
                 </div>                                   
-            </div>
+        </div>
+
+      <Dialog open={isOpen} as="div" className="relative z-10 focus:outline-none" onClose={close}>
+        <div className="fixed grid items-center inset-0 z-10 w-full overflow-x-auto backdrop-blur-lg duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0">
+          <div className='whitespace-nowarp'>            
+                <ul className='flex'>
+                    <li>
+                    <DialogPanel
+                    transition
+                    className="rounded-2xl w-96 border-2 border-red-500 bg-white drop-shadow-2xl mx-2 overflow-x-auto duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
+                    >
+                        <DialogTitle as="h3" className="h2 pt-8 px-6">
+                        ไม้ระแนงไวนิล AMIGO
+                        </DialogTitle>
+                        <p className="mt-4 h6 px-8 pb-10 indent-8 text-justify h-1/3">
+                                เป็นไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนานมีรูปลักษณ์เหมือนไม้ธรรมชาติ มีขนาดให้เลือกหลากหลายได้มาตรฐาน ขนาดเที่ยงตรงมีสีในตัว ไม่ต้องตกแต่ง หรือเก็บรายละเอียดเพิ่มเติม จึงประหยัดเวลา พร้อมทั้งได้สีที่เนียนเรียบสวมงามไม่มีผลกระทบต่อสิ่งแวดล้อม ไม่เบียดเบียนธรรมชาติช่วยให้การใช้ไม้ธรรมชาติลดลง
+                        </p>                            
+                    </DialogPanel>
+                    </li>
+                    <li>
+                    <DialogPanel
+                    transition
+                    className="rounded-2xl w-96 border-2 border-red-500 bg-white drop-shadow-2xl mx-2 overflow-x-auto"
+                    >
+                        <DialogTitle as="h3" className="h2 pt-8 px-6">
+                        ไม้ระแนงไวนิล AMIGO
+                        </DialogTitle>
+                        <p className="mt-4 h6 px-8 pb-10 indent-8 text-justify h-1/3">
+                                เป็นไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนานมีรูปลักษณ์เหมือนไม้ธรรมชาติ มีขนาดให้เลือกหลากหลายได้มาตรฐาน ขนาดเที่ยงตรงมีสีในตัว ไม่ต้องตกแต่ง หรือเก็บรายละเอียดเพิ่มเติม จึงประหยัดเวลา พร้อมทั้งได้สีที่เนียนเรียบสวมงามไม่มีผลกระทบต่อสิ่งแวดล้อม ไม่เบียดเบียนธรรมชาติช่วยให้การใช้ไม้ธรรมชาติลดลง
+                        </p>                            
+                    </DialogPanel>
+                    </li>
+                    <li>
+                    <DialogPanel
+                    transition
+                    className="rounded-2xl w-96 border-2 border-red-500 bg-white drop-shadow-2xl mx-2 overflow-x-auto"
+                    >
+                        <DialogTitle as="h3" className="h2 pt-8 px-6">
+                        ไม้ระแนงไวนิล AMIGO
+                        </DialogTitle>
+                        <p className="mt-4 h6 px-8 pb-10 indent-8 text-justify h-1/3">
+                                เป็นไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนานมีรูปลักษณ์เหมือนไม้ธรรมชาติ มีขนาดให้เลือกหลากหลายได้มาตรฐาน ขนาดเที่ยงตรงมีสีในตัว ไม่ต้องตกแต่ง หรือเก็บรายละเอียดเพิ่มเติม จึงประหยัดเวลา พร้อมทั้งได้สีที่เนียนเรียบสวมงามไม่มีผลกระทบต่อสิ่งแวดล้อม ไม่เบียดเบียนธรรมชาติช่วยให้การใช้ไม้ธรรมชาติลดลง
+                        </p>                            
+                    </DialogPanel>
+                    </li>
+                    <li>
+                    <DialogPanel
+                    transition
+                    className="rounded-2xl w-96 border-2 border-red-500 bg-white drop-shadow-2xl mx-2 overflow-x-auto"
+                    >
+                        <DialogTitle as="h3" className="h2 pt-8 px-6">
+                        ไม้ระแนงไวนิล AMIGO
+                        </DialogTitle>
+                        <p className="mt-4 h6 px-8 pb-10 indent-8 text-justify h-1/3">
+                                เป็นไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนานมีรูปลักษณ์เหมือนไม้ธรรมชาติ มีขนาดให้เลือกหลากหลายได้มาตรฐาน ขนาดเที่ยงตรงมีสีในตัว ไม่ต้องตกแต่ง หรือเก็บรายละเอียดเพิ่มเติม จึงประหยัดเวลา พร้อมทั้งได้สีที่เนียนเรียบสวมงามไม่มีผลกระทบต่อสิ่งแวดล้อม ไม่เบียดเบียนธรรมชาติช่วยให้การใช้ไม้ธรรมชาติลดลง
+                        </p>                            
+                    </DialogPanel>
+                    </li>
+                    
+                </ul>
+          </div>
+        </div>
+      </Dialog>
     </div>
   )
 }

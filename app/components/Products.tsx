@@ -14,11 +14,11 @@ const Products = () => {
   return (
     <div className='bg-white'>
         <div className=''>
-            <p className='mx-20 h1'>รายการสินค้า</p>
+            <p className='mx-5 md:mx-20 h1 md:text-start text-center'>รายการสินค้า</p>
         </div>
         <div className="w-full overflow-x-auto bg-red scrollbar-hide">
             <div className="whitespace-nowrap">
-                <ul className='flex ml-20'>
+                <ul className='flex ml-5 md:ml-20'>
                     {services.map((item) => (
                         <li key={item.id}>
                             <div className='grid w-64 items-center mx-3 my-10 bg-gray-50 rounded-2xl shadow-xl hover:shadow-2xl duration-300'>
