@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .link {
-  @apply hover:underline underline-offset-2 cursor-pointer;
+  @apply hover:underline underline-offset-4 cursor-pointer font-[family-name:var(--font-noto-sans)]
 }
 
 .line-button {
@@ -127,3 +127,9 @@
 .navtxt-active{
   color: #1F1F1F;   
 }
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+

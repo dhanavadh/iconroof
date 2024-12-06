@@ -14,8 +14,11 @@ const BannerAmigo = () => {
                             <div className='basis-1/6'>
                             <div className='grid justify-items-end'>
                                 <div className='flex items-center'>
-                                    <Link href='/' target='_blank' type='button' className='btn-primary'>                                    
+                                    <Link href='/' target='_blank' type='button' className='hidden lg:flex btn-primary'>                                    
                                     ดูเพิ่มเติม →
+                                    </Link>
+                                    <Link href='/' target='_blank' type='button' className='lg:hidden flex btn-primary'>                                    
+                                        <b>&gt;</b>
                                     </Link>
                                 </div>
                             </div>                            

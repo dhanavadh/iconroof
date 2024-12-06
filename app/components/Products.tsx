@@ -14,9 +14,9 @@ const Products = () => {
   return (
     <div className='bg-white'>
         <div className=''>
-            <p className='mx-20 heading'>รายการสินค้า</p>
+            <p className='mx-20 h1'>รายการสินค้า</p>
         </div>
-        <div className="w-full overflow-x-auto bg-red">
+        <div className="w-full overflow-x-auto bg-red scrollbar-hide">
             <div className="whitespace-nowrap">
                 <ul className='flex ml-20'>
                     {services.map((item) => (

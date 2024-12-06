@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='grid mx-20 pt-10 font-[family-name:var(--font-noto-sans)]'>        
+    <footer className='grid px-20 pt-10 font-[family-name:var(--font-noto-sans)] bg-white'>        
         <div className='grid lg:flex gap-8 justify-center mb-5'>
             <div>
                 <p className='h4 mb-2'>Iconroof Showroom</p>
@@ -20,7 +20,7 @@ const Footer = () => {
                     </div>
                     <div className='flex gap-2 mb-2'>
                         <img src='./icon/Line.svg' className='w-8'></img> 
-                        <Link href='https://www.facebook.com/PLK2013/' target='_blank' className='link'>แผ่นหลังคาการช่าง</Link>
+                        <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='link'>แผ่นหลังคาการช่าง</Link>
                     </div>
                     <div className='flex gap-2 mb-2'>
                         <img src='./icon/Tiktok.svg' className='w-8'></img> 
