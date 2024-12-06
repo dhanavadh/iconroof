@@ -25,7 +25,7 @@ const Instal1 = () => {
       }
 
   return (
-    <div>
+    <div id='install'>
         <div className='grid px-5 md:px-20 bg-white justify-items-center'>
             <img src='./tool.svg' className='h-64 mb-10'></img>
             <p className='h1 mb-4 text-center'>ขั้นตอนการติดตั้งระแนงไวนิล</p>            

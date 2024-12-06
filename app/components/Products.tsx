@@ -12,9 +12,9 @@ const services = [
 
 const Products = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-white' id='product'>
         <div className=''>
-            <p className='mx-5 md:mx-20 h1 md:text-start text-center'>รายการสินค้า</p>
+            <p  className='mx-5 md:mx-20 h1 md:text-start text-center'>รายการสินค้า</p>
         </div>
         <div className="w-full overflow-x-auto bg-red scrollbar-hide">
             <div className="whitespace-nowrap">

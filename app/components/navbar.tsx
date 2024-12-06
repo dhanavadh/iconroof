@@ -51,16 +51,16 @@ function Navbar() {
                             <Link className={color ? navtext[1] : navtext[1]} href='/'>
                                 หน้าแรก
                             </Link>
-                            <Link className={color ? navtext[1] : navtext[1]} href='/'>
+                            <Link className={color ? navtext[1] : navtext[1]} href='#product'>
                                 สินค้า
                             </Link>
-                            <Link className={color ? navtext[1] : navtext[1]} href='/'>
+                            <Link className={color ? navtext[1] : navtext[1]} href='https://www.facebook.com/PLK2013/' target='_blank'>
                                 ผลงาน
                             </Link>
-                            <Link className={color ? navtext[1] : navtext[1]} href='/'>
+                            <Link className={color ? navtext[1] : navtext[1]} href='#staff'>
                                 ช่างทำระแนง
                             </Link>
-                            <Link className={color ? navtext[1] : navtext[1]} href='/'>
+                            <Link className={color ? navtext[1] : navtext[1]} href='#install'>
                                 บทความ
                             </Link>
                         </div>

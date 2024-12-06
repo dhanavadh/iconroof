@@ -25,7 +25,7 @@ const Details = () => {
     </div>
 
     {/* ช่างทำระแนง */}
-    <div className="flex pb-20 bg-white">
+    <div className="flex pb-20 bg-white" id='staff'>
       <div className='mx-5 md:mx-20'>
         
         <div className='grid xl:flex justify-items-center'>

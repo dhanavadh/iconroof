@@ -47,64 +47,26 @@ const BannerAmigo = () => {
                 </div>                                   
         </div>
 
-      <Dialog open={isOpen} as="div" className="relative z-10 focus:outline-none" onClose={close}>
-        <div className="fixed grid items-center inset-0 z-10 w-full overflow-x-auto backdrop-blur-lg duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0">
-          <div className='whitespace-nowarp'>            
-                <ul className='flex'>
-                    <li>
-                    <DialogPanel
-                    transition
-                    className="rounded-2xl w-96 border-2 border-red-500 bg-white drop-shadow-2xl mx-2 overflow-x-auto duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
-                    >
-                        <DialogTitle as="h3" className="h2 pt-8 px-6">
-                        ไม้ระแนงไวนิล AMIGO
-                        </DialogTitle>
-                        <p className="mt-4 h6 px-8 pb-10 indent-8 text-justify h-1/3">
-                                เป็นไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนานมีรูปลักษณ์เหมือนไม้ธรรมชาติ มีขนาดให้เลือกหลากหลายได้มาตรฐาน ขนาดเที่ยงตรงมีสีในตัว ไม่ต้องตกแต่ง หรือเก็บรายละเอียดเพิ่มเติม จึงประหยัดเวลา พร้อมทั้งได้สีที่เนียนเรียบสวมงามไม่มีผลกระทบต่อสิ่งแวดล้อม ไม่เบียดเบียนธรรมชาติช่วยให้การใช้ไม้ธรรมชาติลดลง
-                        </p>                            
-                    </DialogPanel>
-                    </li>
-                    <li>
-                    <DialogPanel
-                    transition
-                    className="rounded-2xl w-96 border-2 border-red-500 bg-white drop-shadow-2xl mx-2 overflow-x-auto"
-                    >
-                        <DialogTitle as="h3" className="h2 pt-8 px-6">
-                        ไม้ระแนงไวนิล AMIGO
-                        </DialogTitle>
-                        <p className="mt-4 h6 px-8 pb-10 indent-8 text-justify h-1/3">
-                                เป็นไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนานมีรูปลักษณ์เหมือนไม้ธรรมชาติ มีขนาดให้เลือกหลากหลายได้มาตรฐาน ขนาดเที่ยงตรงมีสีในตัว ไม่ต้องตกแต่ง หรือเก็บรายละเอียดเพิ่มเติม จึงประหยัดเวลา พร้อมทั้งได้สีที่เนียนเรียบสวมงามไม่มีผลกระทบต่อสิ่งแวดล้อม ไม่เบียดเบียนธรรมชาติช่วยให้การใช้ไม้ธรรมชาติลดลง
-                        </p>                            
-                    </DialogPanel>
-                    </li>
-                    <li>
-                    <DialogPanel
-                    transition
-                    className="rounded-2xl w-96 border-2 border-red-500 bg-white drop-shadow-2xl mx-2 overflow-x-auto"
-                    >
-                        <DialogTitle as="h3" className="h2 pt-8 px-6">
-                        ไม้ระแนงไวนิล AMIGO
-                        </DialogTitle>
-                        <p className="mt-4 h6 px-8 pb-10 indent-8 text-justify h-1/3">
-                                เป็นไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนานมีรูปลักษณ์เหมือนไม้ธรรมชาติ มีขนาดให้เลือกหลากหลายได้มาตรฐาน ขนาดเที่ยงตรงมีสีในตัว ไม่ต้องตกแต่ง หรือเก็บรายละเอียดเพิ่มเติม จึงประหยัดเวลา พร้อมทั้งได้สีที่เนียนเรียบสวมงามไม่มีผลกระทบต่อสิ่งแวดล้อม ไม่เบียดเบียนธรรมชาติช่วยให้การใช้ไม้ธรรมชาติลดลง
-                        </p>                            
-                    </DialogPanel>
-                    </li>
-                    <li>
-                    <DialogPanel
-                    transition
-                    className="rounded-2xl w-96 border-2 border-red-500 bg-white drop-shadow-2xl mx-2 overflow-x-auto"
-                    >
-                        <DialogTitle as="h3" className="h2 pt-8 px-6">
-                        ไม้ระแนงไวนิล AMIGO
-                        </DialogTitle>
-                        <p className="mt-4 h6 px-8 pb-10 indent-8 text-justify h-1/3">
-                                เป็นไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนานมีรูปลักษณ์เหมือนไม้ธรรมชาติ มีขนาดให้เลือกหลากหลายได้มาตรฐาน ขนาดเที่ยงตรงมีสีในตัว ไม่ต้องตกแต่ง หรือเก็บรายละเอียดเพิ่มเติม จึงประหยัดเวลา พร้อมทั้งได้สีที่เนียนเรียบสวมงามไม่มีผลกระทบต่อสิ่งแวดล้อม ไม่เบียดเบียนธรรมชาติช่วยให้การใช้ไม้ธรรมชาติลดลง
-                        </p>                            
-                    </DialogPanel>
-                    </li>
-                    
-                </ul>
+        <Dialog open={isOpen} as="div" className="relative z-10 focus:outline-none" onClose={close}>
+        <div className="fixed inset-0 z-10 w-screen overflow-y-auto backdrop-blur-2xl">
+          <div className="flex min-h-full items-center justify-center">
+            <DialogPanel
+              transition
+              className="w-full max-w-4xl rounded-xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
+            >                
+                    <div className='flex max-h-5/6 min-w-screen relative'>
+                    <img src='./dummy/amigo1.jpg' className='rounded-xl w-full h-full absolute object-cover -z-[1] brightness-50'></img>                        
+                    <div className='grid grid-rows mx-10 mt-96 mb-12'>
+                        <p className='grid h1 text-white'>ไม้ระแนงไวนิล AMIGO</p>                    
+                            <p className='basis-5/6 h4 text-white mt-2 mr-10'>เป็นไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนานมีรูปลักษณ์เหมือนไม้ธรรมชาติ มีขนาดให้เลือกหลากหลายได้มาตรฐาน ขนาดเที่ยงตรงมีสีในตัว ไม่ต้องตกแต่ง หรือเก็บรายละเอียดเพิ่มเติม จึงประหยัดเวลา พร้อมทั้งได้สีที่เนียนเรียบสวมงามไม่มีผลกระทบต่อสิ่งแวดล้อม ไม่เบียดเบียนธรรมชาติช่วยให้การใช้ไม้ธรรมชาติลดลง</p>
+                        <div className='md:hidden mt-10'>
+                        <button onClick={open} type='button' className='btn-primary'>                                    
+                                    ดูเพิ่มเติม →
+                            </button>
+                        </div>
+                    </div>                    
+                </div> 
+            </DialogPanel>
           </div>
         </div>
       </Dialog>
