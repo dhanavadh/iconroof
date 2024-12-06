@@ -2,17 +2,13 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./components/footer";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
+
 
 const notoSans = localFont({
   src: "./fonts/NotoSansThai.ttf",
   variable: "--font-noto-sans",
   weight: "100 200 300 400 500 600 700 800 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -28,8 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSans.variable} ${geistMono.variable} antialiased`}
-      >        
+        className={`${notoSans.variable} antialiased`}>        
         <Navbar />
         {children}
         <Footer />

@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import { useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
   const logo = [
     'https://xn--72ca6bng5c5ell7l.com/wp-content/uploads/2024/12/icon-b.svg',
@@ -35,7 +35,7 @@ function Navbar() {
         <div>
             <div className="flex flex-col items-center justify-center">
                 <div className="flex flex-col">                    
-                    <nav className={color ? 'navbar-active' : 'navbar'}>
+                    <div className={color ? 'navbar-active' : 'navbar'}>
 
                     
                         <div className="flex items-center transition-colors duration-300">
@@ -80,7 +80,7 @@ function Navbar() {
                                 สั่งซื้อสินค้า →                        
                                 </a>
                         </div>
-                    </nav>
+                    </div>
                 </div>
             </div>
         </div>
