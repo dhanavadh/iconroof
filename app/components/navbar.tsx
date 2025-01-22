@@ -3,9 +3,8 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
   const logo = [
-    'https://xn--72ca6bng5c5ell7l.com/wp-content/uploads/2024/12/icon-b.svg',
-    'https://xn--72ca6bng5c5ell7l.com/wp-content/uploads/2024/12/icon-c.svg',
-    'https://xn--72ca6bng5c5ell7l.com/wp-content/uploads/2024/12/icon-c.svg'
+    '/icon/iconroof-black.svg',
+    '/icon/iconroof.svg',
   ]
   const btnDec = [
     `btn-primary`,
