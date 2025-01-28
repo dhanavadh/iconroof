@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: #fafafa;
+}
+
 .link {
   @apply hover:underline underline-offset-4 cursor-pointer font-[family-name:var(--font-noto-sans)]
 }
@@ -51,6 +55,7 @@
   @apply text-xl text-white font-[family-name:var(--font-noto-sans)] font-normal
 }
 
+
 .ssa {
   position: fixed;
   width: 100%;
@@ -64,9 +69,8 @@
   
 }
 
-
 .navbar-active {
-  background-color: #F2F2F2;
+  background-color: #fafafa;
   display: flex;
   justify-content: space-around; 
   padding-top: 1rem; /* 16px */
