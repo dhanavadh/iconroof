@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 
 const notoSans = localFont({
@@ -27,6 +28,7 @@ export default function RootLayout({
         className={`${notoSans.variable} antialiased`}>        
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
