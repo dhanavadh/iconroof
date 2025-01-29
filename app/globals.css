@@ -157,3 +157,18 @@ html {
   width: 100%;
   height: 100%;
 }
+
+
+/* Slider Section */
+.slider-core {
+  @apply min-h-screen flex items-end text-white
+}
+.title-section {
+  @apply text-3xl font-medium font-[family-name:var(--font-noto-sans)] mb-2 leading-loose tracking-wide
+}
+.subtitle-section {
+  @apply text-lg font-normal font-[family-name:var(--font-noto-sans)]
+}
+.text-area-padding {
+  @apply p-10 lg:px-20 lg:py-10
+}
