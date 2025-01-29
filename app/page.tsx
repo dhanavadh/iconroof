@@ -10,14 +10,12 @@ export default function Home() {
     
     <>
     <Slider />
-    <div className="flex min-h-screen items-center justify-center mx-4 md:mx-36 font-[family-name:var(--font-noto-sans)]">
-      
-      <div className="flex flex-col items-start">
-        <p className="text-7xl font-medium">ระแนงบังตา</p>
-        <p className="text-xl">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>
-        <Alert />
-
-      </div>      
+    <Alert />
+    <div className="flex min-h-screen items-start mx-10 md:mx-20 font-[family-name:var(--font-noto-sans)]">      
+      <div className="flex flex-col items-start pt-4 ">
+        <p className="h1">เลือกดูผลิตภัณฑ์ระแนง</p>
+        <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>        
+      </div>
     </div>
     
     </>

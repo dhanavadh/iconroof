@@ -28,28 +28,25 @@ body {
   @apply text-7xl font-[family-name:var(--font-noto-sans)] font-medium
 }
 .p{
-  @apply text-lg font-[family-name:var(--font-noto-sans)] font-normal
+  @apply text-base font-[family-name:var(--font-noto-sans)] font-normal tracking-wide
 }
 .p-sm{
   @apply text-sm font-[family-name:var(--font-noto-sans)] font-normal
 }
 .h1{
-  @apply text-5xl font-[family-name:var(--font-noto-sans)] font-medium
+  @apply text-3xl font-[family-name:var(--font-noto-sans)] font-medium my-2
 }
 .h2{
-  @apply text-4xl font-[family-name:var(--font-noto-sans)] font-medium
+  @apply text-2xl font-[family-name:var(--font-noto-sans)] font-medium my-2
 }
 .h3{
-  @apply text-3xl font-[family-name:var(--font-noto-sans)] font-medium
+  @apply text-xl font-[family-name:var(--font-noto-sans)] font-medium my-2
 }
 .h4{
-  @apply text-2xl font-[family-name:var(--font-noto-sans)] font-normal
+  @apply text-lg font-[family-name:var(--font-noto-sans)] font-normal my-2
 }
 .h5{
-  @apply text-xl font-[family-name:var(--font-noto-sans)] font-medium
-}
-.h6{
-  @apply text-lg font-[family-name:var(--font-noto-sans)] font-medium
+  @apply text-base font-[family-name:var(--font-noto-sans)] font-medium my-2
 }
 .subheading{
   @apply text-xl text-white font-[family-name:var(--font-noto-sans)] font-normal
@@ -57,53 +54,15 @@ body {
 
 
 .ssa {
-  position: fixed;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  
-  
+  @apply fixed w-full left-1/2 top-1/2 h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0
 }
-/* 
-.navbar-active {
-  background-color: #fafafa;
-  display: flex;
-  justify-content: space-around; 
-  padding-top: 1rem; 
-  padding-bottom: 1rem;
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: 10;
-  color: #1F1F1F;
-  
-} */
-
 
 .navbar {
-  @apply flex justify-around py-2 w-full fixed top-0 left-0 right-0 z-10
+  @apply flex justify-between px-10 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10
 }
 .navbar-active {
-  @apply bg-neutral-50/75 flex justify-around py-2 w-full fixed top-0 left-0 right-0 z-10 backdrop-blur-3xl
+  @apply bg-neutral-50/75 flex justify-between px-10 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10 backdrop-blur-3xl
 }
-/* .navbar {
-  display: flex;
-  justify-content: space-around; 
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: 10;
-} */
 
 .btn {
   display: flex;
