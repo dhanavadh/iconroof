@@ -11,10 +11,13 @@ import Link from 'next/link';
 const Slider = () => {
   return (
     <>
-        <Swiper        
+        <Swiper    
+        cssMode={true}        
+        mousewheel={true}
+        keyboard={true}    
         centeredSlides={true}
         autoplay={{
-          delay: 9000,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
@@ -33,6 +36,18 @@ const Slider = () => {
             </div>
         </SwiperSlide> 
         
+        
+        <SwiperSlide>
+            <div className='slider-core'>             
+                <img src='/asset/amigo.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></img>
+                <img src='/asset/amigo.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></img>
+                <div className='text-area-padding'>
+                    <Link href='/products' className='title-section link'>ระแนงไวนิล AMIGO</Link>
+                    <p className='subtitle-section'>ไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด</p>
+                </div>
+            </div>
+        </SwiperSlide> 
+
         <SwiperSlide>
             <div className='slider-core'>             
                 <video width="full" autoPlay loop muted preload='auto' playsInline className='absolute z-[-1] w-full h-full object-cover brightness-50'>
@@ -42,17 +57,6 @@ const Slider = () => {
                 <div className='text-area-padding'>
                     <Link href='/products' className='title-section link'>งานติดตั้งระแนง</Link>
                     <p className='subtitle-section'>Iconroof มีบริการติดตั้งระแนงโดยช่างชำนาญการ</p>
-                </div>
-            </div>
-        </SwiperSlide> 
-        
-        <SwiperSlide>
-            <div className='slider-core'>             
-                <img src='/asset/amigo.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></img>
-                <img src='/asset/amigo.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></img>
-                <div className='text-area-padding'>
-                    <Link href='/products' className='title-section link'>ระแนงไวนิล AMIGO</Link>
-                    <p className='subtitle-section'>ไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด</p>
                 </div>
             </div>
         </SwiperSlide> 
@@ -79,6 +83,16 @@ const Slider = () => {
 
         <SwiperSlide>
             <div className='slider-core'>             
+                <img src='/asset/project.png' className='flex absolute z-[-1] w-full h-full object-cover brightness-50'></img>                
+                <div className='text-area-padding'>
+                    <Link href='/products' className='title-section link'>ผลงานการติดตั้ง</Link>
+                    <p className='subtitle-section'>ฝ้าระแนงลายไม้ wpc ไฟเบอร์ซีเมนต์ ไวนิล Amigo หรือ อะลูมิเนียมลายไม้ก็มีพร้อมให้เลือกสรร</p>
+                </div>
+            </div>
+        </SwiperSlide> 
+
+        <SwiperSlide>
+            <div className='slider-core'>             
                 <video width="full" autoPlay loop muted preload='auto' playsInline className='absolute z-[-1] w-full h-full object-cover brightness-50'>
                     <source src="/asset/video/icon-1.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
@@ -89,6 +103,8 @@ const Slider = () => {
                 </div>
             </div>
         </SwiperSlide> 
+
+        
 
         
 

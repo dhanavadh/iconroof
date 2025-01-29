@@ -19,7 +19,7 @@ function NewNavbar() {
     //NavCo
     const [color, setColor ] = useState(false);
     const changeColor = () => {
-        if(window.scrollY >= 150){
+        if(window.scrollY >= 700){
             setColor(true)
         }else {
             setColor(false)
@@ -40,10 +40,6 @@ function NewNavbar() {
                                     <img className="h-8 object-cover"
                                         src={color ? logo[1] : logo[0]} alt="Iconroof">
                                     </img>
-                                    {/* <div className={color ? navtext[1] : navtext[0]}>
-                                        <p className="text-3xl">ไอคอน</p>
-                                        <p className='text-3xl text-[#F5951D]'>รูฟ</p>
-                                    </div> */}
                             </Link>
                         </div>                    
                         <div className="items-center hidden space-x-8 lg:flex">
@@ -64,8 +60,7 @@ function NewNavbar() {
                             </Link>
                         </div>
 
-                        <div className="items-center hidden space-x-5 lg:flex">
-
+                        <div className="hidden lg:flex space-x-5 items-center">
                             <a className={color ? btnDec[1] : btnDec[0]} href='https://line.me/ti/p/@plk2013' target='_blank'>
                                 สั่งซื้อสินค้า →
                             </a>
