@@ -22,10 +22,10 @@ export default function Alert() {
               transition
               className="w-full max-w-md rounded-xl bg-white p-6 backdrop-blur-2xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0 shadow-xl"
             >
-              <DialogTitle as="h3" className="text-base/7 font-medium text-neutral-900">
-                Staging Environment
+              <DialogTitle as="h3" className="text-base font-medium text-neutral-900">
+                Staging Environment Page
               </DialogTitle>
-              <p className="mt-2 text-sm/6 text-neutral-900/50">
+              <p className="mt-2 text-sm text-neutral-900/50">
                 This page is pre-production page if you want to see the production page please go <a href='https://xn--72ca6bng5c5ell7l.com/' target='_blank' className='link'>ระแนงบังตา.com</a>
               </p>
               <div className="mt-4">
