@@ -90,7 +90,7 @@ body {
   @apply flex justify-around py-2 w-full fixed top-0 left-0 right-0 z-10
 }
 .navbar-active {
-  @apply bg-neutral-50/50 flex justify-around py-2 w-full fixed top-0 left-0 right-0 z-10 backdrop-blur-3xl
+  @apply bg-neutral-50/65 flex justify-around py-2 w-full fixed top-0 left-0 right-0 z-10 backdrop-blur-3xl
 }
 /* .navbar {
   display: flex;

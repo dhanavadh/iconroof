@@ -13,7 +13,7 @@ const Slider = () => {
         <Swiper        
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
@@ -21,7 +21,7 @@ const Slider = () => {
       >
         <SwiperSlide>
             <div className='min-h-screen flex items-end text-white'>
-                <img src='https://www.marketingmaterials.info/wp-content/uploads/2022/08/Artboard-10@2x-100-1-scaled.jpg' className='absolute z-[-1] w-full h-full object-cover brightness-50'></img>
+                <img src='https://dhanav.me/banner/buddhism.svg' className='absolute z-[-1] w-full h-full object-cover brightness-50'></img>
                 <div className='p-10'>
                     <p className='text-3xl'>ระแนง Amigo</p>
                     <p>รายละเอียด</p>
@@ -30,7 +30,29 @@ const Slider = () => {
         </SwiperSlide>            
         <SwiperSlide>
             <div className='min-h-screen flex items-end text-white'>
-                <img src='https://www.marketingmaterials.info/wp-content/uploads/2022/08/Artboard-3@2x-100-1-scaled.jpg' className='absolute z-[-1] w-full h-full object-cover brightness-50'></img>
+                <img src='https://dhanav.me/banner/blog-2.svg' className='absolute z-[-1] w-full h-full object-cover brightness-50'></img>
+                <div className='p-10'>
+                    <p className='text-3xl'>ระแนง Amigo</p>
+                    <p>รายละเอียด</p>
+                </div>
+            </div>
+        </SwiperSlide>            
+        <SwiperSlide>
+            <div className='min-h-screen flex items-end text-white'>            
+                <img src='https://dhanav.me/banner/blog-1.svg' className='absolute z-[-1] w-full h-full object-cover brightness-50'></img>
+                <div className='p-10'>
+                    <p className='text-3xl'>ระแนง Amigo</p>
+                    <p>รายละเอียด</p>
+                </div>
+            </div>
+        </SwiperSlide>            
+        <SwiperSlide>
+            <div className='min-h-screen flex items-end text-white'> 
+            <video width="full" autoPlay loop muted preload='auto' playsInline className='absolute z-[-1] w-full h-full object-cover brightness-50'>
+              <source src="https://dhanav.me/content/port-redesign/navbar.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+                {/* <img src='https://dhanav.me/banner/blog-1.svg' className='absolute z-[-1] w-full h-full object-cover brightness-50'></img> */}
                 <div className='p-10'>
                     <p className='text-3xl'>ระแนง Amigo</p>
                     <p>รายละเอียด</p>
