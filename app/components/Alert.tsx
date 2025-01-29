@@ -26,7 +26,7 @@ export default function Alert() {
                 Staging Environment Page
               </DialogTitle>
               <p className="mt-2 text-sm text-neutral-900/50">
-                This page is pre-production page if you want to see the production page please go <a href='https://xn--72ca6bng5c5ell7l.com/' target='_blank' className='link'>ระแนงบังตา.com</a>
+                This page is pre-production page if you want to see the production page please go <a href='https://xn--72ca6bng5c5ell7l.com/' target='_blank' className='link font-medium text-black'>ระแนงบังตา.com</a>
               </p>
               <div className="mt-4">
                 <Button

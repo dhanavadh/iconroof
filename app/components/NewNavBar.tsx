@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
   const logo = [
-    '/icon/iconroof-black.svg',
+    '/icon/iconroof-white.svg',
     '/icon/iconroof.svg',
   ]
   const btnDec = [
@@ -37,13 +37,13 @@ function NewNavbar() {
                     <div className={color ? 'navbar-active' : 'navbar'}>                    
                         <div className="flex items-center transition-colors duration-300">
                             <Link className="cursor-pointer" href='/'>
-                                    {/* <img className="h-8 object-cover"
+                                    <img className="h-8 object-cover"
                                         src={color ? logo[1] : logo[0]} alt="Iconroof">
-                                    </img> */}
-                                    <div className={color ? navtext[1] : navtext[0]}>
+                                    </img>
+                                    {/* <div className={color ? navtext[1] : navtext[0]}>
                                         <p className="text-3xl">ไอคอน</p>
                                         <p className='text-3xl text-[#F5951D]'>รูฟ</p>
-                                    </div>
+                                    </div> */}
                             </Link>
                         </div>                    
                         <div className="items-center hidden space-x-8 lg:flex">
