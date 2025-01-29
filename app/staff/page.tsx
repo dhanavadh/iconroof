@@ -7,8 +7,6 @@ const StaffPage = () => {
       <div className="flex flex-col items-start">
       <p className="text-7xl font-medium text-neutral-100">ช่างทำระแนง</p>
       <p className="text-xl text-neutral-100">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>
-        <Alert />
-
         </div>      
     </div>
   )

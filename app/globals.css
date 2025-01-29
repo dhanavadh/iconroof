@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --swiper-navigation-color: #fafafa;
+  --swiper-pagination-color: #fafafa;
+}
+
 body {
   background: #fafafa;
 }
@@ -126,7 +131,7 @@ html {
   @apply text-3xl font-medium font-[family-name:var(--font-noto-sans)]
 }
 .subtitle-section {
-  @apply text-xl font-normal font-[family-name:var(--font-noto-sans)] mt-2 tracking-wide
+  @apply text-xl font-normal font-[family-name:var(--font-noto-sans)] my-2 tracking-wide
 }
 .text-area-padding {
   @apply p-10 lg:px-20 lg:py-10

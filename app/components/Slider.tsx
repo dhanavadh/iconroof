@@ -12,12 +12,16 @@ const Slider = () => {
   return (
     <>
         <Swiper    
-        cssMode={true}        
+        cssMode={true}    
+        // navigation={true}
+        pagination={{
+            clickable: true,
+          }}    
         mousewheel={true}
         keyboard={true}    
         centeredSlides={true}
         autoplay={{
-          delay: 6000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
