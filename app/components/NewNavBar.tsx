@@ -73,7 +73,7 @@ function NewNavbar() {
                         <div className="lg:hidden flex items-center space-x-5">
                                 <a
                                 type="button"
-                                className={color ? btnDec[1] : btnDec[1]}   
+                                className={color ? btnDec[1] : btnDec[0]}   
                                 href='https://line.me/ti/p/@plk2013' target='_blank'                                      
                                 >
                                 สั่งซื้อสินค้า →                        
