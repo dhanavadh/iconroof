@@ -3,6 +3,7 @@ import Products from "./components/Products";
 import MainPage from "./pages/Main";
 import Instal1 from "./components/installation";
 import Slider from "./components/Slider";
+import Alert from "./components/Alert";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="flex flex-col items-start">
         <p className="text-7xl font-medium">ระแนงบังตา</p>
         <p className="text-xl">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>
+        <Alert />
 
       </div>      
     </div>
