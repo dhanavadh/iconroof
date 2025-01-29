@@ -10,7 +10,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
   ]
   const btnDec = [
     `btn-primary`,
-    `btn-primary-dark`
+    `btn-primary-dark`,
   ]
   const navtext = [
     `flex font-medium text-white link`,
@@ -18,11 +18,12 @@ import { Dialog, DialogPanel } from '@headlessui/react'
   ]
 
   const NavLink = [
-    {name: 'หน้าแรก', href: '/'}, 
-    {name: 'สินค้า', href: '/products'},
-    {name: 'ผลงาน', href: '/preview'}, 
-    {name: 'ช่างทำระแนง', href: '/staff'}, 
-    {name: 'บทความ', href: '/blogs'}
+    {name: 'หน้าแรก', href: '/', target: `_self`}, 
+    {name: 'สินค้า', href: '/products', target: `_self`},
+    {name: 'ผลงาน', href: '/preview', target: `_self`}, 
+    {name: 'ช่างทำระแนง', href: '/staff', target: `_self`}, 
+    {name: 'บทความ', href: '/blogs', target: `_self`},
+    {name: 'แผ่นหลังคา', href: 'https://www.xn--42cf7cl0c9a5bk1kzc.com/', target: `_blank`}
 ]
 
 
@@ -59,6 +60,7 @@ function NewNavbar() {
                                 <Link
                                 key={index.name}
                                 href={index.href}
+                                target={index.target}
                                 className={color ? navtext[1] : navtext[0]}>
                                 {index.name}
                                 </Link>
@@ -96,7 +98,7 @@ function NewNavbar() {
                                 src={color ? logo[1] : logo[1]} alt="Iconroof">
                             </img>
                         </Link>
-                        <button onClick={() => setIsOpen(false)}>
+                        <button onClick={() => setIsOpen(false)} className='btn-primary-dark'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                             <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                             </svg>
