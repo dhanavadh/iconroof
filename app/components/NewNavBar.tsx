@@ -46,7 +46,7 @@ function NewNavbar() {
     return (
         <div>
             <div className="flex flex-col items-center justify-center font-[family-name:var(--font-noto-sans)] text-white">
-                <div className="flex flex-col">                    
+                <div className="flex justify-between flex-col">                    
                     <div className={color ? 'navbar-active' : 'navbar'}>                    
                         <div className="flex items-center transition-colors duration-300">
                             <Link className="cursor-pointer" href='/'>
