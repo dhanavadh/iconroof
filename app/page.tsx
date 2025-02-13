@@ -13,7 +13,6 @@ export default function Home() {
     
     <>
     <Slider />
-    <Alert />
     <div className="flex flex-col min-h-screen items-start mx-6 md:mx-20 font-[family-name:var(--font-noto-sans)]">      
       <div className="flex flex-col items-start pt-8 ">
         <p className="h1">เลือกดูผลิตภัณฑ์ระแนง</p>
