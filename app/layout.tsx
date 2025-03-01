@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import { Analytics } from "@vercel/analytics/react";
 import NewNavbar from "./components/NewNavBar";
+import NewFooter from "./components/NewFooter";
 
 
 const notoSans = localFont({
@@ -30,7 +31,7 @@ export default function RootLayout({
         <NewNavbar />             
         {children}
         <Analytics />
-        <Footer />
+        <NewFooter />
       </body>
     </html>
   );
