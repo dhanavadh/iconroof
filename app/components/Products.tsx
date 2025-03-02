@@ -11,31 +11,32 @@ const services = [
 ]
 
 const Products = () => {
-  return (
-    <div className='bg-white' id='product'>
-        <div className=''>
-            <p  className='mx-5 md:mx-20 h1 md:text-start text-center'>รายการสินค้า</p>
-        </div>
-        <div className="w-full overflow-x-auto bg-red scrollbar-hide">
-            <div className="whitespace-nowrap">
-                <ul className='flex ml-5 md:ml-20'>
-                    {services.map((item) => (
-                        <li key={item.id}>
-                            <div className='grid w-64 items-center mx-3 my-10 bg-gray-50 rounded-2xl shadow-xl hover:shadow-2xl duration-300'>
-                                <img src={item.image} className='w-64 h-64 rounded-t-2xl' alt={item.name}></img>
-                                <div className='grid justify-items-start mt-4 mb-6 ml-3 px-3'>
-                                    <p className='h4'>{item.name}</p>
-                                    <p className='p'>ราคา {item.des}</p>                                    
-                                    <a href='https://line.me/ti/p/@plk2013' target='_blank' className='btn-primary-dark-sm p-sm mb-1 mt-4 px-2 py-1 '>ซื้อผ่านไลน์</a>
-                                </div>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>
-    </div>
-  );
-};
-
-export default Products
+    return (
+      <>
+          <div className="w-full overflow-x-auto bg-red scrollbar-hide">
+              <div className="whitespace-nowrap">
+                  <ul className='flex'>
+                      {services.map((item) => (
+                          <li key={item.id}>
+                              <div className='grid w-64 md:w-80 items-center mx-2 mb-10 bg-gray-100 duration-300'>
+                                  <div className='relative h-64'>
+                                      <img src={item.image} className='w-full h-full object-cover absolute' alt={item.name}></img>
+                                  </div>
+                                  <div className='flex flex-col p-6 whitespace-normal'>
+                                      <div>
+                                          <p className='h3'>{item.name}</p>
+                                          <p className='p line-clamp-2'>{item.des}</p>
+                                      </div>                                        
+                                      <Link href='https://line.me/ti/p/@plk2013' target='_blank' className="text-end mt-4 link">สั่งซื้อสินค้า →</Link>                              
+                                  </div>
+                              </div>
+                          </li>
+                      ))}
+                  </ul>
+              </div>
+          </div>
+      </>
+    );
+  };
+  
+  export default Products
