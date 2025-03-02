@@ -65,7 +65,7 @@ const ProductPage = () => {
         </div>   
         <ScgProduct />
       </div>
-      <div className='pb-4 border-b-2 border-neutral-200 w-full'>
+      <div className='pb-4 w-full'>
         <div className="flex flex-col items-start pt-12 mb-4">
           <p className="h1">ระแนงไวนิล SCG BOX SET</p>
           <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>        
