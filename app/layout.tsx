@@ -13,7 +13,7 @@ const notoSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "ระแนงบังตา – Iconroof",
+  title: "Staging Environment – Iconroof",
   description: "บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ",
 };
 
