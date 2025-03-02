@@ -5,7 +5,7 @@ import Link from 'next/link'
 const NewFooter = () => {
   return (
     <div className='grid px-6 md:px-20 py-5 font-[family-name:var(--font-noto-sans)]'>
-        <div className='pb-2 border-b-2 mb-4'>
+        <div className='pb-2 border-b-2 mb-4 border-neutral-200'>
             <Image src='./icon/iconroof.svg' alt='iconroof' width={200} height={100} className='mb-4'></Image>
         </div>
         <div className='grid lg:flex items-start justify-between mb-10 space-x-0 lg:space-x-4 '>
@@ -23,15 +23,15 @@ const NewFooter = () => {
                     <p className='h4 mb-2'>ช่องทางการติดต่อ</p>
                     <div className='grid ml-1'>
                         <div className='flex items-center gap-2 mb-2'>
-                            <img src='./icon/link_href.svg' className='w-2.5'></img> 
+                            <img src='./icon/link_href.svg' className='w-2'></img> 
                             <Link href='https://www.facebook.com/PLK2013/' target='_blank' className='link'>Facebook แผ่นหลังคาการช่าง</Link>
                         </div>
                         <div className='flex items-center gap-2 mb-2'>
-                            <img src='./icon/link_href.svg' className='w-2.5'></img> 
+                            <img src='./icon/link_href.svg' className='w-2'></img> 
                             <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='link'>Line @PLK2013</Link>
                         </div>
                         <div className='flex items-center gap-2 mb-2'>
-                            <img src='./icon/link_href.svg' className='w-2.5'></img> 
+                            <img src='./icon/link_href.svg' className='w-2'></img> 
                             <Link href='https://www.tiktok.com/@iconroof_official1' target='_blank' className='link'>Tiktok Iconroof</Link>
                         </div>
                     </div>
