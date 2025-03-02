@@ -22,6 +22,12 @@ body {
 .btn-primary {
   @apply px-3 py-1 rounded-full border-2 border-white text-black bg-white font-medium hover:bg-neutral-200 hover:text-black hover:border-neutral-200 cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
 }
+.btn-primary-static {
+  @apply px-3 py-1 rounded-full border-2 border-[#fafafa] text-black font-medium hover:bg-neutral-200 hover:border-neutral-200 cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
+}
+.btn-primary-static-1 {
+  @apply px-4 py-2 rounded-full border-2 border-[#fafafa] bg-[#fafafa] text-black font-medium hover:bg-neutral-200 hover:border-neutral-200 cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
+}
 .btn-primary-dark {
   @apply px-3 py-1 rounded-full border-2 border-black text-black font-medium hover:bg-black hover:text-white cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
 }
@@ -126,6 +132,9 @@ html {
 /* Slider Section */
 .slider-core {
   @apply min-h-screen flex items-end text-white
+}
+.slider-core-min {
+  @apply flex items-end text-white
 }
 .title-section {
   @apply text-3xl font-medium font-[family-name:var(--font-noto-sans)]
