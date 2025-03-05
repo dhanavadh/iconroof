@@ -27,6 +27,7 @@ export default function RootLayout({
   const header = pathName === "/" ? <NewNavbar /> : <NavBarNormal />;
   return (
     <html lang="en">
+      <meta name="google-site-verification" content="yuQhIWvcSNGuy3NhPu0nBRZFmb6icHcSm3Zl_s6G5o4" />
       <meta property="og:title" content="ระแนงบังตา – Iconroof" />
       <meta property="og:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
       <meta property="og:type" content="website" />      
