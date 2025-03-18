@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --swiper-navigation-color: #fafafa;
+  --swiper-pagination-color: #fafafa;
+}
+
+body {
+  background: #fafafa;
+}
+
 .link {
   @apply hover:underline underline-offset-4 cursor-pointer font-[family-name:var(--font-noto-sans)]
 }
@@ -11,10 +20,16 @@
 }
 
 .btn-primary {
-  @apply px-4 py-2 rounded-3xl border-2 border-white text-white font-medium hover:bg-white hover:text-black cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
+  @apply px-3 py-1 rounded-full border-2 border-white text-black bg-white font-medium hover:bg-neutral-200 hover:text-black hover:border-neutral-200 cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
+}
+.btn-primary-static {
+  @apply px-3 py-1 rounded-full border-2 border-[#fafafa] text-black font-medium hover:bg-neutral-200 hover:border-neutral-200 cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
+}
+.btn-primary-static-1 {
+  @apply px-4 py-2 rounded-full border-2 border-[#fafafa] bg-[#fafafa] text-black font-medium hover:bg-neutral-200 hover:border-neutral-200 cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
 }
 .btn-primary-dark {
-  @apply px-4 py-2 rounded-3xl border-2 border-black text-black font-medium hover:bg-black hover:text-white cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
+  @apply px-3 py-1 rounded-full border-2 border-black text-black font-medium hover:bg-black hover:text-white cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
 }
 .btn-primary-dark-sm {
   @apply px-2 py-1 rounded-3xl border-2 border-black text-black font-medium hover:bg-black hover:text-white cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
@@ -24,74 +39,42 @@
   @apply text-7xl font-[family-name:var(--font-noto-sans)] font-medium
 }
 .p{
-  @apply text-lg font-[family-name:var(--font-noto-sans)] font-normal
+  @apply text-base font-[family-name:var(--font-noto-sans)] font-normal tracking-wide
 }
 .p-sm{
   @apply text-sm font-[family-name:var(--font-noto-sans)] font-normal
 }
 .h1{
-  @apply text-5xl font-[family-name:var(--font-noto-sans)] font-medium
+  @apply text-3xl font-[family-name:var(--font-noto-sans)] font-medium my-2
 }
 .h2{
-  @apply text-4xl font-[family-name:var(--font-noto-sans)] font-medium
+  @apply text-2xl font-[family-name:var(--font-noto-sans)] font-medium my-2
 }
 .h3{
-  @apply text-3xl font-[family-name:var(--font-noto-sans)] font-medium
+  @apply text-xl font-[family-name:var(--font-noto-sans)] font-medium my-2
 }
 .h4{
-  @apply text-2xl font-[family-name:var(--font-noto-sans)] font-normal
+  @apply text-lg font-[family-name:var(--font-noto-sans)] font-medium my-2
 }
 .h5{
-  @apply text-xl font-[family-name:var(--font-noto-sans)] font-medium
-}
-.h6{
-  @apply text-lg font-[family-name:var(--font-noto-sans)] font-medium
+  @apply text-base font-[family-name:var(--font-noto-sans)] font-medium my-2
 }
 .subheading{
   @apply text-xl text-white font-[family-name:var(--font-noto-sans)] font-normal
 }
 
+
 .ssa {
-  position: fixed;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  
-  
+  @apply fixed w-full left-1/2 top-1/2 h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0
 }
 
-
-.navbar-active {
-  background-color: white;
-  display: flex;
-  justify-content: space-around; 
-  padding-top: 1rem; /* 16px */
-  padding-bottom: 1rem; /* 16px */ 
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: 10;
-  color: #1F1F1F;
-  
-}
 .navbar {
-  display: flex;
-  justify-content: space-around; 
-  padding-top: 1rem; /* 16px */
-  padding-bottom: 1rem; /* 16px */ 
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: 10;
+  @apply flex justify-between px-10 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10
 }
+.navbar-active {
+  @apply bg-neutral-50/75 flex justify-between px-10 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10 backdrop-blur-3xl
+}
+
 .btn {
   display: flex;
   border-color: #F2F2F2;
@@ -136,4 +119,29 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Slider Section */
+.slider-core {
+  @apply min-h-screen flex items-end text-white
+}
+.slider-core-min {
+  @apply flex items-end text-white
+}
+.title-section {
+  @apply text-3xl font-medium font-[family-name:var(--font-noto-sans)]
+}
+.subtitle-section {
+  @apply text-xl font-normal font-[family-name:var(--font-noto-sans)] my-2 tracking-wide
+}
+.text-area-padding {
+  @apply p-10 lg:px-20 lg:py-10
 }
