@@ -19,7 +19,6 @@ const ProductPage = () => {
           <Link className='link' href='#amigo'>ระแนงไวนิล AMIGO</Link>
           <Link className='link' href='#greenwood'>ระแนงไวนิล GREENWOOD</Link>
           <Link className='link' href='#items'>ชิ้นส่วนระแนง</Link>          
-          <p className='link'>ฝ้าระแนง</p>
         </div>
       </div>   
       <div className='flex flex-col lg:flex-row bg-green-700'>
