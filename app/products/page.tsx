@@ -7,10 +7,14 @@ import ScgProduct from '../components/scg/ScgProduct'
 import AmigoProduct from '../components/Amigo/AmigoProduct'
 import GreenwoodProduct from '../components/Greenwood/GreenwoodProduct'
 import Products from '../components/Products'
+import Head from 'next/head'
 
 const ProductPage = () => {
   return (
     <>
+    <Head>
+        <title>สินค้า – ระแนงบังตา</title>
+    </Head>
     <div className="flex flex-col min-h-screen items-start mx-6 md:mx-20 font-[family-name:var(--font-noto-sans)]">      
       <div className="flex flex-col items-start pt-24 mb-4 w-full border-b-2  border-neutral-200">
         <p className="h1">เลือกดูผลิตภัณฑ์ระแนง</p>
