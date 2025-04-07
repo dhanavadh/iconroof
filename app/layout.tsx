@@ -17,6 +17,37 @@ const notoSans = localFont({
   weight: "100 200 300 400 500 600 700 800 900",
 });
 
+export const metadata: Metadata = {
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+  },
+  title: 'ระแนงบังตา – Iconroof',
+  description: 'บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ',
+  openGraph: {
+    title: 'ระแนงบังตา – Iconroof',
+    description: 'บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ',
+    url: 'https://iconroof.co.th/',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://iconroof.co.th/asset/amigo.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+        alt: 'iconroof ระแนง',
+      },
+      {
+        url: 'https://iconroof.co.th/asset/amigo.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'iconroof ระแนง',
+      },
+    ],
+    locale: 'th_TH',
+    type: 'website',
+  },
+}
+
 
 export default function RootLayout({
   children,
@@ -27,11 +58,6 @@ export default function RootLayout({
   const header = pathName === "/" ? <NewNavbar /> : <NavBarNormal />;
   return (
     <html lang="en">
-      <meta name="google-site-verification" content="yuQhIWvcSNGuy3NhPu0nBRZFmb6icHcSm3Zl_s6G5o4" />
-      <meta property="og:title" content="ระแนงบังตา – Iconroof" />
-      <meta property="og:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
-      <meta property="og:type" content="website" />      
-      <meta property="og:url" content="https://xn--72ca6bng5c5ell7l.com/" />
       <body
         className={`${notoSans.variable} antialiased`}>   
         {header}          

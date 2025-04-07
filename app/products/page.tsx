@@ -8,6 +8,38 @@ import AmigoProduct from '../components/Amigo/AmigoProduct'
 import GreenwoodProduct from '../components/Greenwood/GreenwoodProduct'
 import Products from '../components/Products'
 import Head from 'next/head'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+  },
+  title: 'สินค้า – ระแนงบังตา',
+  description: 'บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ',
+  openGraph: {
+    title: 'สินค้า – ระแนงบังตา',
+    description: 'บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ',
+    url: 'https://iconroof.co.th/products',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://iconroof.co.th/asset/amigo.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+        alt: 'iconroof ระแนง',
+      },
+      {
+        url: 'https://iconroof.co.th/asset/amigo.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'iconroof ระแนง',
+      },
+    ],
+    locale: 'th_TH',
+    type: 'website',
+  },
+}
 
 const ProductPage = () => {
   return (
@@ -149,5 +181,6 @@ const ProductPage = () => {
     </>    
   )
 }
+
 
 export default ProductPage

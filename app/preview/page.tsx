@@ -6,7 +6,7 @@ const PreviewPage = () => {
   return (
     <div className="flex min-h-screen items-center justify-center mx-4 md:mx-36 font-[family-name:var(--font-noto-sans)] bg-neutral-900">          
     <Head>
-        <title>ผลงาน ระแนงบังตา Iconroof</title>
+        <title>ผลงาน – ระแนงบังตา Iconroof</title>
     </Head>
       <div className="flex flex-col items-start">
       <p className="text-7xl font-medium text-neutral-100">ผลงาน</p>
