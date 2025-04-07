@@ -17,38 +17,6 @@ const notoSans = localFont({
   weight: "100 200 300 400 500 600 700 800 900",
 });
 
-export const metadata: Metadata = {
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-  },
-  title: 'ระแนงบังตา – Iconroof',
-  description: 'บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ',
-  openGraph: {
-    title: 'ระแนงบังตา – Iconroof',
-    description: 'บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ',
-    url: 'https://iconroof.co.th/',
-    siteName: 'Next.js',
-    images: [
-      {
-        url: 'https://iconroof.co.th/asset/amigo.png', // Must be an absolute URL
-        width: 800,
-        height: 600,
-        alt: 'iconroof ระแนง',
-      },
-      {
-        url: 'https://iconroof.co.th/asset/amigo.png', // Must be an absolute URL
-        width: 1800,
-        height: 1600,
-        alt: 'iconroof ระแนง',
-      },
-    ],
-    locale: 'th_TH',
-    type: 'website',
-  },
-}
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -58,6 +26,40 @@ export default function RootLayout({
   const header = pathName === "/" ? <NewNavbar /> : <NavBarNormal />;
   return (
     <html lang="en">
+      <title>Page Title</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
+      <meta name="keywords" content="ระแนงบังตา, ระแนงบังตาไวนิล, ระแนงบังตาไวนิล AMIGO, ระแนงชิด, ระแนงเว้นร่อง, ระแนงบานเกล็ด" />
+      <meta name="author" content="Iconroof" />
+      <meta name="robots" content="index, follow" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="google" content="notranslate" />
+      <meta name="theme-color" content="#ffffff" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-title" content="ระแนงบังตา – Iconroof" />
+      <meta name="msapplication-TileColor" content="#ffffff" />
+      <meta name="msapplication-TileImage" content="/favicon.ico" />
+      <meta name="msapplication-config" content="/browserconfig.xml" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@iconroof" />
+      <meta name="twitter:creator" content="@iconroof" />
+      <meta name="twitter:title" content="ระแนงบังตา – Iconroof" />
+      <meta name="twitter:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
+      <meta name="twitter:image" content="https://iconroof.co.th/asset/amigo.png" />
+      <meta name="twitter:image:alt" content="iconroof ระแนง" />
+      <meta property="og:site_name" content="Iconroof" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://iconroof.co.th/asset/amigo.png" />
+      <meta property="og:image:width" content="800" />
+      <meta property="og:image:height" content="600" />
+      <meta property="og:image:alt" content="iconroof ระแนง" />
+      <meta property="og:locale" content="th_TH" />
+      <meta property="og:locale:alternate" content="en_US" />      
+      <meta property="og:title" content="ระแนงบังตา – Iconroof" />
+      <meta property="og:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
+      <meta property="og:type" content="website" />      
+      <meta property="og:url" content="https://xn--72ca6bng5c5ell7l.com/" />
       <body
         className={`${notoSans.variable} antialiased`}>   
         {header}          
