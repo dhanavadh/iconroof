@@ -45,7 +45,7 @@ export default function RootLayout({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@iconroof" />
       <meta name="twitter:creator" content="@iconroof" />
-      <meta name="twitter:title" content="ระแนงบังตา – Iconroof" />
+      <meta name="twitter:title" content="ระแนงบังตาในแบบที่เข้ากับบ้านคุณ – Iconroof" />
       <meta name="twitter:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
       <meta name="twitter:image" content="https://iconroof.co.th/asset/OG1.png" />
       <meta name="twitter:image:alt" content="iconroof ระแนง" />
@@ -57,7 +57,7 @@ export default function RootLayout({
       <meta property="og:image:alt" content="iconroof ระแนง" />
       <meta property="og:locale" content="th_TH" />
       <meta property="og:locale:alternate" content="en_US" />      
-      <meta property="og:title" content="ระแนงบังตา – Iconroof" />
+      <meta property="og:title" content="ระแนงบังตาในแบบที่เข้ากับบ้านคุณ – Iconroof" />
       <meta property="og:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
       <meta property="og:type" content="website" />      
       <meta property="og:url" content="https://iconroof.co.th/" />
