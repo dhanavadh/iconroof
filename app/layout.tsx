@@ -26,7 +26,8 @@ export default function RootLayout({
   const header = pathName === "/" ? <NewNavbar /> : <NavBarNormal />;
   return (
     <html lang="en">
-      <title>Page Title</title>
+      <title>ระแนงบังตา – Iconroof</title>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
       <meta name="keywords" content="ระแนงบังตา, ระแนงบังตาไวนิล, ระแนงบังตาไวนิล AMIGO, ระแนงชิด, ระแนงเว้นร่อง, ระแนงบานเกล็ด" />
@@ -59,7 +60,7 @@ export default function RootLayout({
       <meta property="og:title" content="ระแนงบังตา – Iconroof" />
       <meta property="og:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
       <meta property="og:type" content="website" />      
-      <meta property="og:url" content="https://xn--72ca6bng5c5ell7l.com/" />
+      <meta property="og:url" content="https://iconroof.co.th/" />
       <body
         className={`${notoSans.variable} antialiased`}>   
         {header}          
