@@ -26,7 +26,7 @@ export default function RootLayout({
   const header = pathName === "/" ? <NewNavbar /> : <NavBarNormal />;
   return (
     <html lang="en">
-      <title>ระแนงบังตา – Iconroof</title>
+      <title>จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof</title>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ ขายปลีก-ส่ง ราคาโรงงาน ทันสมัย แข็งแรง สวยงาม ระแนงบังตาไวนิล รับประกัน 10 ปี อบสีด้วย พาวเดอร์ โค้ท ตั้งแต่ 08.00-17.30 น. เปิดบริการวันจันทร์-เสาร์ บริการ: รับติดตั้งระแนงไวนิล, เปิดบริการ จันทร์-ศุกร์, ตั้งแต่ 08.00-17.30 น." />
@@ -45,7 +45,7 @@ export default function RootLayout({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@iconroof" />
       <meta name="twitter:creator" content="@iconroof" />
-      <meta name="twitter:title" content="ระแนงบังตาในแบบที่เข้ากับบ้านคุณ – Iconroof" />
+      <meta name="twitter:title" content="จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof" />
       <meta name="twitter:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
       <meta name="twitter:image" content="https://iconroof.co.th/asset/OG1.png" />
       <meta name="twitter:image:alt" content="iconroof ระแนง" />
@@ -57,7 +57,7 @@ export default function RootLayout({
       <meta property="og:image:alt" content="iconroof ระแนง" />
       <meta property="og:locale" content="th_TH" />
       <meta property="og:locale:alternate" content="en_US" />      
-      <meta property="og:title" content="ระแนงบังตาในแบบที่เข้ากับบ้านคุณ – Iconroof" />
+      <meta property="og:title" content="จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof" />
       <meta property="og:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
       <meta property="og:type" content="website" />      
       <meta property="og:url" content="https://iconroof.co.th/" />
