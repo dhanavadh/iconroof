@@ -21,7 +21,7 @@ import ProductSlider from './ProductSlider';
     {name: 'หน้าแรก', href: '/', target: `_self`}, 
     {name: 'สินค้า', href: '/products', target: `_self`},
     {name: 'ผลงาน', href: '/preview', target: `_self`}, 
-    {name: 'ช่างทำระแนง', href: '/staff', target: `_self`}, 
+    {name: 'ช่างทำระแนง', href: '/service', target: `_self`}, 
     {name: 'บทความ', href: '/blogs', target: `_self`},
     {name: 'แผ่นหลังคา', href: 'https://www.xn--42cf7cl0c9a5bk1kzc.com/', target: `_blank`}
 ]
@@ -47,7 +47,7 @@ function NavBarNormal() {
         <div>            
             <div className="flex flex-col items-center justify-center font-[family-name:var(--font-noto-sans)] text-white">
                 <div className="flex justify-between flex-col">                    
-                    <div className='flex justify-between px-10 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10 bg-[#fafafa] border-b-2 border-neutral-200'>                    
+                    <div className='flex justify-between px-5 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10 bg-[#fafafa] border-b-2 border-neutral-200'>                    
                         <div className="flex items-center transition-colors duration-300">
                             <Link className="cursor-pointer" href='/'>
                                     <img className="h-8 object-cover"
@@ -77,7 +77,7 @@ function NavBarNormal() {
                             
                                 <a
                                 type="button"
-                                className={color ? btnDec[1] : btnDec[0]}   
+                                className={color ? btnDec[0] : btnDec[0]}   
                                 onClick={() => setIsOpen(true)}                   
                                 >
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
@@ -91,7 +91,7 @@ function NavBarNormal() {
 
             <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
                 <div className="fixed inset-0 flex w-screen items-start justify-center backdrop-blur-3xl bg-neutral-200/80 font-[family-name:var(--font-noto-sans)]">
-                <DialogPanel className="flex flex-col w-screen px-10 lg:px-20">
+                <DialogPanel className="flex flex-col w-screen px-5 lg:px-20">
                     <div className="flex justify-between items-center py-4">                
                         <Link className="cursor-pointer" onClick={() => setIsOpen(false)} href='/'>
                             <img className="h-8 object-cover"
@@ -104,7 +104,7 @@ function NavBarNormal() {
                             </svg>
                         </button>
                     </div>
-                    <div className="flex flex-col mt-2">
+                    <div className="flex flex-col mt-2 px-5">
                     {NavLink.map((index) => (
                         <Link
                         key={index.name}

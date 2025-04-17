@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Dialog, DialogPanel } from '@headlessui/react'
+import { Button, Dialog, DialogPanel } from '@headlessui/react'
 
   const logo = [
     '/icon/iconroof-white.svg',
@@ -21,7 +21,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
     {name: 'หน้าแรก', href: '/', target: `_self`}, 
     {name: 'สินค้า', href: '/products', target: `_self`},
     {name: 'ผลงาน', href: '/preview', target: `_self`}, 
-    {name: 'ช่างทำระแนง', href: '/staff', target: `_self`}, 
+    {name: 'ช่างทำระแนง', href: '/service', target: `_self`}, 
     {name: 'บทความ', href: '/blogs', target: `_self`},
     {name: 'แผ่นหลังคา', href: 'https://www.xn--42cf7cl0c9a5bk1kzc.com/', target: `_blank`}
 ]
@@ -54,7 +54,8 @@ function NewNavbar() {
                                         src={color ? logo[1] : logo[0]} alt="Iconroof">
                                     </img>
                             </Link>
-                        </div>                    
+                        </div>       
+                        {/* Menu Item              */}
                         <div className="items-center hidden space-x-8 lg:flex">
                             {NavLink.map((index) => (
                                 <Link
@@ -67,15 +68,15 @@ function NewNavbar() {
                             ))}
                             
                         </div>
-
+                        {/* LG Button */}
                         <div className="hidden lg:flex items-center">
-                            <a className={color ? btnDec[1] : btnDec[0]} href='https://line.me/ti/p/@plk2013' target='_blank'>
+                            <Link className={color ? btnDec[1] : btnDec[0]} href='https://line.me/ti/p/@plk2013' target='_blank'>
                                 สั่งซื้อสินค้า →
-                            </a>
+                            </Link>
                         </div>
                         <div className="lg:hidden flex items-center">
                             
-                                <a
+                                <Button
                                 type="button"
                                 className={color ? btnDec[1] : btnDec[0]}   
                                 onClick={() => setIsOpen(true)}                   
@@ -83,7 +84,7 @@ function NewNavbar() {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                                 <path fillRule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
                                 </svg>
-                                </a>
+                                </Button>
                         </div>
                     </div>
                 </div>
@@ -91,7 +92,7 @@ function NewNavbar() {
 
             <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
                 <div className="fixed inset-0 flex w-screen items-start justify-center backdrop-blur-3xl bg-neutral-200/80 font-[family-name:var(--font-noto-sans)]">
-                <DialogPanel className="flex flex-col w-screen px-10 lg:px-20">
+                <DialogPanel className="flex flex-col w-screen px-5 lg:px-20">
                     <div className="flex justify-between items-center py-4">                
                         <Link className="cursor-pointer" onClick={() => setIsOpen(false)} href='/'>
                             <img className="h-8 object-cover"
@@ -104,7 +105,7 @@ function NewNavbar() {
                             </svg>
                         </button>
                     </div>
-                    <div className="flex flex-col mt-2">
+                    <div className="flex flex-col mt-2 px-5">
                     {NavLink.map((index) => (
                         <Link
                         key={index.name}

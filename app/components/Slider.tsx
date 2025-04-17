@@ -21,7 +21,7 @@ const Slider = () => {
         keyboard={true}    
         centeredSlides={true}
         autoplay={{
-          delay: 4000,
+          delay: 8000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
@@ -29,16 +29,7 @@ const Slider = () => {
       >
 
         {/* Parent Please Clone From This */}
-        <SwiperSlide>
-            <div className='slider-core'>             
-                <img src='/asset/scg.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></img>
-                <img src='/asset/scg-vertical.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></img>
-                <div className='text-area-padding'>
-                    <Link href='/products' className='title-section link'>ระแนงบังตาไวนิล SCG BOX SET</Link>
-                    <p className='subtitle-section'>สร้างสรรค์ความงามได้หลากหลาย ภายใต้คุณภาพที่เป็นมาตรฐาน</p>
-                </div>
-            </div>
-        </SwiperSlide> 
+        
         
         
         <SwiperSlide>
@@ -59,8 +50,19 @@ const Slider = () => {
                     Your browser does not support the video tag.
                 </video>
                 <div className='text-area-padding'>
-                    <Link href='/products' className='title-section link'>งานติดตั้งระแนง</Link>
+                    <Link href='/service' className='title-section link'>งานติดตั้งระแนง</Link>
                     <p className='subtitle-section'>Iconroof มีบริการติดตั้งระแนงโดยช่างชำนาญการ</p>
+                </div>
+            </div>
+        </SwiperSlide> 
+
+        <SwiperSlide>
+            <div className='slider-core'>             
+                <img src='/asset/scg.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></img>
+                <img src='/asset/scg-vertical.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></img>
+                <div className='text-area-padding'>
+                    <Link href='/products' className='title-section link'>ระแนงบังตาไวนิล SCG BOX SET</Link>
+                    <p className='subtitle-section'>สร้างสรรค์ความงามได้หลากหลาย ภายใต้คุณภาพที่เป็นมาตรฐาน</p>
                 </div>
             </div>
         </SwiperSlide> 
