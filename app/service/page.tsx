@@ -10,6 +10,7 @@ import Products from '../components/Products'
 import Head from 'next/head'
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import InstallationList from '../components/Install'
 
 export const metadata: Metadata = {
   icons: {
@@ -164,7 +165,11 @@ const ServicePage = () => {
             </div>
           </div>
         </div>
-      </div>   
+      </div>
+      <div className="flex flex-col items-start w-full">
+        <p className="h1">ขั้นตอนติดตั้งระแนง</p>    
+      </div>
+      <InstallationList />   
       
 
 
