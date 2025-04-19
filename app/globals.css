@@ -137,11 +137,11 @@ html {
   @apply flex items-end text-white
 }
 .title-section {
-  @apply text-xl lg:text-3xl font-medium font-[family-name:var(--font-noto-sans)]
+  @apply text-2xl lg:text-3xl font-semibold font-[family-name:var(--font-noto-sans)]
 }
 .subtitle-section {
   @apply text-base font-normal font-[family-name:var(--font-noto-sans)] my-2 tracking-wide 
 }
 .text-area-padding {
-  @apply p-10 lg:px-20 lg:py-10
+  @apply p-6 lg:px-20 lg:py-10
 }
