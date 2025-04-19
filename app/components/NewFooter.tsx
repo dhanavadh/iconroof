@@ -23,16 +23,56 @@ const NewFooter = () => {
                     <p className='h4 mb-2'>ช่องทางการติดต่อ</p>
                     <div className='grid ml-1'>
                         <div className='flex items-center gap-2 mb-2'>
-                            <img src='./icon/link_href.svg' className='w-2'></img> 
-                            <Link href='https://www.facebook.com/PLK2013/' target='_blank' className='link'>Facebook แผ่นหลังคาการช่าง</Link>
+                            <Link href='https://www.facebook.com/PLK2013/' target='_blank' className='flex items-center link'>
+                                <p className="text-base">Facebook แผ่นหลังคาการช่าง</p>
+                                <Image
+                                src='/icon/link.svg'
+                                alt='Iconroof'
+                                width={20}
+                                height={20}
+                                className='ml-2'
+                                >
+                                </Image>
+                            </Link>
+                        </div>
+                        <div className='flex items-center gap-2 mb-2'>                            
+                            <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='flex items-center link'>
+                                <p className="text-base">Line @PLK2013</p>
+                                <Image
+                                src='/icon/link.svg'
+                                alt='Iconroof'
+                                width={20}
+                                height={20}
+                                className='ml-2'
+                                >
+                                </Image>
+                            </Link>
                         </div>
                         <div className='flex items-center gap-2 mb-2'>
-                            <img src='./icon/link_href.svg' className='w-2'></img> 
-                            <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='link'>Line @PLK2013</Link>
+                            <Link href='https://www.tiktok.com/@iconroof_official1' target='_blank' className='flex items-center link'>
+                                <p className="text-base">Tiktok Iconroof</p>
+                                <Image
+                                src='/icon/link.svg'
+                                alt='Iconroof'
+                                width={20}
+                                height={20}
+                                className='ml-2'
+                                >
+                                </Image>
+                            </Link>
                         </div>
                         <div className='flex items-center gap-2 mb-2'>
-                            <img src='./icon/link_href.svg' className='w-2'></img> 
-                            <Link href='https://www.tiktok.com/@iconroof_official1' target='_blank' className='link'>Tiktok Iconroof</Link>
+                            <Link href='https://www.youtube.com/@iconroof3391/videos' target='_blank' className='flex items-center link'>
+                                <p className="text-base">YouTube Iconroof</p>
+                                <Image
+                                src='/icon/link.svg'
+                                alt='Iconroof'
+                                width={20}
+                                height={20}
+                                className='ml-2'
+                                >
+                                </Image>
+                            </Link>
                         </div>
                     </div>
                 </div>

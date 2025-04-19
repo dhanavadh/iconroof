@@ -10,7 +10,8 @@ import ProductSlider from './ProductSlider';
     '/icon/iconroof-black.svg',
   ]
   const btnDec = [
-    `btn-primary-static`
+    `btn-primary`,
+    `btn-primary-dark`
   ]
   const navtext = [
     `flex font-medium text-white link`,
@@ -47,7 +48,7 @@ function NavBarNormal() {
         <div>            
             <div className="flex flex-col items-center justify-center font-[family-name:var(--font-noto-sans)] text-white">
                 <div className="flex justify-between flex-col">                    
-                    <div className='flex justify-between px-5 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10 bg-[#fafafa] border-b-2 border-neutral-200'>                    
+                    <div className='flex justify-between px-5 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10 bg-[#fafafa]'>                    
                         <div className="flex items-center transition-colors duration-300">
                             <Link className="cursor-pointer" href='/'>
                                     <img className="h-8 object-cover"
@@ -77,7 +78,7 @@ function NavBarNormal() {
                             
                                 <a
                                 type="button"
-                                className={color ? btnDec[0] : btnDec[0]}   
+                                className={color ? btnDec[1] : btnDec[1]}   
                                 onClick={() => setIsOpen(true)}                   
                                 >
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">

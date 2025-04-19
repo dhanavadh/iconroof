@@ -18,18 +18,18 @@ const ProductsList = () => {
                 <ul className='flex'>
                     {services.map((item) => (
                         <li key={item.id}>
-                            <a href={item.link} className='grid w-72 md:w-96 items-center mx-2 my-10 bg-gray-50 rounded-lg shadow-xl duration-300'>
+                            <Link href={item.link} className='grid w-72 md:w-96 items-center mx-2 my-10 bg-gray-50 shadow-md rounded-2xl duration-300 hover:shadow-xl '>
                                 <div className='relative h-64'>
                                     <img src={item.image} className='w-full h-full object-cover absolute rounded-t-lg' alt={item.name}></img>
                                 </div>
                                 <div className='flex flex-col p-6 whitespace-normal'>
                                     <div>
-                                        <p className='h3'>{item.name}</p>
+                                        <p className='text-lg lg:text-xl font-semibold'>{item.name}</p>
                                         <p className='p line-clamp-2'>{item.des}</p>
                                     </div>                                        
                                     <p className="text-end mt-4 link">ดูสินค้า →</p>                              
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

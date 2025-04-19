@@ -45,16 +45,16 @@ body {
   @apply text-sm font-[family-name:var(--font-noto-sans)] font-normal
 }
 .h1{
-  @apply text-3xl font-[family-name:var(--font-noto-sans)] font-medium my-2
+  @apply text-2xl lg:text-3xl font-[family-name:var(--font-noto-sans)] font-semibold my-2
 }
 .h2{
-  @apply text-2xl font-[family-name:var(--font-noto-sans)] font-medium my-2
+  @apply text-lg lg:text-2xl font-[family-name:var(--font-noto-sans)] font-semibold my-2
 }
 .h3{
-  @apply text-xl font-[family-name:var(--font-noto-sans)] font-medium my-2
+  @apply text-base lg:text-xl font-[family-name:var(--font-noto-sans)] font-medium my-2
 }
 .h4{
-  @apply text-lg font-[family-name:var(--font-noto-sans)] font-medium my-2
+  @apply text-base lg:text-lg font-[family-name:var(--font-noto-sans)] font-medium my-2
 }
 .h5{
   @apply text-base font-[family-name:var(--font-noto-sans)] font-medium my-2
@@ -72,7 +72,7 @@ body {
   @apply flex justify-between px-5 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10
 }
 .navbar-active {
-  @apply bg-neutral-50/75 flex justify-between px-5 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10 backdrop-blur-3xl
+  @apply bg-neutral-50 flex justify-between px-5 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10 
 }
 
 .btn {
@@ -137,10 +137,10 @@ html {
   @apply flex items-end text-white
 }
 .title-section {
-  @apply text-3xl font-medium font-[family-name:var(--font-noto-sans)]
+  @apply text-xl lg:text-3xl font-medium font-[family-name:var(--font-noto-sans)]
 }
 .subtitle-section {
-  @apply text-xl font-normal font-[family-name:var(--font-noto-sans)] my-2 tracking-wide
+  @apply text-base font-normal font-[family-name:var(--font-noto-sans)] my-2 tracking-wide 
 }
 .text-area-padding {
   @apply p-10 lg:px-20 lg:py-10
