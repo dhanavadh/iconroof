@@ -131,7 +131,7 @@ html {
 
 /* Slider Section */
 .slider-core {
-  @apply min-h-screen flex items-end text-white
+  @apply min-h-96 flex items-end text-white
 }
 .slider-core-min {
   @apply flex items-end text-white

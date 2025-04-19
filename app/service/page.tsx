@@ -78,7 +78,7 @@ const ServicePage = () => {
           </div>
           <p className="text-2xl mt-4 font-semibold">ติดตั้งระแนงโดยช่างมืออาชีพ</p>
           <p className="text-base mt-1">ไอคอนรูฟมีบริการติดตั้งระแนงโดยช่างมืออาชีพ</p>
-          <p className="text-base mb-4">สามารถติดต่อเพื่อสอบถามข้อมูลเพิ่มเติมได้ผ่านทาง Line@PLK2014</p>
+          <p className="text-base mb-4">สามารถติดต่อเพื่อสอบถามข้อมูลเพิ่มเติมได้ผ่านทาง Line@PLK2013</p>
           <Link href='https://www.youtube.com/@iconroof3391' target='_blank' className='flex items-center mb-8 link'>
             <p className="text-base">ดูผลงานการติดตั้ง</p>
             <Image
