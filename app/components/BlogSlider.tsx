@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Link from 'next/link';
 
-const PreviewSlider1 = () => {
+const BlogSlider1 = () => {
   return (
     <>
         <Swiper    
@@ -82,4 +82,4 @@ const PreviewSlider1 = () => {
   )
 }
 
-export default PreviewSlider1
+export default BlogSlider1

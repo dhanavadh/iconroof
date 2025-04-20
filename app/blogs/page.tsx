@@ -5,11 +5,12 @@ import PreviewSlider from '../components/PreviewSlider'
 import Link from 'next/link'
 import Image from 'next/image'
 import BlogSlider from '../components/BlogSlider'
+import BlogSlider1 from '../components/BlogSlider'
 
 const BlogPage = () => {
   return (
     <>
-    <BlogSlider />
+    <BlogSlider1 />
     <div className="flex flex-col min-h-screen items-start mx-6 lg:mx-20 font-[family-name:var(--font-noto-sans)]">      
       <div className="flex flex-col items-start pt-8 mb-4 w-full">
         <p className="h1">ผลงานการติดตั้ง</p>    
