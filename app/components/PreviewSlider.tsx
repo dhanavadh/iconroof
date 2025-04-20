@@ -45,8 +45,8 @@ const PreviewSlider = () => {
 
         <SwiperSlide>
             <div className='slider-core'>             
-                <img src='/asset/roof-fac.jpg' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
-                <img src='/asset/roof-fac.jpg' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
+                <img src='/asset/roof-fac.JPG' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
+                <img src='/asset/roof-fac.JPG' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
                 <div className='text-area-padding'>
                     <p className='title-section'>รั้วเมทัลชีท</p>
                     <p className='subtitle-section'>ตัวอย่างงานติดตั้งรั้วเมทัลชีท</p>
