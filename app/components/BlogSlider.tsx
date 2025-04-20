@@ -37,7 +37,7 @@ const BlogSlider1 = () => {
                 <img src='/asset/blog/blog-1.jpg' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
                 <img src='/asset/blog/blog-1.jpg' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
                 <div className='text-area-padding'>
-                    <Link href='/blogs/article1' className='title-section link'>วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</Link>
+                    <p className='title-section link'>วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</p>
                     <p className='subtitle-section'>ตัวอย่างงานติดตั้งระแนง Amigo</p>
                 </div>
             </Link>
