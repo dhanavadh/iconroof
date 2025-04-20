@@ -10,8 +10,8 @@ const PreviewPage = () => {
     <>
     <PreviewSlider />
     <div className="flex flex-col min-h-screen items-start mx-6 lg:mx-20 font-[family-name:var(--font-noto-sans)]">      
-      <div className="flex flex-col items-start pt-4 mb-4 w-full">
-        <p className="h1">บริการติดตั้งระแนง</p>    
+      <div className="flex flex-col items-start pt-8 mb-4 w-full">
+        <p className="h1">ผลงานการติดตั้ง</p>    
       </div>
       <div className='flex flex-col lg:grid lg:grid-cols-4 items-start justify-between w-full lg:gap-8 relative'>
         <div className='hidden lg:grid lg:col-span-3 lg:sticky self-start transition-[top] top-20'
