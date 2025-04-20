@@ -6,7 +6,7 @@ const NewFooter = () => {
   return (
     <div className='grid px-6 md:px-20 py-5 font-[family-name:var(--font-noto-sans)]'>
         <div className='pb-2 border-b-2 mb-4 border-neutral-200'>
-            <Image src='./icon/iconroof.svg' alt='iconroof' width={200} height={100} className='mb-4'></Image>
+            <Image src='/icon/iconroof.svg' alt='iconroof' width={200} height={100} className='mb-4'></Image>
         </div>
         <div className='grid lg:flex items-start justify-between mb-10 space-x-0 lg:space-x-4 '>
             
@@ -78,7 +78,7 @@ const NewFooter = () => {
                 </div>
                 <div className='flex flex-col items-center'>
                     <p className='h4'>สั่งซื้อสินค้า</p>  
-                    <img src='./qr-line.svg' className='w-20'></img>             
+                    <img src='/qr-line.svg' className='w-20'></img>             
                     <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='link mt-2 bg-[#06C755] px-2 py-1 rounded-full text-white text-[12px] font-semibold'>LINE@PLK2013</Link>
                 </div>
             </div>
