@@ -29,9 +29,154 @@ export default function Home() {
         <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>          
       </div> 
 
-      <div className="flex flex-row gap-4 w-full mt-2 pb-10">
-        <div className="flex flex-row justify-start items-start rounded-xl bg-gray-50 shadow-xl lg:w-4/6 border-2 border-gray-100">
-          <div className="hidden w-1/2 h-full lg:flex">
+      <div className="lg:hidden flex w-full overflow-x-auto bg-red scrollbar-hide">
+            <div className="whitespace-nowrap">
+                <ul className='flex'>                    
+                        <li className="mb-10">
+                            <Link href='/products' className='grid w-80 items-center mx-2 bg-gray-50 shadow-md rounded-2xl duration-300 hover:shadow-xl '>
+                                <div className='flex flex-col p-6 whitespace-normal'>
+                                    <div>
+                                    <div className="px-4 py-2 lg:px-8 lg:py-4">            
+                                      <div className="flex">
+                                        <div className='flex justify-start items-center gap-0.5 bg-[#F5951D]/15 px-[3px] py-[3px] rounded-full w-20'>
+                                            <div className='relative flex items-center justify-center h-[24px]'>
+                                                <span className='absolute inline-flex h-4 w-4 bg-[#F5951D] rounded-full animate-ping z-0'></span>
+                                                <img src="/icon/star_shine_w.svg" className="inline-flex relative h-[24px] bg-[#F5951D] rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
+                                            </div>  
+                                            <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#F5951D] rounded-[3px] font-semibold'>แนะนำ</p>                                
+                                        </div> 
+                                      </div>    
+                                        <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-start">ระบบฝ้าระแนง AMIGO</p>
+                                        <div className="text-base gap-4 flex flex-col items-start">
+                                          <div className="flex items-center gap-4">
+                                            <Image
+                                              src="/icon/timer.svg"
+                                              alt="AMIGO"
+                                              width={36}
+                                              height={36}    
+                                              className="w-8 h-8"            
+                                            />
+                                            <p className="">ระบบอุปกรณ์ติดตั้งครบชุด พร้อมขั้นตอน<a className="font-semibold text-[#F5951D]">ทำงานง่ายและรวดเร็ว</a></p>
+                                          </div>            
+                                          <div className="flex items-center gap-4">
+                                            <Image
+                                              src="/icon/verified.svg"
+                                              alt="AMIGO"
+                                              width={36}
+                                              height={36}    
+                                              className="w-8 h-8"            
+                                            />
+                                            <p className=""><a className="font-semibold text-[#F5951D]">งานเรียบร้อยได้มาตรฐาน</a> เว้นร่องเท่ากันเป็นระเบียบสวยงาม</p>
+                                          </div>            
+                                          <div className="flex items-center gap-4">
+                                            <Image
+                                              src="/icon/health_and_safety.svg"
+                                              alt="AMIGO"
+                                              width={36}
+                                              height={36}    
+                                              className="w-8 h-8"            
+                                            />
+                                            <p className="">ไม่มีปัญหาเรื่องปลวก <a className="font-semibold text-[#F5951D]">ไม่ชวมน้ำ ไม่ผุกร่อน</a> ไม่บิดโก่งงอ ไม่ขึ้นรา</p>
+                                          </div>            
+                                          <div className="flex items-center gap-4">
+                                            <Image
+                                              src="/icon/package.svg"
+                                              alt="AMIGO"
+                                              width={36}
+                                              height={36}    
+                                              className="w-8 h-8"            
+                                            />
+                                            <p className=""><a className="font-semibold text-[#F5951D]">ระบบติดตั้งทันสมัย</a> ใช้อุปกรณ์โครงสร้างคร่าวเหล็กชุบกัลวาไนซ์</p>
+                                          </div>                                
+                                          <div className="flex items-center gap-4">
+                                            <Image
+                                              src="/icon/star_shine.svg"
+                                              alt="AMIGO"
+                                              width={36}
+                                              height={36}    
+                                              className="w-8 h-8"            
+                                            />
+                                            <p className="">ผลิตจากไวนิลสูตรพิเศษ มีสีในตัว <a className="font-semibold text-[#F5951D]">สวยงามยาวนาน</a></p>
+                                          </div>                                                            
+                                        </div>
+                                      </div>
+                                    </div>                                        
+                                </div>
+                            </Link>
+                        </li>
+                        <li >
+                            <div className='grid w-80 items-center mx-2 bg-gray-50 shadow-md rounded-2xl'>
+                                <div className='flex flex-col p-6 whitespace-normal'>
+                                    <div>
+                                    <div className="px-4 py-2 lg:px-8 lg:py-4">            
+                                      <span className="flex h-7">
+                                       
+                                      </span>    
+                                        <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-start">ระบบฝ้าระแนงไม้ธรรมดา</p>
+                                        <div className="text-base gap-4 flex flex-col items-start">
+                                          <div className="flex items-center gap-4">
+                                            <Image
+                                              src="/icon/timer.svg"
+                                              alt="AMIGO"
+                                              width={36}
+                                              height={36}    
+                                              className="w-8 h-8"            
+                                            />
+                                            <p className="">การติดตั้งใช้เวลานาน และต้องทาสี</p>
+                                          </div>            
+                                          <div className="flex items-center gap-4">
+                                            <Image
+                                              src="/icon/verified_off.svg"
+                                              alt="AMIGO"
+                                              width={36}
+                                              height={36}    
+                                              className="w-8 h-8"            
+                                            />
+                                            <p className="">ร่องอาจไม่เท่ากัน มีการทด โก่ง งอ ตามคุณภาพไม้ และรอยตะปู</p>
+                                          </div>            
+                                          <div className="flex items-center gap-4">
+                                            <Image
+                                              src="/icon/hourglass_arrow_down.svg"
+                                              alt="AMIGO"
+                                              width={36}
+                                              height={36}    
+                                              className="w-8 h-8"            
+                                            />
+                                            <p className="">คุณภาพของไม้เปลี่ยนไปตามการเวลา</p>
+                                          </div>            
+                                          <div className="flex items-center gap-4">
+                                            <Image
+                                              src="/icon/bug.svg"
+                                              alt="AMIGO"
+                                              width={36}
+                                              height={36}    
+                                              className="w-8 h-8"            
+                                            />
+                                            <p className="">โครงคร่าวเป็นไม้ ยังมีปัญหาต่างๆ ของไม้อยู่</p>
+                                          </div>                                
+                                          <div className="flex items-center gap-4">
+                                            <Image
+                                              src="/icon/paint.svg"
+                                              alt="AMIGO"
+                                              width={36}
+                                              height={36}    
+                                              className="w-8 h-8"            
+                                            />
+                                            <p className="">เพื่อความสวยงาม ต้องทาสีใหม่ทุกๆ 2-3 ปี</p>
+                                          </div>                                                            
+                                        </div>
+                                      </div>
+                                    </div>                                        
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+
+      <div className="hidden lg:flex flex-row gap-4 w-full mt-2 pb-10">
+        <Link href='/products' className="flex flex-row justify-start items-start shadow-md rounded-2xl duration-300 hover:shadow-xl bg-gray-50 lg:w-4/6 w-64">
+          <div className="w-1/2 h-full flex">
             <Image
               src="/asset/amigo-1.png"
               alt="AMIGO"
@@ -105,8 +250,8 @@ export default function Home() {
               </div>                                                            
             </div>
           </div>
-        </div>
-        <div className="flex flex-col lg:flex-row justify-start items-start rounded-xl bg-gray-50 shadow-xl lg:w-2/6 border-2 border-gray-100">         
+        </Link>
+        <div className="flex flex-col lg:flex-row justify-start items-start shadow-md rounded-2xl bg-gray-50 lg:w-2/6">         
           <div className="px-4 py-2 lg:px-8 lg:py-4">
           <a className="hidden lg:flex h-[24px] text-white font-semibold px-2 py-0.5 rounded-full"></a>
             <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-center lg:text-start">ระบบฝ้าระแนงไม้ธรรมดา</p>
@@ -123,7 +268,7 @@ export default function Home() {
               </div>            
               <div className="flex items-center gap-4">
                 <Image
-                  src="/icon/verified.svg"
+                  src="/icon/verified_off.svg"
                   alt="AMIGO"
                   width={36}
                   height={36}    
@@ -133,7 +278,7 @@ export default function Home() {
               </div>            
               <div className="flex items-center gap-4">
                 <Image
-                  src="/icon/health_and_safety.svg"
+                  src="/icon/hourglass_arrow_down.svg"
                   alt="AMIGO"
                   width={36}
                   height={36}    
@@ -143,7 +288,7 @@ export default function Home() {
               </div>            
               <div className="flex items-center gap-4">
                 <Image
-                  src="/icon/package.svg"
+                  src="/icon/bug.svg"
                   alt="AMIGO"
                   width={36}
                   height={36}    
@@ -153,7 +298,7 @@ export default function Home() {
               </div>                                
               <div className="flex items-center gap-4">
                 <Image
-                  src="/icon/star_shine.svg"
+                  src="/icon/paint.svg"
                   alt="AMIGO"
                   width={36}
                   height={36}    
