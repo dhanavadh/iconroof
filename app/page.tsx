@@ -40,9 +40,18 @@ export default function Home() {
               className="w-full h-full object-cover lg:rounded-tl-xl lg:rounded-bl-xl"
             />
           </div>
-          <div className="px-8 py-4">
-            <a className="text-[14px] bg-[#F5951D] text-white font-semibold px-2 py-0.5 rounded-full">แนะนำ</a>
-            <p className="text-lg lg:text-xl font-semibold pb-4 pt-2">ระบบฝ้าระแนง AMIGO</p>
+          <div className="px-4 py-2 lg:px-8 lg:py-4">
+            
+          <div className="hidden lg:flex">
+            <div className='flex justify-start items-center gap-0.5 bg-[#F5951D]/15 px-[3px] py-[3px] rounded-full w-20'>
+                <div className='relative flex items-center justify-center h-[24px]'>
+                    <span className='absolute inline-flex h-4 w-4 bg-[#F5951D] rounded-full animate-ping z-0'></span>
+                    <img src="/icon/star_shine_w.svg" className="inline-flex relative h-[24px] bg-[#F5951D] rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
+                </div>  
+                <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#F5951D] rounded-[3px] font-semibold'>แนะนำ</p>                                
+            </div> 
+          </div>    
+            <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-center lg:text-start">ระบบฝ้าระแนง AMIGO</p>
             <div className="text-base gap-4 flex flex-col items-start">
               <div className="flex items-center gap-4">
                 <Image
@@ -98,9 +107,9 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-start items-start rounded-xl bg-gray-50 shadow-xl lg:w-2/6 border-2 border-gray-100">         
-          <div className="px-8 py-4">
-          <a className="text-[14px] bg-neutral-100 text-white font-semibold px-2 py-0.5 rounded-full"></a>
-            <p className="text-lg lg:text-xl font-semibold pb-4 pt-2">ระบบฝ้าระแนงไม้</p>
+          <div className="px-4 py-2 lg:px-8 lg:py-4">
+          <a className="hidden lg:flex h-[24px] text-white font-semibold px-2 py-0.5 rounded-full"></a>
+            <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-center lg:text-start">ระบบฝ้าระแนงไม้ธรรมดา</p>
             <div className="text-base gap-4 flex flex-col items-start">
               <div className="flex items-center gap-4">
                 <Image
