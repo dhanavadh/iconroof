@@ -18,25 +18,15 @@ const BlogPage = () => {
     <BlogSlider1 />
     <div className="flex flex-col min-h-screen items-start mx-6 lg:mx-20 font-[family-name:var(--font-noto-sans)]">      
       <div className="flex flex-col items-start pt-8 mb-4 w-full">
-        <p className="h1">ผลงานการติดตั้ง</p>    
+        <p className="h1">บทความ</p>    
       </div>
       <div className='flex flex-col lg:grid lg:grid-cols-4 items-start justify-between w-full lg:gap-8 relative'>
         <div className='hidden lg:grid lg:col-span-3 lg:sticky self-start transition-[top] top-20'
           id='big-content'
         >
           <div>
-          
-            {/* <video
-              className='w-full h-full object-cover'
-              autoPlay
-              loop
-              muted
-              playsInline
-              src='/asset/video/test1.mp4'
-              // src='https://cdn.openai.com/ctf-cdn/o3o4mini_16x9(1080).mp4'
-            ></video> */}
             <Image
-              src='/asset/amigo-2.png'
+              src='/asset/blog/blog-1.jpg'
               alt='Iconroof'
               width={1920}
               height={1080}
@@ -45,7 +35,7 @@ const BlogPage = () => {
 
               </Image>
           </div>
-          <p className="text-2xl mt-4 font-semibold">ติดตั้งระแนงโดยช่างมืออาชีพ</p>
+          <p className="text-2xl mt-4 font-semibold">วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</p>
           <p className="text-base mt-1">ไอคอนรูฟมีบริการติดตั้งระแนงโดยช่างมืออาชีพ</p>
           <p className="text-base mb-4">สามารถติดต่อเพื่อสอบถามข้อมูลเพิ่มเติมได้ผ่านทาง Line@PLK2013</p>
           <Link href='https://www.youtube.com/@iconroof3391' target='_blank' className='flex items-center mb-8 link'>
