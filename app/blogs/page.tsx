@@ -21,7 +21,7 @@ const BlogPage = () => {
         <p className="h1">บทความ</p>    
       </div>
       <div className='flex flex-col lg:grid lg:grid-cols-4 items-start justify-between w-full lg:gap-8 relative'>
-        <div className='hidden lg:grid lg:col-span-3 lg:sticky self-start transition-[top] top-20'
+        <Link href='/blogs/article-1' className='hidden lg:grid lg:col-span-3 lg:sticky self-start transition-[top] top-20'
           id='big-content'
         >
           <div>
@@ -35,11 +35,10 @@ const BlogPage = () => {
 
               </Image>
           </div>
-          <p className="text-2xl mt-4 font-semibold">วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</p>
-          <p className="text-base mt-1">ไอคอนรูฟมีบริการติดตั้งระแนงโดยช่างมืออาชีพ</p>
-          <p className="text-base mb-4">สามารถติดต่อเพื่อสอบถามข้อมูลเพิ่มเติมได้ผ่านทาง Line@PLK2013</p>
-          <Link href='https://www.youtube.com/@iconroof3391' target='_blank' className='flex items-center mb-8 link'>
-            <p className="text-base">ดูผลงานการติดตั้ง</p>
+          <p className="text-2xl mt-4 font-semibold hover:underline hover:underline-offset-2">วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</p>
+          <p className="text-base mt-1 mb-4">การเลือกวัสดุที่ใช้มุง หลังคา ถือว่าเป็นอย่างแรกๆ ที่เรามักต้องเลือกกันก่อน ด้วยวัสดุมีหลากหลายแบบและชนิด ซึ่งมันอาจจะไม่เหมาะกับทรงหลังคาบ้านและความต้องการของเราก็เป็นได้</p>
+          <Link href='/blogs/article-1' className='flex items-center mb-8 link'>
+            <p className="text-base">อ่านต่อ</p>
             <Image
               src='/icon/link.svg'
               alt='Iconroof'
@@ -49,30 +48,30 @@ const BlogPage = () => {
               >
               </Image>
           </Link>
-        </div>
-        <div className='grid lg:col-span-1 overflow-y-auto w-full' id='small-content'>
+        </Link>
+        <Link href='/blogs/article-1' className='grid lg:col-span-1 overflow-y-auto w-full' id='small-content'>
           <div className='lg:hidden'>
             <Image
-              src='/asset/amigo-2.png'
+              src='/asset/blog/blog-1.jpg'
               alt='Iconroof'
               width={1920}
               height={1080}
               className='h-64 w-full object-cover rounded-lg'
             />                    
             <div>
-              <p className="text-2xl mt-4 font-semibold">ติดตั้งระแนงโดยช่างมืออาชีพ</p>
-              <p className="text-base mt-1 mb-4">ไอคอนรูฟมีบริการติดตั้งระแนงโดยช่างมืออาชีพ สามารถติดต่อเพื่อสอบถามข้อมูลเพิ่มเติมได้ผ่านทาง Line@PLK2014</p>
-              <Link href='https://www.youtube.com/@iconroof3391' target='_blank' className='flex items-center mb-8 link'>
-                <p className="text-base">ดูผลงานการติดตั้ง</p>
-                <Image
-                  src='/icon/link.svg'
-                  alt='Iconroof'
-                  width={20}
-                  height={20}
-                  className='ml-2'
-                  >
-                  </Image>
-              </Link>
+            <p className="text-2xl mt-4 font-semibold hover:underline hover:underline-offset-2">วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</p>
+            <p className="text-base mt-1 mb-4">การเลือกวัสดุที่ใช้มุง หลังคา ถือว่าเป็นอย่างแรกๆ ที่เรามักต้องเลือกกันก่อน ด้วยวัสดุมีหลากหลายแบบและชนิด ซึ่งมันอาจจะไม่เหมาะกับทรงหลังคาบ้านและความต้องการของเราก็เป็นได้</p>
+            <Link href='/blogs/article-1' className='flex items-center mb-8 link'>
+              <p className="text-base">อ่านต่อ</p>
+              <Image
+                src='/icon/link.svg'
+                alt='Iconroof'
+                width={20}
+                height={20}
+                className='ml-2'
+                >
+                </Image>
+            </Link>
             </div>
           </div>
           <div>
@@ -123,7 +122,7 @@ const BlogPage = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
       <div className="flex flex-col items-start w-full">
         <p className="h1">ขั้นตอนติดตั้งระแนง</p>    

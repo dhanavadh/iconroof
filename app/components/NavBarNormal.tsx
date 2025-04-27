@@ -48,7 +48,7 @@ function NavBarNormal() {
         <div>            
             <div className="flex flex-col items-center justify-center font-[family-name:var(--font-noto-sans)] text-white">
                 <div className="flex justify-between flex-col">                    
-                    <div className='flex justify-between px-5 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10 bg-[#fafafa]'>                    
+                    <div className='flex justify-between px-5 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-50 bg-[#f5f5f5]'>                    
                         <div className="flex items-center transition-colors duration-300">
                             <Link className="cursor-pointer" href='/'>
                                     <img className="h-8 object-cover"

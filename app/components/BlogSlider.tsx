@@ -38,45 +38,21 @@ const BlogSlider1 = () => {
                 <img src='/asset/blog/blog-1.jpg' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
                 <div className='text-area-padding'>
                     <p className='title-section link'>วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</p>
-                    <p className='subtitle-section'>ตัวอย่างงานติดตั้งระแนง Amigo</p>
+                    <p className='subtitle-section'>การเลือกวัสดุที่ใช้มุง หลังคา ถือว่าเป็นอย่างแรกๆ ที่เรามักต้องเลือกกันก่อน ด้วยวัสดุมีหลากหลายแบบและชนิด ซึ่งมันอาจจะไม่เหมาะกับทรงหลังคาบ้านและความต้องการของเราก็เป็นได้</p>
                 </div>
             </Link>
         </SwiperSlide> 
 
         <SwiperSlide>
-            <div className='slider-core'>             
-                <img src='/asset/roof-fac.JPG' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
-                <img src='/asset/roof-fac.JPG' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
+            <Link href='/blogs/article-2' className='slider-core'>             
+                <img src='/asset/blog/blog-2.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
+                <img src='/asset/blog/blog-2.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
                 <div className='text-area-padding'>
-                    <p className='title-section'>รั้วเมทัลชีท</p>
-                    <p className='subtitle-section'>ตัวอย่างงานติดตั้งรั้วเมทัลชีท</p>
+                    <p className='title-section link'>สาเหตุหรือปัญหาที่ต้องระวัง เวลาติดตั้งระแนงไม้</p>
+                    <p className='subtitle-section'>หากให้นึกถึงวัสดุที่สามารถป้องกันแสงแดด ทั้งยังพรางสายตาเพื่อนบ้านได้ เชื่อว่า “ระแนง” กับคุณสมบัติที่สามารถเพิ่มความสวยงามให้กับบ้านได้ไม่ยาก แต่การตกแต่งบ้านด้วยระแนงนั้น ไม่ใช่แค่การตีไม้ยึดติดผนังหรือพื้นเป็นอันว่าจบกัน</p>
                 </div>
-            </div>
-        </SwiperSlide> 
-
-        <SwiperSlide>
-            <div className='slider-core'>             
-                <img src='/asset/amigo-1.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
-                <img src='/asset/amigo-1.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
-                <div className='text-area-padding'>
-                    <p className='title-section'>บริทาเนีย บางนา</p>
-                    <p className='subtitle-section'>ตัวอย่างงานติดตั้งระแนง Amigo</p>
-                </div>
-            </div>
-        </SwiperSlide> 
-
-        <SwiperSlide>
-            <div className='slider-core'>             
-                <video width="full" autoPlay loop muted preload='auto' playsInline className='absolute z-[-1] w-full h-full object-cover brightness-50'>
-                    <source src="/asset/video/preview-1.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-                <div className='text-area-padding'>
-                    <p className='title-section'>นันทวัน</p>
-                    <p className='subtitle-section'>ตัวอย่างงานติดตั้งระแนงโดยช่างไอคอนรูฟ</p>
-                </div>
-            </div>
-        </SwiperSlide>         
+            </Link>
+        </SwiperSlide>  
       </Swiper>
     </>
   )
