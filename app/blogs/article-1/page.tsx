@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     siteName: 'Next.js',
     images: [
       {
-        url: '/asset/blog/blog-1.jpg', // Must be an absolute URL
+        url: 'https://iconroof.co.th/asset/blog/blog-1.jpg', // Must be an absolute URL
         width: 800,
         height: 600,
         alt: 'iconroof ระแนง',
       },
       {
-        url: '/asset/blog/blog-1.jpg', // Must be an absolute URL
+        url: 'https://iconroof.co.th/asset/blog/blog-1.jpg', // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: 'iconroof ระแนง',
