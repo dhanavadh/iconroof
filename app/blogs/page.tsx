@@ -50,10 +50,10 @@ const BlogPage = () => {
         <p className="h1">บทความ</p>    
       </div>
       <div className='flex flex-col lg:grid lg:grid-cols-4 items-start justify-between w-full lg:gap-8 relative'>
-        <Link href='/blogs/article-1' className='hidden lg:grid lg:col-span-3 lg:sticky self-start transition-[top] top-20'
+        <div className='hidden lg:grid lg:col-span-3 lg:sticky self-start transition-[top] top-20'
           id='big-content'
         >
-          <div>
+          <Link href='/blogs/article-1'>
             <Image
               src='/asset/blog/blog-1.jpg'
               alt='Iconroof'
@@ -63,7 +63,7 @@ const BlogPage = () => {
               >
 
               </Image>
-          </div>
+          </Link>
           <p className="text-2xl mt-4 font-semibold hover:underline hover:underline-offset-2">วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</p>
           <p className="text-base mt-1 mb-4">การเลือกวัสดุที่ใช้มุง หลังคา ถือว่าเป็นอย่างแรกๆ ที่เรามักต้องเลือกกันก่อน ด้วยวัสดุมีหลากหลายแบบและชนิด ซึ่งมันอาจจะไม่เหมาะกับทรงหลังคาบ้านและความต้องการของเราก็เป็นได้</p>
           <Link href='/blogs/article-1' className='flex items-center mb-8 link'>
@@ -77,9 +77,9 @@ const BlogPage = () => {
               >
               </Image>
           </Link>
-        </Link>
-        <Link href='/blogs/article-1' className='grid lg:col-span-1 overflow-y-auto w-full' id='small-content'>
-          <div className='lg:hidden'>
+        </div>
+        <div className='grid lg:col-span-1 overflow-y-auto w-full' id='small-content'>
+          <Link href='/blogs/article-1' className='lg:hidden'>
             <Image
               src='/asset/blog/blog-1.jpg'
               alt='Iconroof'
@@ -102,20 +102,20 @@ const BlogPage = () => {
                 </Image>
             </Link>
             </div>
-          </div>
-          <div>
+          </Link>
+          <Link href='/blogs/article-2'>
             <Image
-              src='/asset/amigo.png'
+              src='/asset/blog/blog-2.png'
               alt='Iconroof'
               width={1920}
               height={1080}
               className='h-64 w-full object-cover rounded-lg'
             />                    
             <div>
-              <p className="text-2xl mt-4 font-semibold">ต่อเติมระแนงสูง ไม่ยึดรั้วโครงการ</p>
+              <p className="text-2xl mt-4 font-semibold">สาเหตุหรือปัญหาที่ต้องระวัง เวลาติดตั้งระแนงไม้</p>
               <p className="text-base mt-1 mb-4">งานต่อเติมระแนงสูง ไม่ยึดรั้วโครงการ โดยช่างโอไอคอนรูฟ</p>
-              <Link href='https://www.youtube.com/watch?v=1HI_yjBgzgc' target='_blank' className='flex items-center mb-8 link'>
-                <p className="text-base">ดูผลงานการติดตั้ง</p>
+              <Link href='/blogs/article-2' className='flex items-center mb-8 link'>
+                <p className="text-base">อ่านต่อ</p>
                 <Image
                   src='/icon/link.svg'
                   alt='Iconroof'
@@ -126,20 +126,20 @@ const BlogPage = () => {
                   </Image>
               </Link>
             </div>
-          </div>
-          <div>
+          </Link>
+          <Link href='/blogs/article-3'>
             <Image
-              src='/asset/roof-1.jpg'
+              src='/asset/blog/blog-3.png'
               alt='Iconroof'
               width={1920}
               height={1080}
               className='h-64 w-full object-cover rounded-lg'
             />                    
             <div>
-              <p className="text-2xl mt-4 font-semibold">รั้วระแนงบังตา ติดตั้งเสร็จภายใน 1 วัน</p>
-              <p className="text-base mt-1 mb-4">งานต่อเติมระแนงสูง ไม่ยึดรั้วโครงการ โดยช่างโอไอคอนรูฟ</p>
-              <Link href='https://www.youtube.com/watch?v=1HI_yjBgzgc' target='_blank' className='flex items-center mb-8 link'>
-                <p className="text-base">ดูผลงานการติดตั้ง</p>
+              <p className="text-2xl mt-4 font-semibold">ระแนงไวนิล ต่างจาก ไม้ระแนงเฌอร่า อย่างไร..?</p>
+              <p className="text-base mt-1 mb-4">หลายคนอาจสงสัยว่าระแนงแต่ละชนิดต่างกันอย่างไร มีคุณสมบัติอย่างไร</p>
+              <Link href='/blogs/article-3' target='_blank' className='flex items-center mb-8 link'>
+                <p className="text-base">อ่านต่อ</p>
                 <Image
                   src='/icon/link.svg'
                   alt='Iconroof'
@@ -150,8 +150,8 @@ const BlogPage = () => {
                   </Image>
               </Link>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
       <div className="flex flex-col items-start w-full">
         <p className="h1">ขั้นตอนติดตั้งระแนง</p>    

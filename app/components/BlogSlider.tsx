@@ -38,7 +38,7 @@ const BlogSlider1 = () => {
                 <img src='/asset/blog/blog-1.jpg' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
                 <div className='text-area-padding'>
                     <p className='title-section link'>วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</p>
-                    <p className='subtitle-section'>การเลือกวัสดุที่ใช้มุง หลังคา ถือว่าเป็นอย่างแรกๆ ที่เรามักต้องเลือกกันก่อน ด้วยวัสดุมีหลากหลายแบบและชนิด ซึ่งมันอาจจะไม่เหมาะกับทรงหลังคาบ้านและความต้องการของเราก็เป็นได้</p>
+                    <p className='subtitle-section'>การเลือกวัสดุที่ใช้มุง หลังคา ถือว่าเป็นอย่างแรกๆ ที่เรามักต้องเลือกกันก่อน</p>
                 </div>
             </Link>
         </SwiperSlide> 
@@ -49,7 +49,18 @@ const BlogSlider1 = () => {
                 <img src='/asset/blog/blog-2.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
                 <div className='text-area-padding'>
                     <p className='title-section link'>สาเหตุหรือปัญหาที่ต้องระวัง เวลาติดตั้งระแนงไม้</p>
-                    <p className='subtitle-section'>หากให้นึกถึงวัสดุที่สามารถป้องกันแสงแดด ทั้งยังพรางสายตาเพื่อนบ้านได้ เชื่อว่า “ระแนง” กับคุณสมบัติที่สามารถเพิ่มความสวยงามให้กับบ้านได้ไม่ยาก แต่การตกแต่งบ้านด้วยระแนงนั้น ไม่ใช่แค่การตีไม้ยึดติดผนังหรือพื้นเป็นอันว่าจบกัน</p>
+                    <p className='subtitle-section'>“ระแนง” กับคุณสมบัติที่สามารถเพิ่มความสวยงามให้กับบ้านได้ไม่ยาก แต่ระแนงไม่ใช่แค่การตีไม้ยึดติดผนังเป็นอันว่าจบ</p>
+                </div>
+            </Link>
+        </SwiperSlide>  
+
+        <SwiperSlide>
+            <Link href='/blogs/article-3' className='slider-core'>             
+                <img src='/asset/blog/blog-3.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
+                <img src='/asset/blog/blog-3.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
+                <div className='text-area-padding'>
+                    <p className='title-section link'>ระแนงไวนิล ต่างจาก ไม้ระแนงเฌอร่า อย่างไร..?</p>
+                    <p className='subtitle-section'>หลายคนอาจสงสัยว่าระแนงแต่ละชนิดต่างกันอย่างไร มีคุณสมบัติอย่างไร</p>
                 </div>
             </Link>
         </SwiperSlide>  
