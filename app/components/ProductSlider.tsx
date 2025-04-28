@@ -2,7 +2,7 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
+import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -31,8 +31,8 @@ const ProductSlider = () => {
         {/* Parent Please Clone From This */}
         <SwiperSlide>
             <div className='slider-core-min'>             
-                <img src='/asset/scg.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></img>
-                <img src='/asset/scg-vertical.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></img>
+                <Image src='/asset/scg.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50' width={1920} height={1080} alt='iconroof-scg'></Image>
+                <Image src='/asset/scg-vertical.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' width={1920} height={1080} alt='iconroof-scg'></Image>
                 <div className='text-area-padding'>
                     <Link href='/products' className='title-section link'>ระแนงบังตาไวนิล SCG BOX SET</Link>
                     <p className='subtitle-section'>สร้างสรรค์ความงามได้หลากหลาย ภายใต้คุณภาพที่เป็นมาตรฐาน</p>
