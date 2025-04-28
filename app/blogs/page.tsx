@@ -7,6 +7,7 @@ import Image from 'next/image'
 import BlogSlider from '../components/BlogSlider'
 import BlogSlider1 from '../components/BlogSlider'
 import type { Metadata } from 'next'
+import InstallationList from '../components/Install'
 
 
 export const metadata: Metadata = {
@@ -156,6 +157,7 @@ const BlogPage = () => {
       <div className="flex flex-col items-start w-full">
         <p className="h1">ขั้นตอนติดตั้งระแนง</p>    
       </div>
+      <InstallationList />
       
 
 
