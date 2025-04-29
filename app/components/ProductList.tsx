@@ -18,7 +18,7 @@ const ProductsList = () => {
                 <ul className='flex'>
                     {services.map((item) => (
                         <li key={item.id}>
-                            <Link href={item.link} className='grid w-72 md:w-96 items-center mx-2 my-10 bg-gray-50 shadow-md rounded-2xl duration-300 hover:shadow-xl '>
+                            <Link href={item.link} className='grid w-72 md:w-96 items-center mx-2 mt-4 mb-10 bg-gray-50 shadow-md rounded-2xl duration-300 hover:shadow-xl '>
                                 <div className='relative h-64'>
                                     <img src={item.image} className='w-full h-full object-cover absolute rounded-t-lg' alt={item.name}></img>
                                 </div>

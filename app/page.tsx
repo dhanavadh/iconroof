@@ -24,7 +24,7 @@ export default function Home() {
         <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>        
       </div>       
       <ProductsList /> 
-      <div className="flex flex-col items-start pt-4 pb-10">
+      <div className="flex flex-col items-start pt-4 pb-4">
         <p className="h1">เปรียบเทียบคุณสมบัติระแนง</p>
         <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>          
       </div> 
