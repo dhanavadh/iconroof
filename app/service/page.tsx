@@ -11,6 +11,7 @@ import Head from 'next/head'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import InstallationList from '../components/Install'
+import ServiceSlider from '../components/ServiceSlider'
 
 export const metadata: Metadata = {
   icons: {
@@ -47,6 +48,7 @@ export const metadata: Metadata = {
 const ServicePage = () => {
   return (
     <>    
+    <ServiceSlider />
     <div className="flex flex-col min-h-screen items-start mx-6 lg:mx-20 font-[family-name:var(--font-noto-sans)]">      
       <div className="flex flex-col items-start pt-24 mb-4 w-full">
         <p className="h1">บริการติดตั้งระแนง</p>    
