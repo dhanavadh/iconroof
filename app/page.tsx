@@ -33,7 +33,8 @@ export default function Home() {
             <div className="whitespace-nowrap">
                 <ul className='flex'>                    
                         <li className="mb-10">
-                            <div  className='grid w-80 items-center mx-2 bg-gray-50 shadow-md rounded-2xl duration-300 hover:shadow-xl '>
+                          {/* In HTML, <a> cannot be a descendant of <a>.This will cause a hydration error. */}
+                            <Link href='/products' className='grid w-80 items-center mx-2 bg-gray-50 shadow-md rounded-2xl duration-300 hover:shadow-xl '>
                                 <div className='flex flex-col p-6 whitespace-normal'>
                                     <div>
                                     <div className="px-4 py-2 lg:px-8 lg:py-4">            
@@ -102,16 +103,22 @@ export default function Home() {
                                       </div>
                                     </div>                                        
                                 </div>
-                            </div>
+                            </Link>
                         </li>
                         <li >
                             <div className='grid w-80 items-center mx-2 bg-gray-50 shadow-md rounded-2xl'>
                                 <div className='flex flex-col p-6 whitespace-normal'>
                                     <div>
-                                    <div className="px-4 py-2 lg:px-8 lg:py-4">            
-                                      <span className="flex h-7">
-                                       
-                                      </span>    
+                                    <div className="px-4 py-2 lg:px-8 lg:py-4">    
+                                      <div className="flex">
+                                        <div className='flex justify-start items-center gap-0.5 bg-neutral-700/15 px-[3px] py-[3px] rounded-full w-25'>
+                                            <div className='relative flex items-center justify-center h-[24px]'>
+                                                <span className='absolute inline-flex h-4 w-4 bg-neutral-700 rounded-full animate-ping z-0'></span>
+                                                <img src="/icon/warning.svg" className="inline-flex relative h-[24px] bg-neutral-700 rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
+                                            </div>  
+                                            <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-neutral-700 rounded-[3px] font-semibold'>ไม่แนะนำ</p>                                
+                                        </div> 
+                                      </div>          
                                         <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-start">ระบบฝ้าระแนงไม้ธรรมดา</p>
                                         <div className="text-base gap-4 flex flex-col items-start">
                                           <div className="flex items-center gap-4">
@@ -173,7 +180,7 @@ export default function Home() {
                 </ul>
             </div>
         </div>
-
+      {/* Main Size */}
       <div className="hidden lg:flex flex-row gap-4 w-full mt-2 pb-10">
         {/* ระแนงอมิโก */}
         <Link href='/products' className="flex flex-row justify-start items-start shadow-md rounded-2xl duration-300 hover:shadow-xl bg-gray-50 lg:w-4/6 w-64">
@@ -255,7 +262,15 @@ export default function Home() {
         {/* ระแนงธรรมดา */}
         <div className="flex flex-col lg:flex-row justify-start items-start shadow-md rounded-2xl bg-gray-50 lg:w-2/6">                 
           <div className="px-4 py-2 lg:px-8 lg:py-4">
-          <a className="hidden lg:flex h-[24px] text-white font-semibold px-2 py-0.5 rounded-full"></a>
+            <div className="flex">
+              <div className='flex justify-start items-center gap-0.5 bg-neutral-700/15 px-[3px] py-[3px] rounded-full w-25'>
+                  <div className='relative flex items-center justify-center h-[24px]'>
+                      <span className='absolute inline-flex h-4 w-4 bg-neutral-700 rounded-full animate-ping z-0'></span>
+                      <img src="/icon/warning.svg" className="inline-flex relative h-[24px] bg-neutral-700 rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
+                  </div>  
+                  <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-neutral-700 rounded-[3px] font-semibold'>ไม่แนะนำ</p>                                
+              </div> 
+            </div>   
             <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-center lg:text-start">ระบบฝ้าระแนงไม้ธรรมดา</p>
             <div className="text-base gap-4 flex flex-col items-start">
               <div className="flex items-center gap-4">
