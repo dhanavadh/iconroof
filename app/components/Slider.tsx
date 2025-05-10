@@ -33,27 +33,27 @@ const Slider = () => {
         
         
         <SwiperSlide>
-            <div className='slider-core'>             
+            <Link href='/products' className='slider-core'>             
                 <Image alt='amigo' width={1920} height={1080} src='/asset/amigo.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
                 <Image alt='amigo' width={1920} height={1080} src='/asset/amigo.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
                 <div className='text-area-padding'>
-                    <Link href='/products' className='title-section link'>ระแนงไวนิล AMIGO</Link>
+                    <p className='title-section link'>ระแนงไวนิล AMIGO</p>
                     <p className='subtitle-section'>ไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด</p>
                 </div>
-            </div>
+            </Link>
         </SwiperSlide> 
 
         <SwiperSlide>
-            <div className='slider-core'>             
+            <Link href='/service' className='slider-core'>             
                 <video width="full" autoPlay loop muted preload='auto' playsInline className='absolute z-[-1] w-full h-full object-cover brightness-50'>
                     <source src="/asset/video/install.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className='text-area-padding'>
-                    <Link href='/service' className='title-section link'>งานติดตั้งระแนง</Link>
+                    <p className='title-section link'>งานติดตั้งระแนง</p>
                     <p className='subtitle-section'>Iconroof มีบริการติดตั้งระแนงโดยช่างชำนาญการ</p>
                 </div>
-            </div>
+            </Link>
         </SwiperSlide> 
 
         <SwiperSlide>
@@ -68,46 +68,46 @@ const Slider = () => {
         </SwiperSlide> 
 
         <SwiperSlide>
-            <div className='slider-core'>             
+            <Link href='/products' className='slider-core'>             
                 <Image alt='greenwood' width={1920} height={1080} src='/asset/greenwood1.png' className='flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>                
                 <div className='text-area-padding'>
-                    <Link href='/products' className='title-section link'>ระแนง GREENWOOD</Link>
+                    <p className='title-section link'>ระแนง GREENWOOD</p>
                     <p className='subtitle-section'>ผลิตภัณฑ์ไม้สังเคราะห์ที่มีส่วนผสมของไม้ธรรมชาติ จึงให้ผิวสัมผัสและภาพลักษณ์เสมือนไม้จริง มากกว่าวัสดุทดแทนไม้ชนิดอื่นๆ</p>
                 </div>
-            </div>
+            </Link>
         </SwiperSlide> 
         
         <SwiperSlide>
-            <div className='slider-core'>             
+            <Link href='/products' className='slider-core'>             
                 <Image alt='roof' width={1920} height={1080} src='/asset/roof-1.png' className='flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>                
                 <div className='text-area-padding'>
-                    <Link href='/products' className='title-section link'>ฝ้าระแนง</Link>
+                    <p className='title-section link'>ฝ้าระแนง</p>
                     <p className='subtitle-section'>ฝ้าระแนงลายไม้ wpc ไฟเบอร์ซีเมนต์ ไวนิล Amigo หรือ อะลูมิเนียมลายไม้ก็มีพร้อมให้เลือกสรร</p>
                 </div>
-            </div>
+            </Link>
         </SwiperSlide> 
 
         <SwiperSlide>
-            <div className='slider-core'>             
+            <Link href='/products' className='slider-core'>             
                 <Image alt='service' width={1920} height={1080} src='/asset/project.png' className='flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>                
                 <div className='text-area-padding'>
-                    <Link href='/products' className='title-section link'>ผลงานการติดตั้ง</Link>
+                    <p className='title-section link'>ผลงานการติดตั้ง</p>
                     <p className='subtitle-section'>ฝ้าระแนงลายไม้ wpc ไฟเบอร์ซีเมนต์ ไวนิล Amigo หรือ อะลูมิเนียมลายไม้ก็มีพร้อมให้เลือกสรร</p>
                 </div>
-            </div>
+            </Link>
         </SwiperSlide> 
 
         <SwiperSlide>
-            <div className='slider-core'>             
+            <Link href='/products' className='slider-core'>             
                 <video width="full" autoPlay loop muted preload='auto' playsInline className='absolute z-[-1] w-full h-full object-cover brightness-50'>
                     <source src="/asset/video/icon-1.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className='text-area-padding'>
-                    <Link href='/products' className='title-section link'>วัสดุระแนง</Link>
+                    <p className='title-section link'>วัสดุระแนง</p>
                     <p className='subtitle-section'>ไอคอนรูฟมีวัสดุระแนงพร้อมจำหน่าย</p>
                 </div>
-            </div>
+            </Link>
         </SwiperSlide> 
 
         

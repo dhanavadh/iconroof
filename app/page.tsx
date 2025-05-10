@@ -33,7 +33,7 @@ export default function Home() {
             <div className="whitespace-nowrap">
                 <ul className='flex'>                    
                         <li className="mb-10">
-                            <Link href='/products' className='grid w-80 items-center mx-2 bg-gray-50 shadow-md rounded-2xl duration-300 hover:shadow-xl '>
+                            <div  className='grid w-80 items-center mx-2 bg-gray-50 shadow-md rounded-2xl duration-300 hover:shadow-xl '>
                                 <div className='flex flex-col p-6 whitespace-normal'>
                                     <div>
                                     <div className="px-4 py-2 lg:px-8 lg:py-4">            
@@ -102,7 +102,7 @@ export default function Home() {
                                       </div>
                                     </div>                                        
                                 </div>
-                            </Link>
+                            </div>
                         </li>
                         <li >
                             <div className='grid w-80 items-center mx-2 bg-gray-50 shadow-md rounded-2xl'>
@@ -175,6 +175,7 @@ export default function Home() {
         </div>
 
       <div className="hidden lg:flex flex-row gap-4 w-full mt-2 pb-10">
+        {/* ระแนงอมิโก */}
         <Link href='/products' className="flex flex-row justify-start items-start shadow-md rounded-2xl duration-300 hover:shadow-xl bg-gray-50 lg:w-4/6 w-64">
           <div className="w-1/2 h-full flex">
             <Image
@@ -251,7 +252,8 @@ export default function Home() {
             </div>
           </div>
         </Link>
-        <div className="flex flex-col lg:flex-row justify-start items-start shadow-md rounded-2xl bg-gray-50 lg:w-2/6">         
+        {/* ระแนงธรรมดา */}
+        <div className="flex flex-col lg:flex-row justify-start items-start shadow-md rounded-2xl bg-gray-50 lg:w-2/6">                 
           <div className="px-4 py-2 lg:px-8 lg:py-4">
           <a className="hidden lg:flex h-[24px] text-white font-semibold px-2 py-0.5 rounded-full"></a>
             <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-center lg:text-start">ระบบฝ้าระแนงไม้ธรรมดา</p>
