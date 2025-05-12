@@ -159,10 +159,10 @@ const AmigoCompare = () => {
       {/* Main Size */}
       <div className="hidden lg:flex flex-row gap-4 w-full mt-2 pb-10">
         {/* ระแนงอมิโก */}
-        <Link href='/products' className="flex flex-row justify-start items-start shadow-md rounded-lg duration-300 hover:shadow-xl bg-gray-50 lg:w-4/6 w-64">
+        <Link href='/products/amigo' className="flex flex-row justify-start items-start shadow-md rounded-lg duration-300 hover:shadow-xl bg-gray-50 lg:w-4/6 w-64">
           <div className="w-1/2 h-full flex">
             <Image
-              src="/asset/amigo-1.png"
+              src="https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/amigo-1.png"
               alt="AMIGO"
               width={1000}
               height={1000}    
