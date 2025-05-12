@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathName = usePathname();
-  const header = ["/products", "/redirect"].includes(pathName) ? <NavBarNormal /> : <NewNavbar />;
+  const header = ["/products", "/redirect", '/products/amigo'].includes(pathName) ? <NavBarNormal /> : <NewNavbar />;
   return (
     <html lang="en">
       <title>จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof</title>
