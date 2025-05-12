@@ -18,7 +18,7 @@ const InstallationList = () => {
                 <ul className='flex'>
                     {services.map((item) => (
                         <li key={item.id}>
-                            <div className='grid w-72 md:w-96 items-center mx-2 mt-4 mb-10 bg-gray-50 shadow-md rounded-2xl duration-300'>
+                            <div className='grid w-72 md:w-96 items-center mx-2 mt-4 mb-10 bg-gray-50 shadow-md rounded-lg duration-300'>
                                 <div className='relative h-80'>
                                     <img src={item.image} className='w-full h-full object-cover absolute rounded-t-lg' alt={item.name}></img>
                                 </div>

@@ -18,9 +18,9 @@ const Products = () => {
                   <ul className='flex'>
                       {services.map((item) => (
                           <li key={item.id}>
-                              <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='grid w-64 md:w-80 items-center mx-2 mb-10 bg-gray-50 shadow-md rounded-2xl duration-300 hover:shadow-xl'>
+                              <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='grid w-64 md:w-80 items-center mx-2 mb-10 bg-gray-50 shadow-md rounded-lg duration-300 hover:shadow-xl'>
                                   <div className='relative h-64'>
-                                      <img src={item.image} className='w-full h-full object-cover absolute rounded-t-2xl' alt={item.name}></img>
+                                      <img src={item.image} className='w-full h-full object-cover absolute rounded-t-lg' alt={item.name}></img>
                                   </div>
                                   <div className='flex flex-col p-6 whitespace-normal'>
                                       <div>

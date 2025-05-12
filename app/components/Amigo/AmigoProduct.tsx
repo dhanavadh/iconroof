@@ -20,7 +20,7 @@ const AmigoProduct = () => {
                         <li key={item.id}>
                             <div className='grid w-64 md:w-80 items-center mx-2 my-4 bg-gray-50 duration-300'>
                                 <div className='relative h-96'>
-                                    <img src={item.image} className='w-full h-full object-cover absolute z-0' alt={item.name}></img>
+                                    <img src={item.image} className='w-full h-full object-cover absolute z-0 rounded-lg' alt={item.name}></img>
                                     <p className='z-10'>สั่งซื้อสินค้า</p>
                                 </div>                                
                             </div>

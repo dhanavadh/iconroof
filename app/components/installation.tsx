@@ -45,7 +45,7 @@ const Instal1 = () => {
                         <li key={item.id}>                            
                         <DialogPanel
                         transition
-                        className="rounded-2xl w-64 md:w-80 bg-white drop-shadow-2xl mx-2 overflow-x-auto duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
+                        className="rounded-lg w-64 md:w-80 bg-white drop-shadow-2xl mx-2 overflow-x-auto duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
                         >
                             <div className='h-1/2'>
                                 <img src={item.image} className='object-fill'></img>

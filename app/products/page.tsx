@@ -79,7 +79,7 @@ const ProductPage = () => {
           <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>        
         </div>     
 
-        <div className='flex flex-col lg:flex-row bg-neutral-100 rounded-2xl'>
+        <div className='flex flex-col lg:flex-row bg-neutral-200/45 rounded-2xl'>
           <div className='lg:hidden flex w-full'>
             <img src='asset/amigo-1.png' className='w-full h-full object-cover rounded-t-2xl'></img>
           </div>
@@ -111,7 +111,7 @@ const ProductPage = () => {
           <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>        
         </div>     
 
-        <div className='flex flex-col lg:flex-row bg-neutral-100 rounded-2xl'>
+        <div className='flex flex-col lg:flex-row bg-neutral-200/45 rounded-2xl'>
           <div className='lg:hidden flex w-full h-64'>
             <img src='asset/scg.png' className='w-full h-full object-cover rounded-t-2xl'></img>
           </div>
@@ -142,7 +142,7 @@ const ProductPage = () => {
           <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>        
         </div>     
 
-        <div className='flex flex-col lg:flex-row bg-neutral-100 rounded-2xl'>
+        <div className='flex flex-col lg:flex-row bg-neutral-200/45 rounded-2xl'>
           <div className='lg:hidden flex w-full'>
             <img src='asset/greenwood1.png' className='w-full h-full object-cover rounded-t-2xl'></img>
           </div>
