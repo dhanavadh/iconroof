@@ -33,7 +33,7 @@ const Slider = () => {
         
         
         <SwiperSlide>
-            <Link href='/products' className='slider-core'>             
+            <Link href='/products/amigo' className='slider-core'>             
                 <Image alt='amigo' width={1920} height={1080} src='/asset/amigo.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
                 <Image alt='amigo' width={1920} height={1080} src='/asset/amigo.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
                 <div className='text-area-padding'>

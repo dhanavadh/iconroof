@@ -5,6 +5,7 @@ import PreviewSlider from '../components/PreviewSlider'
 import Link from 'next/link'
 import Image from 'next/image'
 import PreviewSlider1 from '../components/BlogSlider'
+import AmigoGallerry from '../components/Amigo/AmigoGallerry'
 
 const PreviewPage = () => {
   return (
@@ -135,8 +136,9 @@ const PreviewPage = () => {
         </div>
       </div>
       <div className="flex flex-col items-start w-full">
-        <p className="h1">ขั้นตอนติดตั้งระแนง</p>    
+        <p className="h1">ผลงานการติดตั้งระแนง Amigo</p>    
       </div>
+      <AmigoGallerry />
       
 
 
