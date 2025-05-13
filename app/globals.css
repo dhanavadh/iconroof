@@ -23,7 +23,7 @@ body {
   @apply px-3 py-1 rounded-full border-2 border-white text-black bg-white font-medium hover:bg-neutral-200 hover:text-black hover:border-neutral-200 cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
 }
 .btn-primary-static {
-  @apply px-3 py-1 rounded-full border-2 border-[#fafafa] text-black font-medium hover:bg-neutral-200 hover:border-neutral-200 cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
+  @apply px-3 py-1 rounded-full border-2 border-neutral-800 bg-neutral-800 text-white font-medium hover:bg-neutral-700 hover:border-neutral-700 cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
 }
 .btn-primary-static-1 {
   @apply px-4 py-2 rounded-full border-2 border-[#fafafa] bg-[#fafafa] text-black font-medium hover:bg-neutral-200 hover:border-neutral-200 cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]

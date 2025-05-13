@@ -44,7 +44,8 @@ export default function AmigoPage() {
       <div className='pb-4 mt-12 border-b-2 border-neutral-200 w-full' id='amigo'>
         <div className="flex flex-col items-center pt-6 lg:pt-12 mb-4">
           <p className="h1">ระแนงไวนิล AMIGO</p>
-          <p className="p text-center">หมดปัญหาเรื่องปลวกและเชื้อรา ไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนาน</p>                                     
+          <p className="p text-center">หมดปัญหาเรื่องปลวกและเชื้อรา ไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนาน</p>        
+          <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='mt-4 px-4 py-2 rounded-full border-2 border-neutral-800 bg-neutral-800 text-white font-medium hover:bg-neutral-600 hover:border-neutral-600 cursor-pointer transition-colors duration-300 mb-4 lg:mb-0'>สั่งซื้อสินค้า</Link>                            
         </div>     
 
         <AmigoGallerry />

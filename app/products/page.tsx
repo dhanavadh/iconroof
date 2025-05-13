@@ -66,7 +66,7 @@ const ProductPage = () => {
             <p className='text-2xl font-semibold lg:text-5xl lg:leading-normal leading-normal'>สร้างความเป็นส่วนตัวให้กับบ้านของคุณ</p>
             <p className='text-lg mt-2 font-medium'>เลือกดูผลิตภัณฑ์ระแนงที่สนใจได้แล้วที่นี่</p>
           </div>
-          <Link href='#scg' className='btn-primary-static-1 mb-4 lg:mb-0'>เลือกระแนง</Link>
+          <Link href='#amigo' className='btn-primary-static-1 mb-4 lg:mb-0'>เลือกระแนง</Link>
         </div>
         <div className='hidden lg:flex w-full lg:w-4/6'>
           <img src='asset/amigo.png' className='w-full h-full object-cover rounded-r-2xl'></img>
