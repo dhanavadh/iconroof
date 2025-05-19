@@ -59,11 +59,11 @@ export default function RootLayout({
       <meta name="twitter:creator" content="@iconroof" />
       <meta name="twitter:title" content="จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof" />
       <meta name="twitter:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
-      <meta name="twitter:image" content="https://iconroof.co.th/asset/OG1.png" />
+      <meta name="twitter:image" content="https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/og-img.jpg" />
       <meta name="twitter:image:alt" content="iconroof ระแนง" />
       <meta property="og:site_name" content="Iconroof" />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="https://iconroof.co.th/asset/OG1.png" />
+      <meta property="og:image" content="https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/og-img.jpg" />
       <meta property="og:image:width" content="800" />
       <meta property="og:image:height" content="600" />
       <meta property="og:image:alt" content="iconroof ระแนง" />
