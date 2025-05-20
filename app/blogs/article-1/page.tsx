@@ -16,15 +16,15 @@ export const metadata: Metadata = {
     siteName: 'Next.js',
     images: [
       {
-        url: 'https://iconroof.co.th/asset/blog/blog-1.jpg', // Must be an absolute URL
-        width: 800,
-        height: 600,
+        url: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image1.jpg', // Must be an absolute URL
+        width: 1200,
+        height: 630,
         alt: 'iconroof ระแนง',
       },
       {
-        url: 'https://iconroof.co.th/asset/blog/blog-1.jpg', // Must be an absolute URL
-        width: 1800,
-        height: 1600,
+        url: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image1.jpg', // Must be an absolute URL
+        width: 1200,
+        height: 630,
         alt: 'iconroof ระแนง',
       },
     ],
@@ -36,6 +36,10 @@ export const metadata: Metadata = {
 const ArticlePage1 = () => {
   return (
     <>
+    <meta name="twitter:image" content="https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image1.jpg" />
+    <meta name="twitter:image:type" content="jpg" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
     <div className='blog-panel'>
         {/* Banner */}
         <div className='flex max-h-3/4 min-w-full relative -z-[1]'>
