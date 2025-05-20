@@ -40,9 +40,23 @@ export const metadata: Metadata = {
         height: 630,
         alt: 'iconroof ระแนง',
       },
-    ],
+    ],    
       locale: 'th_TH',
       type: 'website',
+    },
+      twitter: {
+      card: "summary_large_image",
+      title: "สาเหตุหรือปัญหาที่ต้องระวัง เวลาติดตั้งระแนงไม้ – ระแนงบังตา",
+      description: "บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ ขายปลีก-ส่ง ราคาโรงงาน ทันสมัย แข็งแรง สวยงาม ระแนงบังตาไวนิล รับประกัน 10 ปี อบสีด้วย พาวเดอร์ โค้ท ตั้งแต่ 08.00-17.30 น. เปิดบริการวันจันทร์-เสาร์ บริการ: รับติดตั้งระแนงไวนิล, เปิดบริการ จันทร์-ศุกร์, ตั้งแต่ 08.00-17.30 น.",
+      creator: "Iconroof",
+      images: [
+        {
+          url: "https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image2.jpg",        
+          width: 1200,
+          height: 630,
+          alt: "Iconroof Blog",
+        },
+      ],
     },
   }
 
