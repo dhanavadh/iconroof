@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   "ไอคอนรุฟ"
 ],
     openGraph: {
-      title: 'สาเหตุหรือปัญหาที่ต้องระวัง เวลาติดตั้งระแนงไม้ – ระแนงบังตา',
-      description: 'บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ ขายปลีก-ส่ง ราคาโรงงาน ทันสมัย แข็งแรง สวยงาม ระแนงบังตาไวนิล รับประกัน 10 ปี อบสีด้วย พาวเดอร์ โค้ท ตั้งแต่ 08.00-17.30 น. เปิดบริการวันจันทร์-เสาร์ บริการ: รับติดตั้งระแนงไวนิล, เปิดบริการ จันทร์-ศุกร์, ตั้งแต่ 08.00-17.30 น.',
-      url: 'https://iconroof.co.th/blogs/article-2',
-      siteName: 'Next.js',
-      images: [
+    title: 'สาเหตุหรือปัญหาที่ต้องระวัง เวลาติดตั้งระแนงไม้ – จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof',
+    description: 'หากให้นึกถึงวัสดุที่สามารถป้องกันแสงแดด ทั้งยังพรางสายตาเพื่อนบ้านได้ เชื่อว่า “ระแนง” กับคุณสมบัติที่สามารถเพิ่มความสวยงามให้กับบ้านได้ไม่ยาก แต่การตกแต่งบ้านด้วยระแนงนั้น ไม่ใช่แค่การตีไม้ยึดติดผนังหรือพื้นเป็นอันว่าจบกัน',
+    url: 'https://iconroof.co.th/blogs/article-2',
+    siteName: 'Next.js',
+    images: [
       {
         url: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image2.jpg', // Must be an absolute URL
         width: 1200,
@@ -40,31 +40,11 @@ export const metadata: Metadata = {
         height: 630,
         alt: 'iconroof ระแนง',
       },
-    ],    
-      locale: 'th_TH',
-      type: 'website',
-    },
-      twitter: {
-      card: "summary_large_image",
-      title: "สาเหตุหรือปัญหาที่ต้องระวัง เวลาติดตั้งระแนงไม้ – ระแนงบังตา",
-      description: "บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ ขายปลีก-ส่ง ราคาโรงงาน ทันสมัย แข็งแรง สวยงาม ระแนงบังตาไวนิล รับประกัน 10 ปี อบสีด้วย พาวเดอร์ โค้ท ตั้งแต่ 08.00-17.30 น. เปิดบริการวันจันทร์-เสาร์ บริการ: รับติดตั้งระแนงไวนิล, เปิดบริการ จันทร์-ศุกร์, ตั้งแต่ 08.00-17.30 น.",
-      creator: "Iconroof",
-      images: [
-        {
-          url: "https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image2.jpg",        
-          width: 1200,
-          height: 630,
-          alt: "Iconroof Blog",
-        },
-        {
-          url: "https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image31X1.png",        
-          width: 800,
-          height: 800,
-          alt: "Iconroof Blog",
-        },
-      ],
-    },
-  }
+    ],
+    locale: 'th_TH',
+    type: 'website',
+  },
+}
 
 const ArticlePage2 = () => {
   return (
