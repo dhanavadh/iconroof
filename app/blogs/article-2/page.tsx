@@ -56,6 +56,12 @@ export const metadata: Metadata = {
           height: 630,
           alt: "Iconroof Blog",
         },
+        {
+          url: "https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image31X1.png",        
+          width: 800,
+          height: 800,
+          alt: "Iconroof Blog",
+        },
       ],
     },
   }
