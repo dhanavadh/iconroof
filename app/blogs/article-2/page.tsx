@@ -28,19 +28,19 @@ export const metadata: Metadata = {
       url: 'https://iconroof.co.th/blogs/article-2',
       siteName: 'Next.js',
       images: [
-        {
-          url: 'https://iconroof.co.th/asset/blog/blog-2.png', // Must be an absolute URL
-          width: 800,
-          height: 600,
-          alt: 'iconroof ระแนง',
-        },
-        {
-          url: 'https://iconroof.co.th/asset/blog/blog-2.png', // Must be an absolute URL
-          width: 1800,
-          height: 1600,
-          alt: 'iconroof ระแนง',
-        },
-      ],
+      {
+        url: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image2.jpg', // Must be an absolute URL
+        width: 1200,
+        height: 630,
+        alt: 'iconroof ระแนง',
+      },
+      {
+        url: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image2.jpg', // Must be an absolute URL
+        width: 1200,
+        height: 630,
+        alt: 'iconroof ระแนง',
+      },
+    ],
       locale: 'th_TH',
       type: 'website',
     },
