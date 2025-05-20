@@ -10,7 +10,7 @@ import { Button, Dialog, DialogPanel } from '@headlessui/react'
   ]
   const btnDec = [
     `btn-primary`,
-    `btn-primary-dark`,
+    `btn-primary-static`,
   ]
   const navtext = [
     `flex font-medium text-white link`,
