@@ -33,13 +33,24 @@ export const metadata: Metadata = {
   },
 }
 
+import Head from 'next/head'
+
 const ArticlePage1 = () => {
   return (
     <>
-    <meta name="twitter:image" content="https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image1.jpg" />
-    <meta name="twitter:image:type" content="jpg" />
-    <meta name="twitter:image:width" content="1200" />
-    <meta name="twitter:image:height" content="630" />
+    <Head>
+      <meta property="og:title" content="วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน – ระแนงบังตา" />
+      <meta property="og:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ ขายปลีก-ส่ง ราคาโรงงาน ทันสมัย แข็งแรง สวยงาม ระแนงบังตาไวนิล รับประกัน 10 ปี อบสีด้วย พาวเดอร์ โค้ท ตั้งแต่ 08.00-17.30 น. เปิดบริการวันจันทร์-เสาร์ บริการ: รับติดตั้งระแนงไวนิล, เปิดบริการ จันทร์-ศุกร์, ตั้งแต่ 08.00-17.30 น." />
+      <meta property="og:image" content="https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image1.jpg" />
+      <meta property="og:url" content="https://iconroof.co.th/blogs/article-1" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Iconroof" />
+      <meta property="og:locale" content="th_TH" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน – ระแนงบังตา" />
+      <meta name="twitter:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ ขายปลีก-ส่ง ราคาโรงงาน ทันสมัย แข็งแรง สวยงาม ระแนงบังตาไวนิล รับประกัน 10 ปี อบสีด้วย พาวเดอร์ โค้ท ตั้งแต่ 08.00-17.30 น. เปิดบริการวันจันทร์-เสาร์ บริการ: รับติดตั้งระแนงไวนิล, เปิดบริการ จันทร์-ศุกร์, ตั้งแต่ 08.00-17.30 น." />
+      <meta name="twitter:image" content="https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image1.jpg" />
+    </Head>
     <div className='blog-panel'>
         {/* Banner */}
         <div className='flex max-h-3/4 min-w-full relative -z-[1]'>
