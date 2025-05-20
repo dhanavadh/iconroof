@@ -37,7 +37,7 @@ export default function RootLayout({
   const header = ["/products", "/redirect", '/products/amigo'].includes(pathName) ? <NavBarNormal /> : <NewNavbar />;
   return (
     <html lang="en">
-      <title>จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof</title>
+      {/* <title>จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof</title>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -72,7 +72,7 @@ export default function RootLayout({
       <meta property="og:title" content="จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof" />
       <meta property="og:description" content="บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO รุ่นระแนงชิด รุ่นระแนงเว้นร่อง รุ่นระแนงบานเกล็ด โดยไอคอนรูฟ" />
       <meta property="og:type" content="website" />      
-      <meta property="og:url" content="https://iconroof.co.th/" />
+      <meta property="og:url" content="https://iconroof.co.th/" /> */}
       <body
         className={`${notoSans.variable} ${SarabunRegular.variable} ${SarabunMedium.variable} antialiased`}>             
         {header}          
