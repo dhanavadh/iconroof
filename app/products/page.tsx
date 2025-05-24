@@ -6,6 +6,7 @@ import GreenwoodProduct from '../components/Greenwood/GreenwoodProduct'
 import Products from '../components/Products'
 import Head from 'next/head'
 import type { Metadata } from 'next'
+import AmigoRefGallerry from '../components/Amigo/AmigoRefGallerry'
 
 export const metadata: Metadata = {
   icons: {
@@ -186,6 +187,8 @@ const ProductPage = () => {
         </div>     
         <Products />
       </div>
+
+      
       
 
 

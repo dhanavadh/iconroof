@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import PreviewSlider1 from '../components/BlogSlider'
 import AmigoGallerry from '../components/Amigo/AmigoGallerry'
+import AmigoRefGallerry from '../components/Amigo/AmigoRefGallerry'
 
 const PreviewPage = () => {
   return (
@@ -135,10 +136,11 @@ const PreviewPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-start w-full">
-        <p className="h1">ผลงานการติดตั้งระแนง Amigo</p>    
-      </div>
-      <AmigoGallerry />
+      <div className="flex flex-col items-start pt-4">
+          <p className="h1">ตัวอย่างงานติดตั้งระแนง Amigo</p>
+          <p className="p">Iconroof มีบริการติดตั้งระแนงไวนิล A60, A40</p>        
+      </div>   
+      <AmigoRefGallerry />
       
 
 

@@ -4,6 +4,7 @@ import Image from "next/image";
 import AmigoGallerry from "@/app/components/Amigo/AmigoGallerry";
 import AmigoCompare from "@/app/components/Amigo/AmigoCompare";
 import type { Metadata } from 'next'
+import AmigoRefGallerry from "@/app/components/Amigo/AmigoRefGallerry";
 
 export const metadata: Metadata = {
   icons: {
@@ -72,6 +73,11 @@ export default function AmigoPage() {
           <p className="p">Iconroof จัดจำหน้าย ระแนงไวนิล A60 , A40</p>        
         </div>   
         <AmigoA60Product />
+        <div className="flex flex-col items-start pt-4">
+          <p className="h1">ตัวอย่างงานติดตั้งระแนง Amigo</p>
+          <p className="p">Iconroof มีบริการติดตั้งระแนงไวนิล A60, A40</p>        
+        </div>   
+        <AmigoRefGallerry />
       </div>     
     </div>
   );
