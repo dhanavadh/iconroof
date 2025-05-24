@@ -58,7 +58,10 @@ export default function AmigoPage() {
         <div className="flex flex-col items-center pt-6 lg:pt-12 mb-4">
           <p className="h1">ระแนงไวนิล AMIGO</p>
           <p className="p text-center">หมดปัญหาเรื่องปลวกและเชื้อรา ไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนาน</p>        
-          <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='mt-4 px-4 py-2 rounded-full border-2 border-neutral-800 bg-neutral-800 text-white font-medium hover:bg-neutral-600 hover:border-neutral-600 cursor-pointer transition-colors duration-300 mb-4 lg:mb-0'>สั่งซื้อสินค้า</Link>                            
+          <div className="flex flex-col lg:flex-row items-center gap-2 mt-4 mb-4 lg:mb-0">
+            <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='px-4 py-2 rounded-full border-2 border-neutral-800 bg-neutral-800 text-white font-medium hover:bg-neutral-600 hover:border-neutral-600 cursor-pointer transition-colors duration-300 '>สั่งซื้อสินค้า</Link>                            
+            <Link href='#preview' className='px-4 py-2 rounded-full border-2 border-neutral-100 bg-neutral-100 text-black font-medium hover:bg-neutral-200 hover:border-neutral-200 cursor-pointer transition-colors duration-300 mb-4 lg:mb-0'>ดูผลงาน</Link>
+          </div>
         </div>     
 
         <AmigoGallerry />
@@ -73,7 +76,7 @@ export default function AmigoPage() {
           <p className="p">Iconroof จัดจำหน้าย ระแนงไวนิล A60 , A40</p>        
         </div>   
         <AmigoA60Product />
-        <div className="flex flex-col items-start pt-4">
+        <div className="flex flex-col items-start pt-4" id="preview">
           <p className="h1">ตัวอย่างงานติดตั้งระแนง Amigo</p>
           <p className="p">Iconroof มีบริการติดตั้งระแนงไวนิล A60, A40</p>        
         </div>   
