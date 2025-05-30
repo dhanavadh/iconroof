@@ -54,9 +54,9 @@ const BlogPage = () => {
         <div className='hidden lg:grid lg:col-span-3 lg:sticky self-start transition-[top] top-20'
           id='big-content'
         >
-          <Link href='/blogs/article-1'>
+          <Link href='/blogs/article-4'>
             <Image
-              src='/asset/blog/blog-1.jpg'
+              src='https://tvss01.iconroof.co.th/public/asset/blog/USrLCJB7BUY-HD.jpg'
               alt='Iconroof'
               width={1920}
               height={1080}
@@ -65,9 +65,9 @@ const BlogPage = () => {
 
               </Image>
           </Link>
-          <p className="text-2xl mt-4 font-semibold hover:underline hover:underline-offset-2">วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</p>
-          <p className="text-base mt-1 mb-4">การเลือกวัสดุที่ใช้มุง หลังคา ถือว่าเป็นอย่างแรกๆ ที่เรามักต้องเลือกกันก่อน ด้วยวัสดุมีหลากหลายแบบและชนิด ซึ่งมันอาจจะไม่เหมาะกับทรงหลังคาบ้านและความต้องการของเราก็เป็นได้</p>
-          <Link href='/blogs/article-1' className='flex items-center mb-8 link'>
+          <p className="text-2xl mt-4 font-semibold hover:underline hover:underline-offset-2">รีโนเวทบ้านสวย ด้วยระแนงไวนิล By ช่างโอ | ICONROOF</p>
+          <p className="text-base mt-1 mb-4">เปลี่ยนบ้านเก่าให้สวยใหม่ด้วยระแนงไวนิล: ทั้งบังแดด บังตา กันนก และเพิ่มสไตล์ให้บ้านคุณ</p>
+          <Link href='/blogs/article-4' className='flex items-center mb-8 link'>
             <p className="text-base">อ่านต่อ</p>
             <Image
               src='/icon/link.svg'
@@ -80,7 +80,31 @@ const BlogPage = () => {
           </Link>
         </div>
         <div className='grid lg:col-span-1 overflow-y-auto w-full' id='small-content'>
-          <Link href='/blogs/article-1' className='lg:hidden'>
+          <Link href='/blogs/article-4' className='lg:hidden'>
+            <Image
+              src='https://tvss01.iconroof.co.th/public/asset/blog/USrLCJB7BUY-HD.jpg'
+              alt='Iconroof'
+              width={1920}
+              height={1080}
+              className='h-64 w-full object-cover rounded-lg'
+            />                    
+            <div>
+            <p className="text-2xl mt-4 font-semibold hover:underline hover:underline-offset-2">รีโนเวทบ้านสวย ด้วยระแนงไวนิล By ช่างโอ | ICONROOF</p>
+            <p className="text-base mt-1 mb-4">เปลี่ยนบ้านเก่าให้สวยใหม่ด้วยระแนงไวนิล: ทั้งบังแดด บังตา กันนก และเพิ่มสไตล์ให้บ้านคุณ</p>
+            <Link href='/blogs/article-4' className='flex items-center mb-8 link'>
+              <p className="text-base">อ่านต่อ</p>
+              <Image
+                src='/icon/link.svg'
+                alt='Iconroof'
+                width={20}
+                height={20}
+                className='ml-2'
+                >
+                </Image>
+            </Link>
+            </div>
+          </Link>
+          <Link href='/blogs/article-1'>
             <Image
               src='/asset/blog/blog-1.jpg'
               alt='Iconroof'
@@ -113,9 +137,9 @@ const BlogPage = () => {
               className='h-64 w-full object-cover rounded-lg'
             />                    
             <div>
-              <p className="text-2xl mt-4 font-semibold">สาเหตุหรือปัญหาที่ต้องระวัง เวลาติดตั้งระแนงไม้</p>
-              <p className="text-base mt-1 mb-4">งานต่อเติมระแนงสูง ไม่ยึดรั้วโครงการ โดยช่างโอไอคอนรูฟ</p>
-              <Link href='/blogs/article-2' className='flex items-center mb-8 link'>
+              <p className="text-2xl mt-4 font-semibold">ระแนงไวนิล ต่างจาก ไม้ระแนงเฌอร่า อย่างไร..?</p>
+              <p className="text-base mt-1 mb-4">หลายคนอาจสงสัยว่าระแนงแต่ละชนิดต่างกันอย่างไร มีคุณสมบัติอย่างไร</p>
+              <Link href='/blogs/article-2' target='_blank' className='flex items-center mb-8 link'>
                 <p className="text-base">อ่านต่อ</p>
                 <Image
                   src='/icon/link.svg'

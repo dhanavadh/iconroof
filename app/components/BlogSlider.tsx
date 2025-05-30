@@ -33,6 +33,17 @@ const BlogSlider1 = () => {
         
         
         <SwiperSlide>
+            <Link href='/blogs/article-4' className='slider-core'>             
+                <img src='https://tvss01.iconroof.co.th/public/asset/blog/USrLCJB7BUY-HD.jpg' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
+                <img src='https://tvss01.iconroof.co.th/public/asset/blog/USrLCJB7BUY-HD.jpg' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
+                <div className='text-area-padding'>
+                    <p className='title-section link'>รีโนเวทบ้านสวย ด้วยระแนงไวนิล By ช่างโอ | ICONROOF</p>
+                    <p className='subtitle-section'>เปลี่ยนบ้านเก่าให้สวยใหม่ด้วยระแนงไวนิล: ทั้งบังแดด บังตา กันนก และเพิ่มสไตล์ให้บ้านคุณ</p>
+                </div>
+            </Link>
+        </SwiperSlide> 
+
+        <SwiperSlide>
             <Link href='/blogs/article-1' className='slider-core'>             
                 <img src='/asset/blog/blog-1.jpg' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
                 <img src='/asset/blog/blog-1.jpg' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50' alt='AmigoRoof'></img>
