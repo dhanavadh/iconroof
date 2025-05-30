@@ -12,7 +12,6 @@ import Image from "next/image";
 import AmigoCompare from "./components/Amigo/AmigoCompare";
 import { Metadata } from 'next'
 import YouTubeList from "./components/YouTube";
-import AmigoCompareMobile from "./components/Amigo/AmigoCompareMobile";
 
 export const metadata: Metadata = {
   icons: {
