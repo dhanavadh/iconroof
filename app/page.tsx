@@ -11,6 +11,8 @@ import Head from "next/head";
 import Image from "next/image";
 import AmigoCompare from "./components/Amigo/AmigoCompare";
 import { Metadata } from 'next'
+import YouTubeList from "./components/YouTube";
+import AmigoCompareMobile from "./components/Amigo/AmigoCompareMobile";
 
 export const metadata: Metadata = {
   icons: {
@@ -74,8 +76,9 @@ export default function Home() {
         <p className="h1">เปรียบเทียบคุณสมบัติระแนง</p>
         <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>          
       </div> 
-
-       <AmigoCompare />
+      <div className="w-full overflow-x-auto">
+        <AmigoCompare />
+      </div>
 
       
 
@@ -84,6 +87,12 @@ export default function Home() {
         <p className="p">ขั้นตอนการติดตั้งระแนงจากช่างทำระแนง Iconroof</p>        
       </div> 
       <InstallationList />
+      
+      <div className="flex flex-col items-start pt-4 ">
+        <p className="h1">ผลงานการติดตั้งโดยช่างโอ</p>
+        <p className="p">ตัวอย่างงานติดตั้งระแนงจากช่างทำระแนง Iconroof</p>        
+      </div> 
+      <YouTubeList />
     </div>
     
     </>
