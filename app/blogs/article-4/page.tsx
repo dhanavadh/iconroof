@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
   },
-  title: 'วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน – จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof',
+  title: 'รีโนเวทบ้านสวย ด้วยระแนงไวนิล By ช่างโอ | ICONROOF – ระแนงบังตา',
   description: 'บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ ขายปลีก-ส่ง ราคาโรงงาน ทันสมัย แข็งแรง สวยงาม ระแนงบังตาไวนิล รับประกัน 10 ปี อบสีด้วย พาวเดอร์ โค้ท ตั้งแต่ 08.00-17.30 น. เปิดบริการวันจันทร์-เสาร์ บริการ: รับติดตั้งระแนงไวนิล, เปิดบริการ จันทร์-ศุกร์, ตั้งแต่ 08.00-17.30 น.',
   keywords: [
   "amigo", "ระแนงบังตา", "ระแนงบังตาไวนิล", "ระแนงบังตาไวนิล AMIGO", "upvc", "Amigo",
@@ -23,19 +23,19 @@ export const metadata: Metadata = {
   "ไอคอนรุฟ"
 ],
   openGraph: {
-    title: 'วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน – ระแนงบังตา',
+    title: 'รีโนเวทบ้านสวย ด้วยระแนงไวนิล By ช่างโอ | ICONROOF – ระแนงบังตา',
     description: 'บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ ขายปลีก-ส่ง ราคาโรงงาน ทันสมัย แข็งแรง สวยงาม ระแนงบังตาไวนิล รับประกัน 10 ปี อบสีด้วย พาวเดอร์ โค้ท ตั้งแต่ 08.00-17.30 น. เปิดบริการวันจันทร์-เสาร์ บริการ: รับติดตั้งระแนงไวนิล, เปิดบริการ จันทร์-ศุกร์, ตั้งแต่ 08.00-17.30 น.',
-    url: 'https://iconroof.co.th/blogs/article-1',
+    url: 'https://iconroof.co.th/blogs/article-4',
     siteName: 'Next.js',
     images: [
       {
-        url: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image1.jpg', // Must be an absolute URL
+        url: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image3.jpg', // Must be an absolute URL
         width: 1200,
         height: 630,
         alt: 'iconroof ระแนง',
       },
       {
-        url: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image1.jpg', // Must be an absolute URL
+        url: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/OpenGraph_Image3.jpg', // Must be an absolute URL
         width: 1200,
         height: 630,
         alt: 'iconroof ระแนง',
@@ -51,19 +51,6 @@ import Head from 'next/head'
 const ArticlePage4 = () => {
   return (
     <>
-    <Head>
-      <meta property="og:title" content="รีโนเวทบ้านสวย ด้วยระแนงไวนิล By ช่างโอ | ICONROOF – ระแนงบังตา" />
-      <meta property="og:description" content="เปลี่ยนบ้านเก่าให้สวยใหม่ด้วยระแนงไวนิล: ทั้งบังแดด บังตา กันนก และเพิ่มสไตล์ให้บ้านคุณ" />
-      <meta property="og:image" content="https://tvss01.iconroof.co.th/public/asset/blog/USrLCJB7BUY-HD.jpg" />
-      <meta property="og:url" content="https://iconroof.co.th/blogs/article-4" />
-      <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Iconroof" />
-      <meta property="og:locale" content="th_TH" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="รีโนเวทบ้านสวย ด้วยระแนงไวนิล By ช่างโอ | ICONROOF – ระแนงบังตา" />
-      <meta name="twitter:description" content="เปลี่ยนบ้านเก่าให้สวยใหม่ด้วยระแนงไวนิล: ทั้งบังแดด บังตา กันนก และเพิ่มสไตล์ให้บ้านคุณ" />
-      <meta name="twitter:image" content="https://tvss01.iconroof.co.th/public/asset/blog/USrLCJB7BUY-HD.jpg" />
-    </Head>
     <div className='blog-panel'>
         {/* Banner */}
         <div className='flex max-h-3/4 min-w-full relative -z-[1]'>
