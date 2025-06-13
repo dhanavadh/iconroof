@@ -50,7 +50,7 @@ const ProductsList = () => {
                           alt="Iconroof"
                           width={1024}
                           height={1024}
-                          className=" h-[500px] w-[500px] rounded-md"
+                          className="h-80 w-80 md:h-[500px] md:w-[500px] rounded-md"
                       />          
                       <div className="flex flex-col lg:flex-row items-center gap-2">
                           <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='px-4 py-2 rounded-full border-2 border-neutral-800 bg-neutral-800 text-white font-medium hover:bg-neutral-600 hover:border-neutral-600 cursor-pointer transition-colors duration-300 '>สั่งซื้อสินค้า</Link>                            
