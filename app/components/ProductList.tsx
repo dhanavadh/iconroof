@@ -1,5 +1,9 @@
+'use client';
 import Link from 'next/link';
 import React from 'react'
+import { useState } from 'react';
+import { Dialog, DialogPanel } from '@headlessui/react';
+import Image from 'next/image';
 
 const services = [
     { id:'1', name: 'ระแนงไวนิล AMIGO', des: 'ไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด', image: '/asset/image.png', link: '/products/amigo' },
@@ -11,6 +15,7 @@ const services = [
 ]
 
 const ProductsList = () => {
+    const [isOpen, setIsOpen] = useState(true)    
   return (
     <>
         <div className="w-full overflow-x-auto bg-red scrollbar-hide">
@@ -35,6 +40,27 @@ const ProductsList = () => {
                 </ul>
             </div>
         </div>
+
+        <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
+              <div className="fixed inset-0 flex w-screen items-center justify-center backdrop-blur-sm font-[family-name:var(--font-noto-sans)]">
+              <DialogPanel className="flex flex-col w-screen px-5 lg:px-20">
+                  <div className="flex gap-4 flex-col items-center py-4 ">           
+                      <Image
+                          src="https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/promo-june-25.png"
+                          alt="Iconroof"
+                          width={1024}
+                          height={1024}
+                          className=" h-[500px] w-[500px] rounded-md"
+                      />          
+                      <div className="flex flex-col lg:flex-row items-center gap-2">
+                          <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='px-4 py-2 rounded-full border-2 border-neutral-800 bg-neutral-800 text-white font-medium hover:bg-neutral-600 hover:border-neutral-600 cursor-pointer transition-colors duration-300 '>สั่งซื้อสินค้า</Link>                            
+                          <button onClick={() => setIsOpen(false)} className='px-4 py-2 rounded-full border-2 border-neutral-100 bg-neutral-100 text-black font-medium hover:bg-neutral-200 hover:border-neutral-200 cursor-pointer transition-colors duration-300 mb-4 lg:mb-0'>เข้าเว็บไซต์</button>
+                      </div>                                          
+                  </div>
+                                
+              </DialogPanel>
+              </div>
+          </Dialog>
     </>
   );
 };
