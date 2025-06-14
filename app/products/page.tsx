@@ -76,7 +76,7 @@ const ProductPage = () => {
         </div>
         <div className='flex w-full lg:w-2/6 row-span-4 py-4 lg:py-8 flex-col items-start px-8 lg:px-12 gap-6 justify-between  text-white'>
           <div>
-            <p className='text-2xl font-semibold lg:text-5xl lg:leading-normal leading-normal'>สร้างความเป็นส่วนตัวให้กับบ้านของคุณ</p>
+            <p className='text-2xl font-medium lg:text-5xl lg:leading-normal leading-normal'>สร้างความเป็นส่วนตัวให้กับบ้านของคุณ</p>
             <p className='text-lg mt-2 font-medium'>เลือกดูผลิตภัณฑ์ระแนงที่สนใจได้แล้วที่นี่</p>
           </div>
           <Link href='#amigo' className='btn-primary-static-1 mb-4 lg:mb-0'>เลือกระแนง</Link>
@@ -98,7 +98,7 @@ const ProductPage = () => {
           </div>
           <div className='flex w-full lg:w-2/6 row-span-4 py-4 lg:py-8 flex-col items-start px-8 lg:px-12 gap-6 justify-between'>
             <div>
-              <p className='text-2xl lg:text-5xl font-semibold lg:leading-normal leading-normal text-blue-600'>ระแนงไวนิล AMIGO</p>
+              <p className='text-2xl lg:text-5xl font-medium lg:leading-normal leading-normal text-blue-600'>ระแนงไวนิล AMIGO</p>
               <p className='text-lg mt-2 font-medium text-blue-600'>หมดปัญหาเรื่องปลวกและเชื้อรา ไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด มีอายุการใช้งานที่ยาวนาน</p>
             </div>
             <div className='flex gap-2 flex-row lg:flex-col text-center xl:flex-row'>
@@ -130,7 +130,7 @@ const ProductPage = () => {
           </div>
           <div className='flex w-full lg:w-2/6 row-span-4 py-4 lg:py-8 flex-col items-start px-8 lg:px-12 gap-6 justify-between'>
             <div>
-              <p className='text-2xl font-semibold lg:text-5xl lg:leading-normal leading-normal text-[#ED1C24]'>ระแนงไวนิล SCG BOX SET</p>
+              <p className='text-2xl font-medium lg:text-5xl lg:leading-normal leading-normal text-[#ED1C24]'>ระแนงไวนิล SCG BOX SET</p>
               <p className='text-lg mt-2 font-medium text-[#ED1C24]'>สร้างสรรค์ความงามได้หลากหลาย ภายใต้คุณภาพที่เป็นมาตรฐาน</p>
             </div>
             <div className='flex gap-2 flex-row lg:flex-col text-center xl:flex-row'>
@@ -161,7 +161,7 @@ const ProductPage = () => {
           </div>
           <div className='flex w-full lg:w-2/6 row-span-4 py-4 lg:py-8 flex-col items-start px-8 lg:px-12 gap-6 justify-between'>
             <div>
-              <p className='text-2xl lg:text-5xl font-semibold lg:leading-normal leading-normal text-[#F5951D]'>ระแนงไวนิล GREENWOOD</p>
+              <p className='text-2xl lg:text-5xl font-medium lg:leading-normal leading-normal text-[#F5951D]'>ระแนงไวนิล GREENWOOD</p>
               <p className='text-lg mt-2 font-medium text-[#F5951D]'>ผลิตภัณฑ์ไม้สังเคราะห์ที่มีส่วนผสมของไม้ธรรมชาติ จึงให้ผิวสัมผัสและภาพลักษณ์เสมือนไม้จริง</p>
             </div>
             <div className='flex gap-2 flex-row lg:flex-col text-center xl:flex-row'>

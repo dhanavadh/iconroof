@@ -20,10 +20,10 @@ const AmigoCompare = () => {
                                                 <span className='absolute inline-flex h-4 w-4 bg-[#F5951D] rounded-full animate-ping z-0'></span>
                                                 <img src="/icon/star_shine_w.svg" className="inline-flex relative h-[24px] bg-[#F5951D] rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
                                             </div>  
-                                            <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#F5951D] rounded-[3px] font-semibold'>แนะนำ</p>                                
+                                            <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#F5951D] rounded-[3px] font-medium'>แนะนำ</p>                                
                                         </div> 
                                       </div>    
-                                        <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-start">ระบบฝ้าระแนง AMIGO</p>
+                                        <p className="text-lg lg:text-xl font-medium pb-4 pt-2 text-start">ระบบฝ้าระแนง AMIGO</p>
                                         <div className="text-base gap-4 flex flex-col items-start">
                                           <div className="flex items-center gap-4">
                                             <Image
@@ -33,7 +33,7 @@ const AmigoCompare = () => {
                                               height={36}    
                                               className="w-8 h-8"            
                                             />
-                                            <p className="">ระบบอุปกรณ์ติดตั้งครบชุด พร้อมขั้นตอน<a className="font-semibold text-[#F5951D]">ทำงานง่ายและรวดเร็ว</a></p>
+                                            <p className="">ระบบอุปกรณ์ติดตั้งครบชุด พร้อมขั้นตอน<a className="font-medium text-[#F5951D]">ทำงานง่ายและรวดเร็ว</a></p>
                                           </div>            
                                           <div className="flex items-center gap-4">
                                             <Image
@@ -43,7 +43,7 @@ const AmigoCompare = () => {
                                               height={36}    
                                               className="w-8 h-8"            
                                             />
-                                            <p className=""><a className="font-semibold text-[#F5951D]">งานเรียบร้อยได้มาตรฐาน</a> เว้นร่องเท่ากันเป็นระเบียบสวยงาม</p>
+                                            <p className=""><a className="font-medium text-[#F5951D]">งานเรียบร้อยได้มาตรฐาน</a> เว้นร่องเท่ากันเป็นระเบียบสวยงาม</p>
                                           </div>            
                                           <div className="flex items-center gap-4">
                                             <Image
@@ -53,7 +53,7 @@ const AmigoCompare = () => {
                                               height={36}    
                                               className="w-8 h-8"            
                                             />
-                                            <p className="">ไม่มีปัญหาเรื่องปลวก <a className="font-semibold text-[#F5951D]">ไม่ชวมน้ำ ไม่ผุกร่อน</a> ไม่บิดโก่งงอ ไม่ขึ้นรา</p>
+                                            <p className="">ไม่มีปัญหาเรื่องปลวก <a className="font-medium text-[#F5951D]">ไม่ชวมน้ำ ไม่ผุกร่อน</a> ไม่บิดโก่งงอ ไม่ขึ้นรา</p>
                                           </div>            
                                           <div className="flex items-center gap-4">
                                             <Image
@@ -63,7 +63,7 @@ const AmigoCompare = () => {
                                               height={36}    
                                               className="w-8 h-8"            
                                             />
-                                            <p className=""><a className="font-semibold text-[#F5951D]">ระบบติดตั้งทันสมัย</a> ใช้อุปกรณ์โครงสร้างคร่าวเหล็กชุบกัลวาไนซ์</p>
+                                            <p className=""><a className="font-medium text-[#F5951D]">ระบบติดตั้งทันสมัย</a> ใช้อุปกรณ์โครงสร้างคร่าวเหล็กชุบกัลวาไนซ์</p>
                                           </div>                                
                                           <div className="flex items-center gap-4">
                                             <Image
@@ -73,7 +73,7 @@ const AmigoCompare = () => {
                                               height={36}    
                                               className="w-8 h-8"            
                                             />
-                                            <p className="">ผลิตจากไวนิลสูตรพิเศษ มีสีในตัว <a className="font-semibold text-[#F5951D]">สวยงามยาวนาน</a></p>
+                                            <p className="">ผลิตจากไวนิลสูตรพิเศษ มีสีในตัว <a className="font-medium text-[#F5951D]">สวยงามยาวนาน</a></p>
                                           </div>                                                            
                                         </div>
                                       </div>
@@ -92,10 +92,10 @@ const AmigoCompare = () => {
                                                 <span className='absolute inline-flex h-4 w-4 bg-neutral-700 rounded-full animate-ping z-0'></span>
                                                 <img src="/icon/warning.svg" className="inline-flex relative h-[24px] bg-neutral-700 rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
                                             </div>  
-                                            <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-neutral-700 rounded-[3px] font-semibold'>ไม่แนะนำ</p>                                
+                                            <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-neutral-700 rounded-[3px] font-medium'>ไม่แนะนำ</p>                                
                                         </div> 
                                       </div>          
-                                        <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-start">ระบบฝ้าระแนงไม้ธรรมดา</p>
+                                        <p className="text-lg lg:text-xl font-medium pb-4 pt-2 text-start">ระบบฝ้าระแนงไม้ธรรมดา</p>
                                         <div className="text-base gap-4 flex flex-col items-start">
                                           <div className="flex items-center gap-4">
                                             <Image
@@ -177,10 +177,10 @@ const AmigoCompare = () => {
                     <span className='absolute inline-flex h-4 w-4 bg-[#F5951D] rounded-full animate-ping z-0'></span>
                     <img src="/icon/star_shine_w.svg" className="inline-flex relative h-[24px] bg-[#F5951D] rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
                 </div>  
-                <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#F5951D] rounded-[3px] font-semibold'>แนะนำ</p>                                
+                <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#F5951D] rounded-[3px] font-medium'>แนะนำ</p>                                
             </div> 
           </div>    
-            <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-center lg:text-start">ระบบฝ้าระแนง AMIGO</p>
+            <p className="text-lg lg:text-xl font-medium pb-4 pt-2 text-center lg:text-start">ระบบฝ้าระแนง AMIGO</p>
             <div className="text-base gap-4 flex flex-col items-start">
               <div className="flex items-center gap-4">
                 <Image
@@ -244,10 +244,10 @@ const AmigoCompare = () => {
                       <span className='absolute inline-flex h-4 w-4 bg-neutral-700 rounded-full animate-ping z-0'></span>
                       <img src="/icon/warning.svg" className="inline-flex relative h-[24px] bg-neutral-700 rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
                   </div>  
-                  <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-neutral-700 rounded-[3px] font-semibold'>ไม่แนะนำ</p>                                
+                  <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-neutral-700 rounded-[3px] font-medium'>ไม่แนะนำ</p>                                
               </div> 
             </div>   
-            <p className="text-lg lg:text-xl font-semibold pb-4 pt-2 text-center lg:text-start">ระบบฝ้าระแนงไม้ธรรมดา</p>
+            <p className="text-lg lg:text-xl font-medium pb-4 pt-2 text-center lg:text-start">ระบบฝ้าระแนงไม้ธรรมดา</p>
             <div className="text-base gap-4 flex flex-col items-start">
               <div className="flex items-center gap-4">
                 <Image

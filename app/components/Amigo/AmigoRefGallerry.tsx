@@ -39,7 +39,7 @@ const AmigoRefGallerry = () => {
                     <div className="absolute bottom-0 left-0 right-0 bg-white rounded px-4 py-2 text-black text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className='flex items-center justify-between'>
                         <div>
-                          <div className="font-semibold text-lg">{item.name}</div>
+                          <div className="font-medium text-lg">{item.name}</div>
                           <div>{item.des}</div>
                         </div>
                         <div className='hidden lg:block'>

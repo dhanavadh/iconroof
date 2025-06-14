@@ -24,7 +24,7 @@ const InstallationList = () => {
                                 </div>
                                 <div className='flex flex-col p-6 whitespace-normal'>
                                     <div>
-                                        <p className='text-lg lg:text-xl font-semibold'>{item.name}</p>
+                                        <p className='text-lg lg:text-xl font-medium'>{item.name}</p>
                                         <p className='p line-clamp-2 mb-2'>{item.des}</p>
                                     </div>                                                                            
                                 </div>

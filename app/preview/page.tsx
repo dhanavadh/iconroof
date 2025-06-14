@@ -46,7 +46,7 @@ const PreviewPage = () => {
 
               </Image>
           </div>
-          <p className="text-2xl mt-4 font-semibold">ติดตั้งระแนงโดยช่างมืออาชีพ</p>
+          <p className="text-2xl mt-4 font-medium">ติดตั้งระแนงโดยช่างมืออาชีพ</p>
           <p className="text-base mt-1">ไอคอนรูฟมีบริการติดตั้งระแนงโดยช่างมืออาชีพ</p>
           <p className="text-base mb-4">สามารถติดต่อเพื่อสอบถามข้อมูลเพิ่มเติมได้ผ่านทาง Line@PLK2013</p>
           <Link href='https://www.youtube.com/@iconroof3391' target='_blank' className='flex items-center mb-8 link'>
@@ -71,7 +71,7 @@ const PreviewPage = () => {
               className='h-64 w-full object-cover rounded-lg'
             />                    
             <div>
-              <p className="text-2xl mt-4 font-semibold">ติดตั้งระแนงโดยช่างมืออาชีพ</p>
+              <p className="text-2xl mt-4 font-medium">ติดตั้งระแนงโดยช่างมืออาชีพ</p>
               <p className="text-base mt-1 mb-4">ไอคอนรูฟมีบริการติดตั้งระแนงโดยช่างมืออาชีพ สามารถติดต่อเพื่อสอบถามข้อมูลเพิ่มเติมได้ผ่านทาง Line@PLK2014</p>
               <Link href='https://www.youtube.com/@iconroof3391' target='_blank' className='flex items-center mb-8 link'>
                 <p className="text-base">ดูผลงานการติดตั้ง</p>
@@ -95,7 +95,7 @@ const PreviewPage = () => {
               className='h-64 w-full object-cover rounded-lg'
             />                    
             <div>
-              <p className="text-2xl mt-4 font-semibold">ต่อเติมระแนงสูง ไม่ยึดรั้วโครงการ</p>
+              <p className="text-2xl mt-4 font-medium">ต่อเติมระแนงสูง ไม่ยึดรั้วโครงการ</p>
               <p className="text-base mt-1 mb-4">งานต่อเติมระแนงสูง ไม่ยึดรั้วโครงการ โดยช่างโอไอคอนรูฟ</p>
               <Link href='https://www.youtube.com/watch?v=1HI_yjBgzgc' target='_blank' className='flex items-center mb-8 link'>
                 <p className="text-base">ดูผลงานการติดตั้ง</p>
@@ -119,7 +119,7 @@ const PreviewPage = () => {
               className='h-64 w-full object-cover rounded-lg'
             />                    
             <div>
-              <p className="text-2xl mt-4 font-semibold">รั้วระแนงบังตา ติดตั้งเสร็จภายใน 1 วัน</p>
+              <p className="text-2xl mt-4 font-medium">รั้วระแนงบังตา ติดตั้งเสร็จภายใน 1 วัน</p>
               <p className="text-base mt-1 mb-4">งานต่อเติมระแนงสูง ไม่ยึดรั้วโครงการ โดยช่างโอไอคอนรูฟ</p>
               <Link href='https://www.youtube.com/watch?v=1HI_yjBgzgc' target='_blank' className='flex items-center mb-8 link'>
                 <p className="text-base">ดูผลงานการติดตั้ง</p>

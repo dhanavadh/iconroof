@@ -29,7 +29,7 @@ const ProductsList = () => {
                                 </div>
                                 <div className='flex flex-col p-6 whitespace-normal'>
                                     <div>
-                                        <p className='text-lg lg:text-xl font-semibold'>{item.name}</p>
+                                        <p className='text-lg lg:text-xl font-medium'>{item.name}</p>
                                         <p className='p line-clamp-2'>{item.des}</p>
                                     </div>                                        
                                     <p className="text-end mt-4 link">ดูสินค้า →</p>                              
@@ -43,7 +43,7 @@ const ProductsList = () => {
 
         <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
               <div className="fixed inset-0 flex w-screen items-center justify-center backdrop-blur-sm font-[family-name:var(--font-noto-sans)]">
-              <DialogPanel className="flex flex-col w-screen px-5 lg:px-20">
+              <DialogPanel className="flex flex-col w-screen px-5 lg:px-20 ">
                   <div className="flex gap-4 flex-col items-center py-4 ">           
                       <Image
                           src="https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/promo-june-25.png"

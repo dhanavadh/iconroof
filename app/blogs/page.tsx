@@ -65,7 +65,7 @@ const BlogPage = () => {
 
               </Image>
           </Link>
-          <p className="text-2xl mt-4 font-semibold hover:underline hover:underline-offset-2">รีโนเวทบ้านสวย ด้วยระแนงไวนิล By ช่างโอ | ICONROOF</p>
+          <p className="text-2xl mt-4 font-medium hover:underline hover:underline-offset-2">รีโนเวทบ้านสวย ด้วยระแนงไวนิล By ช่างโอ | ICONROOF</p>
           <p className="text-base mt-1 mb-4">เปลี่ยนบ้านเก่าให้สวยใหม่ด้วยระแนงไวนิล: ทั้งบังแดด บังตา กันนก และเพิ่มสไตล์ให้บ้านคุณ</p>
           <Link href='/blogs/article-4' className='flex items-center mb-8 link'>
             <p className="text-base">อ่านต่อ</p>
@@ -89,7 +89,7 @@ const BlogPage = () => {
               className='h-64 w-full object-cover rounded-lg'
             />                    
             <div>
-            <p className="text-2xl mt-4 font-semibold hover:underline hover:underline-offset-2">รีโนเวทบ้านสวย ด้วยระแนงไวนิล By ช่างโอ | ICONROOF</p>
+            <p className="text-2xl mt-4 font-medium hover:underline hover:underline-offset-2">รีโนเวทบ้านสวย ด้วยระแนงไวนิล By ช่างโอ | ICONROOF</p>
             <p className="text-base mt-1 mb-4">เปลี่ยนบ้านเก่าให้สวยใหม่ด้วยระแนงไวนิล: ทั้งบังแดด บังตา กันนก และเพิ่มสไตล์ให้บ้านคุณ</p>
             <Link href='/blogs/article-4' className='flex items-center mb-8 link'>
               <p className="text-base">อ่านต่อ</p>
@@ -113,7 +113,7 @@ const BlogPage = () => {
               className='h-64 w-full object-cover rounded-lg'
             />                    
             <div>
-            <p className="text-2xl mt-4 font-semibold hover:underline hover:underline-offset-2">วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</p>
+            <p className="text-2xl mt-4 font-medium hover:underline hover:underline-offset-2">วัสดุมุงหลังคายอดนิยม ที่ใช้กันในปัจจุบัน</p>
             <p className="text-base mt-1 mb-4">การเลือกวัสดุที่ใช้มุง หลังคา ถือว่าเป็นอย่างแรกๆ ที่เรามักต้องเลือกกันก่อน ด้วยวัสดุมีหลากหลายแบบและชนิด ซึ่งมันอาจจะไม่เหมาะกับทรงหลังคาบ้านและความต้องการของเราก็เป็นได้</p>
             <Link href='/blogs/article-1' className='flex items-center mb-8 link'>
               <p className="text-base">อ่านต่อ</p>
@@ -137,7 +137,7 @@ const BlogPage = () => {
               className='h-64 w-full object-cover rounded-lg'
             />                    
             <div>
-              <p className="text-2xl mt-4 font-semibold">ระแนงไวนิล ต่างจาก ไม้ระแนงเฌอร่า อย่างไร..?</p>
+              <p className="text-2xl mt-4 font-medium">ระแนงไวนิล ต่างจาก ไม้ระแนงเฌอร่า อย่างไร..?</p>
               <p className="text-base mt-1 mb-4">หลายคนอาจสงสัยว่าระแนงแต่ละชนิดต่างกันอย่างไร มีคุณสมบัติอย่างไร</p>
               <Link href='/blogs/article-2' target='_blank' className='flex items-center mb-8 link'>
                 <p className="text-base">อ่านต่อ</p>
@@ -161,7 +161,7 @@ const BlogPage = () => {
               className='h-64 w-full object-cover rounded-lg'
             />                    
             <div>
-              <p className="text-2xl mt-4 font-semibold">ระแนงไวนิล ต่างจาก ไม้ระแนงเฌอร่า อย่างไร..?</p>
+              <p className="text-2xl mt-4 font-medium">ระแนงไวนิล ต่างจาก ไม้ระแนงเฌอร่า อย่างไร..?</p>
               <p className="text-base mt-1 mb-4">หลายคนอาจสงสัยว่าระแนงแต่ละชนิดต่างกันอย่างไร มีคุณสมบัติอย่างไร</p>
               <Link href='/blogs/article-3' target='_blank' className='flex items-center mb-8 link'>
                 <p className="text-base">อ่านต่อ</p>

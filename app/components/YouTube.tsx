@@ -25,7 +25,7 @@ const YouTubeList = () => {
                                 </div>
                                 <div className='flex flex-col p-6 whitespace-normal'>
                                     <div>
-                                        <p className='text-lg lg:text-xl font-semibold'>{item.name}</p>
+                                        <p className='text-lg lg:text-xl font-medium'>{item.name}</p>
                                         <p className='p line-clamp-2 mb-2'>{item.des}</p>
                                         <Link href={item.link} target='_blank' className='flex items-center link'>
                                             <p className="text-base">ดูผลงานการติดตั้ง</p>
