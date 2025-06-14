@@ -25,6 +25,10 @@ body {
 .btn-primary-static {
   @apply px-3 py-1 text-black rounded-full border-2 border-white bg-white font-medium hover:bg-neutral-100 hover:border-neutral-100 cursor-pointer transition-colors shadow-md hover:shadow-lg duration-300 font-[family-name:var(--font-noto-sans)]
 }
+
+.btn-primary-line {
+  @apply px-3 py-1 text-white rounded-full border-2 border-green-700 bg-green-700 font-medium hover:bg-green-700/90 hover:border-green-700/90 cursor-pointer transition-colors shadow-md hover:shadow-lg duration-300 font-[family-name:var(--font-noto-sans)]
+}
 .btn-primary-static-1 {
   @apply px-4 py-2 rounded-full border-2 border-[#fafafa] bg-[#fafafa] text-black font-medium hover:bg-neutral-200 hover:border-neutral-200 cursor-pointer transition-colors duration-300 font-[family-name:var(--font-noto-sans)]
 }
@@ -128,10 +132,10 @@ body {
 }
 
 .navbar {
-  @apply flex justify-between px-5 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10
+  @apply flex justify-between px-5 lg:px-20 py-3 w-full fixed left-0 right-0 z-50
 }
 .navbar-active {
-  @apply bg-neutral-100 flex justify-between px-5 lg:px-20 py-3 w-full fixed top-0 left-0 right-0 z-10 
+  @apply bg-neutral-100 flex justify-between px-5 lg:px-20 py-3 w-full fixed left-0 right-0 z-50 
 }
 
 .btn {
@@ -203,4 +207,17 @@ html {
 }
 .text-area-padding {
   @apply p-6 lg:px-20 lg:py-10
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(50%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 12s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
 }

@@ -7,6 +7,7 @@ import Products from '../components/Products'
 import Head from 'next/head'
 import type { Metadata } from 'next'
 import AmigoRefGallerry from '../components/Amigo/AmigoRefGallerry'
+import AdsSlider from '../components/AdsSlider'
 
 export const metadata: Metadata = {
   icons: {
@@ -70,7 +71,8 @@ const ProductPage = () => {
           <Link className='link' href='#items'>ชิ้นส่วนระแนง</Link>          
         </div>
       </div>   
-      <div className='flex flex-col lg:flex-row bg-green-700 rounded-2xl'>
+      <AdsSlider />      
+      {/* <div className='flex flex-col lg:flex-row bg-green-700 rounded-2xl'>
         <div className='lg:hidden flex w-full h-64'>
           <img src='asset/amigo.png' className='w-full h-full object-cover rounded-t-2xl'></img>
         </div>
@@ -84,7 +86,7 @@ const ProductPage = () => {
         <div className='hidden lg:flex w-full lg:w-4/6'>
           <img src='asset/amigo.png' className='w-full h-full object-cover rounded-r-2xl'></img>
         </div>
-      </div>
+      </div> */}
       
       <div className='pb-4 border-b-2 border-neutral-200 w-full' id='amigo'>
         <div className="flex flex-col items-start pt-6 lg:pt-12 mb-4">

@@ -1,9 +1,6 @@
 "use client"
-import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Footer from "./components/footer";
-import Navbar from "./components/navbar";
 import { Analytics } from "@vercel/analytics/react";
 import NewNavbar from "./components/NewNavBar";
 import NewFooter from "./components/NewFooter";
@@ -38,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">      
       <body
-        className={`${notoSans.variable} ${SarabunRegular.variable} ${SarabunMedium.variable} antialiased`}>             
+        className={`${notoSans.variable} ${SarabunRegular.variable} ${SarabunMedium.variable} antialiased`}>  
         {header}          
         {children}
         <Analytics />
