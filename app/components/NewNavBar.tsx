@@ -47,12 +47,11 @@ function NewNavbar() {
     
     return (
         <div>                 
-            {/* Hide HeadAds when scrolled */}
-            {!color && <HeadAds />}
+            <HeadAds />
             <div className="flex flex-col items-center justify-center font-[family-name:var(--font-noto-sans)] text-white">
             
             <div className="flex justify-between flex-col">                    
-                <div className={color ? 'navbar-active' : 'navbar top-12'}>                    
+                <div className={color ? 'navbar-active top-12' : 'navbar top-12'}>                    
                 <div className="flex items-center transition-colors duration-300">
                     <Link className="cursor-pointer" href='/'>
                         <img className="h-8 object-cover"
