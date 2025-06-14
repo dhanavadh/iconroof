@@ -12,6 +12,7 @@ import Image from "next/image";
 import AmigoCompare from "./components/Amigo/AmigoCompare";
 import { Metadata } from 'next'
 import YouTubeList from "./components/YouTube";
+import AmigoSlider from "./components/Amigo/AmigoSlider";
 
 export const metadata: Metadata = {
   icons: {
@@ -66,11 +67,20 @@ export default function Home() {
     </Head>
     <Slider />
     <div className="flex flex-col min-h-screen items-start ml-6 md:ml-20 mr-6 md:mr-20 font-[family-name:var(--font-noto-sans)]">      
-      <div className="flex flex-col items-start pt-8 ">
-        <p className="h1">เลือกดูผลิตภัณฑ์ระแนง</p>
-        <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>        
+      <div className="flex flex-col items-start pt-8 pb-4">
+        <p className="h1">โปรโมชั่นในเดือนมิถุนายน</p>
+        <p className="p">โปรโมชั่นจำนวนจำกัด โดย Iconroof</p>        
       </div>       
-      <ProductsList /> 
+      <AmigoSlider /> 
+
+      <div className="flex flex-col items-start pt-4 pb-4">
+        <p className="h1">เลือกดูผลิตภัณฑ์ระแนง</p>
+        <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>          
+      </div> 
+      <div className="w-full overflow-x-auto">
+        <ProductsList />
+      </div>
+
       <div className="flex flex-col items-start pt-4 pb-4">
         <p className="h1">เปรียบเทียบคุณสมบัติระแนง</p>
         <p className="p">ศูนย์รวมระแนง ไม้ระแนงไวนิล AMIGO ระแนงบังตา และช่างทำระแนง โดย Iconroof</p>          

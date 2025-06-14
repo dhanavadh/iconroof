@@ -16,22 +16,22 @@ const ProductListPage = () => {
       <TabList className="flex space-x-1.5 bg-white px-1.5 py-1.5 rounded-full shadow-md sm:text-base text-sm">
         <Tab as={Fragment}>
           {({ hover, selected }) => (
-            <button className={clsx('px-1.5 py-0.5 sm:px-3 sm:py-1 rounded-full outline-transparent',hover && 'bg-neutral-200 duration-300', selected && 'bg-neutral-100 text-black')}>โปรโมชั่น</button>
+            <button className={clsx('px-3 py-1 rounded-full outline-transparent',hover && 'bg-neutral-200 duration-300', selected && 'bg-neutral-100 text-black')}>โปรโมชั่น</button>
           )}
         </Tab>
         <Tab as={Fragment}>
           {({ hover, selected }) => (
-            <button className={clsx('px-1.5 py-0.5 sm:px-3 sm:py-1 rounded-full outline-transparent',hover && 'bg-neutral-200 duration-300', selected && 'bg-neutral-100 text-black')}>Amigo</button>
+            <button className={clsx('px-3 py-1 rounded-full outline-transparent',hover && 'bg-neutral-200 duration-300', selected && 'bg-neutral-100 text-black')}>Amigo</button>
           )}
         </Tab>
         <Tab as={Fragment}>
           {({ hover, selected }) => (
-            <button className={clsx('px-1.5 py-0.5 sm:px-3 sm:py-1 rounded-full outline-transparent',hover && 'bg-neutral-200 duration-300', selected && 'bg-neutral-100 text-black')}>SCG</button>
+            <button className={clsx('px-3 py-1 rounded-full outline-transparent',hover && 'bg-neutral-200 duration-300', selected && 'bg-neutral-100 text-black')}>SCG</button>
           )}
         </Tab>
         <Tab as={Fragment}>
           {({ hover, selected }) => (
-            <button className={clsx('px-1.5 py-0.5 sm:px-3 sm:py-1 rounded-full outline-transparent',hover && 'bg-neutral-200 duration-300', selected && 'bg-neutral-100 text-black')}>ชิ้นส่วนระแนง</button>
+            <button className={clsx('px-3 py-1 rounded-full outline-transparent',hover && 'bg-neutral-200 duration-300', selected && 'bg-neutral-100 text-black')}>ชิ้นส่วนระแนง</button>
           )}
         </Tab>
       </TabList>
