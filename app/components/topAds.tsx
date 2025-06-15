@@ -17,7 +17,7 @@ const HeadAds = () => {
         } 
   return (
     <>
-    <div className='flex flex-row items-center justify-between font-[family-name:var(--font-noto-sans)] px-8 h-12 bg-black text-white w-full fixed top-0 left-0 right-0 z-50 gap-4'>                    
+    <div className='flex flex-row items-center justify-between font-[family-name:var(--font-noto-sans)] px-8 h-12 bg-amber-100 text-amber-600 font-medium w-full top-0 left-0 right-0 z-50 gap-4 border-l-8 border-amber-500'>                    
         <div className='hidden lg:flex'>
             <button onClick={openModal} className='font-medium underline underline-offset-4 lg:mr-4'>โปรโมชั่น</button>              
         </div>
