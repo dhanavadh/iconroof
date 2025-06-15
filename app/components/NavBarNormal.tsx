@@ -58,7 +58,7 @@ function NavBarNormal() {
                                     </img>
                             </Link>
                         </div>                    
-                        <div className="items-center flex space-x-1.5 bg-white px-1.5 py-1.5 rounded-full shadow-md text-black">
+                        <div className="items-center hidden lg:flex space-x-1.5 bg-white px-1.5 py-1.5 rounded-full shadow-md text-black">
                             {NavLink.map((index) => (
                             <Link
                             key={index.name}

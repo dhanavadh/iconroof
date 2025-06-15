@@ -60,7 +60,7 @@ function NewNavbar() {
                     </Link>
                 </div>       
                 {/* Menu Item              */}
-                <div className="items-center flex space-x-1.5 bg-white px-1.5 py-1.5 rounded-full shadow-md text-black">
+                <div className="items-center hidden lg:flex space-x-1.5 bg-white px-1.5 py-1.5 rounded-full shadow-md text-black">
                     {NavLink.map((index) => (
                     <Link
                     key={index.name}
@@ -110,7 +110,7 @@ function NewNavbar() {
                         </svg>
                     </button>
                 </div>
-                <div className="flex space-x-1.5 bg-white px-1.5 py-1.5 rounded-full shadow-md">
+                <div className="flex flex-col mt-2 px-5">
                 {NavLink.map((index) => (
                 <Link
                 key={index.name}
@@ -120,7 +120,7 @@ function NewNavbar() {
                 {index.name}
                 </Link>
                 ))}
-                </div>                
+                </div>               
             </DialogPanel>
             </div>
             </Dialog>
