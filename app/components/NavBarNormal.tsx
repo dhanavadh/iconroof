@@ -93,7 +93,7 @@ function NavBarNormal() {
             </div>
 
             <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
-            <div className="fixed inset-0 flex w-screen items-start justify-center backdrop-blur-3xl bg-neutral-200/80 font-[family-name:var(--font-noto-sans)] top-12">
+            <div className="fixed inset-0 flex w-screen items-start justify-center backdrop-blur-3xl bg-neutral-200/80 font-[family-name:var(--font-noto-sans)]">
             <DialogPanel className="flex flex-col w-screen">
                 <div className="flex justify-between items-center py-4 px-5">                
                     <Link className="cursor-pointer" onClick={() => setIsOpen(false)} href='/'>
