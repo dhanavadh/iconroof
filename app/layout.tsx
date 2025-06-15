@@ -6,6 +6,8 @@ import NewNavbar from "./components/NewNavBar";
 import NewFooter from "./components/NewFooter";
 import { usePathname } from "next/navigation";
 import NavBarNormal from "./components/NavBarNormal";
+import JuneAds from "./components/Ads/JuneAds";
+import CookieAlert from "./components/CookieAlert";
 
 
 const notoSans = localFont({
@@ -38,6 +40,8 @@ export default function RootLayout({
         className={`${notoSans.variable} ${SarabunRegular.variable} ${SarabunMedium.variable} antialiased`}>  
         {header}          
         {children}
+        <JuneAds />
+        <CookieAlert />
         <Analytics />
         <NewFooter />
       </body>

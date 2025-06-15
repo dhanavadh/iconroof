@@ -62,7 +62,7 @@ const ProductPage = () => {
     </Head>
     <div className="flex flex-col min-h-screen items-start mx-6 md:mx-20 font-[family-name:var(--font-noto-sans)]">      
       
-      <div className="flex flex-col items-center sm:items-start pt-32 mb-4 w-full">
+      <div className="flex flex-col items-center sm:items-start pt-24 mb-4 w-full">
         <p className="h1">เลือกดูผลิตภัณฑ์ระแนง</p>
         <ProductListPage />
       </div>   
