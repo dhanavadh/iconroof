@@ -7,7 +7,7 @@ import HeadAds from './topAds';
 
   const logo = [
     '/icon/iconroof-shadow-white.svg',
-    '/icon/iconroof-shadow.svg',
+    '/icon/iconroof.svg',
     '/icon/iconroof-black.svg',
   ]
   const btnDec = [
@@ -33,13 +33,23 @@ function NewNavbar() {
     //NavCo
     const [color, setColor ] = useState(false);
     const [isOpen, setIsOpen] = useState(false)    
-    const changeColor = () => {
-        if(window.scrollY >= 20){
-            setColor(true)
-        }else {
-            setColor(false)
-        }        
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
 
+    const changeColor = () => {
+        const currentScrollPos = window.scrollY;
+        
+        if (currentScrollPos === 0) {
+            // At the top of the page
+            setColor(true);
+        } else if (currentScrollPos < prevScrollPos) {
+            // Scrolling up
+            setColor(true);
+        } else {
+            // Scrolling down
+            setColor(false);
+        }
+        
+        setPrevScrollPos(currentScrollPos);
     }
     useEffect(() => {
       window.addEventListener('scroll', changeColor);
@@ -47,16 +57,14 @@ function NewNavbar() {
     
     return (
         <div>                 
-            <HeadAds />
             <div className="flex flex-col items-center justify-center font-[family-name:var(--font-noto-sans)] text-white">
             
             <div className="flex justify-between flex-col">                    
-                <div className={color ? 'navbar -top-16 duration-300' : 'navbar top-8 duration-300'}>                    
+                <div className={color ? 'navbar top-0 duration-300' : 'navbar -top-16 duration-300'}>                    
                 <div className="flex items-center transition-colors duration-300">
                     <Link className="cursor-pointer" href='/'>
-                        <img className="h-8 object-cover"
-                        src={color ? logo[1] : logo[0]} alt="Iconroof">
-                        </img>
+                        <Image width={415} height={100} className="h-8 w-auto"
+                        src={color ? logo[1] : logo[1]} alt="Iconroof Logo"/>
                     </Link>
                 </div>       
                 {/* Menu Item              */}

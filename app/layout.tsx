@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathName = usePathname();
-  const header = ["/products", "/redirect", '/products/amigo'].includes(pathName) ? <NavBarNormal /> : <NewNavbar />;
+  const header = ["/products", "/redirect", '/products/amigo'].includes(pathName) ? <NewNavbar /> : <NewNavbar />;
   return (
     <html lang="en">      
       <body
