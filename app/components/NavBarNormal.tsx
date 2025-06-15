@@ -6,8 +6,8 @@ import ProductSlider from './ProductSlider';
 import HeadAds from './topAds';
 
   const logo = [
-    '/icon/iconroof-white.svg',
-    '/icon/iconroof.svg',
+    '/icon/iconroof-shadow-white.svg',
+    '/icon/iconroof-shadow.svg',
     '/icon/iconroof-black.svg',
   ]
   const btnDec = [
@@ -50,7 +50,7 @@ function NavBarNormal() {
             <HeadAds />        
             <div className="flex flex-col items-center justify-center font-[family-name:var(--font-noto-sans)] text-white">
                 <div className="flex justify-between flex-col">                    
-                    <div className='flex justify-between px-5 lg:px-20 py-3 w-full fixed top-12 left-0 right-0 z-50 bg-[#f5f5f5]'>                    
+                    <div className='flex justify-between px-5 lg:px-20 py-3 w-full fixed top-12 left-0 right-0 z-50'>                    
                         <div className="flex items-center transition-colors duration-300">
                             <Link className="cursor-pointer" href='/'>
                                     <img className="h-8 object-cover"
@@ -58,15 +58,15 @@ function NavBarNormal() {
                                     </img>
                             </Link>
                         </div>                    
-                        <div className="items-center hidden space-x-8 lg:flex">
+                        <div className="items-center flex space-x-1.5 bg-white px-1.5 py-1.5 rounded-full shadow-md text-black">
                             {NavLink.map((index) => (
-                                <Link
-                                key={index.name}
-                                href={index.href}
-                                target={index.target}
-                                className={navtext[1]}>
-                                {index.name}
-                                </Link>
+                            <Link
+                            key={index.name}
+                            href={index.href}
+                            target={index.target}
+                            className={`color ? navtext[1] : navtext[1] px-3 py-1 rounded-full outline-transparent hover:bg-neutral-200 duration-300` }>
+                            {index.name}
+                            </Link>
                             ))}
                             
                         </div>
