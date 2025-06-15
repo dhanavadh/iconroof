@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, Fragment } from 'react';
+import React, { useRef, useState, Fragment } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
@@ -9,17 +9,7 @@ import 'swiper/css/navigation';
 import Link from 'next/link';
 import { Dialog, Transition } from '@headlessui/react'
 
-const services = [
-    { id:'1', name: 'ระแนงไวนิล Amigo', des: 'ระแนงไวนิล Amigo ระบบ Clip Lock', image: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/A60/หน้าแรกระแนงamigo.jpg', link: '/product' },    
-    { id:'2', name: 'ระแนงไวนิล A40 เว้นร่อง', des: 'ระแนงไวนิล A40 เว้นร่อง 1cm. หน้ากว้าง 4cm.', image: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/A60/A40เว้น.jpg', link: '/product' },
-    { id:'3', name: 'ระแนงไวนิล A40 ร่องชิด', des: 'ระแนงไวนิล A40 ร่องชิด หน้ากว้าง 4cm.', image: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/A60/A40ชิด.jpg', link: '/product' },
-    { id:'4', name: 'ระแนงไวนิล A60 เว้นร่อง', des: 'ระแนงไวนิล A60 เว้นร่อง 1cm. หน้ากว้าง 6cm.', image: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/A60/A60เว้น.jpg', link: '/product' },
-    { id:'5', name: 'ระแนงไวนิล A60 ร่องชิด', des: 'ระแนงไวนิล A60 ร่องชิด หน้ากว้าง 6cm.', image: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/A60/A60ชิด.jpg', link: '/product' },    
-    { id:'6', name: 'ระแนงไวนิล A60 บานเกล็ด', des: 'ระแนงไวนิล A60 บานเกล็ด หน้ากว้าง 6cm.', image: 'https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/A60/A60บานเกล็ดแก้.jpg', link: '/product' },    
-    
-]
-
-const AmigoA60Product = () => {
+const ScgSliderPrev = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     function closeModal() {
@@ -29,10 +19,15 @@ const AmigoA60Product = () => {
     function openModal() {
         setIsOpen(true)
     }
+
   return (
     <>
         <Swiper    
         cssMode={true}    
+        // navigation={true}
+        pagination={{
+            clickable: true,
+          }}    
         mousewheel={true}
         keyboard={true}    
         centeredSlides={true}
@@ -42,32 +37,44 @@ const AmigoA60Product = () => {
         }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper font-[family-name:var(--font-noto-sans)] rounded-2xl space-x-2"
-      >        
-
-
-        {services.map((item) => (
-            <SwiperSlide className='max-w-72 mr-4 bg-white rounded-2xl max-h-lg hover:cursor-pointer mb-2 shadow-md' key={item.id} onClick={openModal}>         
-                <div className='flex h-[288px]'>
-                  <Image width={512} height={512} alt='ระแนงไวนิล amigo' src={item.image} className='w-full h-full object-cover rounded-t-2xl'></Image>
-                </div>
-                <div className='flex h-32 flex-col items-start justify-center  px-8 py-6'>
+      >
+        <SwiperSlide className='max-w-72 mr-4 bg-orange-500 rounded-2xl max-h-lg'>         
+          <Image alt='amigo' width={512} height={512} src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/promo-june-1.svg' className='flex w-full h-full object-cover rounded-t-2xl'></Image> 
+                <div className='flex h-80 flex-col items-start justify-between text-white px-8 py-6'>
                     <div>                    
-                        <p className='text-lg font-medium lg:text-xl leading-normal text-black'>{item.name}</p>
-                        <p className='text-base mt-2 lg:font-medium overflow-hidden text-black/60'>{item.des}</p>
-                    </div>                    
+                        <p className='text-2xl font-medium lg:text-3xl leading-normal'>ติดตั้งระแนงไวนิลเหลือ 1,750 บาท/ตร.ม.*</p>
+                        <p className='text-base mt-2 lg:font-medium overflow-hidden'>ติดตั้งระแนงไวนิลเว้นร่อง <a className='font-medium underline underline-offset-4'>ตั้งแต่วันนี้ – 30 มิ.ย. 2568</a> จาก 1,900 ลดเหลือ 1,750 บาท/ตร.ม. *เงื่อนไขเป็นไปตามบริษัทกำหนด</p>
+                    </div>
+                    <button onClick={openModal} className='btn-primary-static mb-3'>สั่งซื้อสินค้า</button>
+                    
                 </div>
         </SwiperSlide>
-        ))}
-        
-
-
-        
+        <SwiperSlide className='bg-red-600 rounded-2xl max-w-72 md:max-w-4xl mr-4 max-h-lg'>  
+            <div className='flex flex-col md:flex-row'>
+                <div className='md:hidden flex w-[288px] h-[288px]'>
+                <Image width={1920} height={1080} alt='ระแนงไวนิล amigo' src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/scg.png' className='w-full h-full object-cover rounded-t-2xl'></Image>
+                </div>
+                <div className='flex w-full md:w-2/6 px-8 py-6 flex-col items-start justify-between gap-6 h-80 md:h-[608px]'>
+                    <div className='text-white'>
+                    <p className='text-2xl font-medium lg:text-3xl leading-normal'>ระแนงไวนิล SCG BOX SET</p>
+                    <p className='text-base mt-2 lg:font-medium overflow-hidden'>สร้างสรรค์ความงามได้หลากหลาย ภายใต้คุณภาพที่เป็นมาตรฐาน</p>
+                    </div>
+                    <div className='flex items-end gap-2 flex-col text-center'>
+                    <Link href='https://line.me/ti/p/@plk2013' target='_blank' className='btn-primary-static mb-3'>สั่งซื้อสินค้า</Link>                  
+                    </div>
+            </div>
+            <div className='hidden md:flex w-4/6 h-[608px]'>
+                <Image width={1920} height={1080} alt='ระแนงไวนิล amigo' src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/scg.png' className='w-full h-full object-cover rounded-r-2xl'></Image>
+            </div>
+            </div>                     
+        </SwiperSlide>
         
 
         
 
         
       </Swiper>
+
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-50 font-[family-name:var(--font-noto-sans)]" onClose={closeModal}>
           <Transition.Child
@@ -139,7 +146,7 @@ const AmigoA60Product = () => {
         </Dialog>
       </Transition>
     </>
-  );
-};
+  )
+}
 
-export default AmigoA60Product
+export default ScgSliderPrev

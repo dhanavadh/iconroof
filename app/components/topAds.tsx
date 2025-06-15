@@ -17,16 +17,16 @@ const HeadAds = () => {
         } 
   return (
     <>
-    <div className='flex flex-row items-center justify-between font-[family-name:var(--font-noto-sans)] px-8 h-12 bg-amber-100 text-amber-600 font-medium w-full top-0 left-0 right-0 z-50 gap-4 border-l-8 border-amber-500'>                    
+    <div className='flex flex-row items-center justify-between font-[family-name:var(--font-noto-sans)] px-8 h-8 text-sm bg-amber-100 text-amber-600 font-medium w-full top-0 left-0 right-0 z-50 gap-4'>                    
         <div className='hidden lg:flex'>
             <button onClick={openModal} className='font-medium underline underline-offset-4 lg:mr-4'>โปรโมชั่น</button>              
         </div>
-        <div className="hidden lg:flex max-w-[800px] overflow-hidden whitespace-nowrap">
+        <div className="hidden lg:flex overflow-hidden whitespace-nowrap">
                 <div className="inline-block animate-marquee">
                     <p>🎉 ติดตั้งระแนงไวนิลเว้นร่อง ตั้งแต่วันนี้ – 30 มิ.ย. 2568 จาก 1,900 ลดเหลือ 1,750 บาท/ตร.ม.* 🎊</p>
                 </div>
             </div>
-        <div className="lg:hidden max-w-screen-lg overflow-hidden whitespace-nowrap">
+        <div className="lg:hidden overflow-hidden whitespace-nowrap">
                 <div className="inline-block animate-marquee">
                     <p>🎉 ติดตั้งระแนงไวนิลเว้นร่อง ตั้งแต่วันนี้ – 30 มิ.ย. 2568 จาก 1,900 ลดเหลือ 1,750 บาท/ตร.ม.* 🎊</p>
                 </div>
