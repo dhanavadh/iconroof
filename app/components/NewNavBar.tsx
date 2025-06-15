@@ -15,8 +15,8 @@ import HeadAds from './topAds';
     `btn-primary-static`,
   ]
   const navtext = [
-    `flex font-medium text-white link`,
-    `flex font-medium text-black link`
+    `flex font-medium text-white`,
+    `flex font-medium text-black`
   ]
 
   const NavLink = [
@@ -60,13 +60,13 @@ function NewNavbar() {
                     </Link>
                 </div>       
                 {/* Menu Item              */}
-                <div className="items-center hidden lg:flex space-x-1.5 bg-white px-1.5 py-1.5 rounded-full shadow-md text-black">
+                <div className="items-center hidden lg:flex space-x-2 bg-white px-1.5 py-0.5 rounded-full shadow-md text-black font-medium">
                     {NavLink.map((index) => (
                     <Link
                     key={index.name}
                     href={index.href}
                     target={index.target}
-                    className={`color ? navtext[1] : navtext[1] px-3 py-1 rounded-full outline-transparent hover:bg-neutral-200 duration-300` }>
+                    className={`color ? navtext[1] : navtext[1] px-3 py-0.5 rounded-full outline-transparent hover:bg-neutral-200 duration-300` }>
                     {index.name}
                     </Link>
                     ))}
