@@ -31,7 +31,7 @@ import HeadAds from './topAds';
 
 function NewNavbar() {    
     //NavCo
-    const [color, setColor ] = useState(false);
+    const [color, setColor ] = useState(true);
     const [isOpen, setIsOpen] = useState(false)    
     const [prevScrollPos, setPrevScrollPos] = useState(0);
 
@@ -51,9 +51,16 @@ function NewNavbar() {
         
         setPrevScrollPos(currentScrollPos);
     }
+
     useEffect(() => {
-      window.addEventListener('scroll', changeColor);
-    }) 
+        // Set initial scroll position
+        setPrevScrollPos(window.scrollY);
+        window.addEventListener('scroll', changeColor);
+        
+        return () => {
+            window.removeEventListener('scroll', changeColor);
+        };
+    }, []);
     
     return (
         <div>                 
