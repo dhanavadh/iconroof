@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Button, Dialog, DialogPanel } from '@headlessui/react'
 import Image from 'next/image';
 import HeadAds from './topAds';
@@ -33,28 +33,27 @@ function NewNavbar() {
     //NavCo
     const [color, setColor ] = useState(true);
     const [isOpen, setIsOpen] = useState(false)    
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const lastScrollY = useRef(0);
 
     const changeColor = () => {
-        const currentScrollPos = window.scrollY;
+        const currentScrollY = window.scrollY;
         
-        if (currentScrollPos === 0) {
+        if (currentScrollY <= 0) {
             // At the top of the page
             setColor(true);
-        } else if (currentScrollPos < prevScrollPos) {
-            // Scrolling up
+        } else if (currentScrollY < lastScrollY.current) {
+            // Scrolling up            
             setColor(true);
-        } else {
+        } else if (currentScrollY > lastScrollY.current) {
             // Scrolling down
             setColor(false);
         }
         
-        setPrevScrollPos(currentScrollPos);
+        lastScrollY.current = currentScrollY;
     }
 
     useEffect(() => {
-        // Set initial scroll position
-        setPrevScrollPos(window.scrollY);
+        lastScrollY.current = window.scrollY;
         window.addEventListener('scroll', changeColor);
         
         return () => {
