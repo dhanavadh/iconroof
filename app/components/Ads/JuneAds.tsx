@@ -1,41 +1,29 @@
 'use client';
 import Link from 'next/link';
-import React from 'react'
-import { useState, Fragment } from 'react';
+import { useState, Fragment, useEffect } from 'react';
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image';
 
-const HeadAds = () => {
-    const [isOpen, setIsOpen] = useState(false)
-    
-        function closeModal() {
-            setIsOpen(false)
+const JuneAds = () => {
+    const [showPopup, setShowPopup] = useState(false);
+
+    useEffect(() => {
+        const popupShown = localStorage.getItem('popupShown');
+        if (!popupShown) {
+            setShowPopup(true);
+            localStorage.setItem('popupShown', 'true');
         }
+    }, []);
     
-        function openModal() {
-            setIsOpen(true)
-        } 
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
+
   return (
     <>
-    <div className='flex flex-row items-center justify-between font-[family-name:var(--font-noto-sans)] px-8 h-8 text-sm bg-amber-100 text-amber-600 font-medium w-full top-0 left-0 right-0 z-50 gap-4'>                    
-        <div className='hidden lg:flex'>
-            <button onClick={openModal} className='font-medium underline underline-offset-4 lg:mr-4'>โปรโมชั่น</button>              
-        </div>
-        <div className="hidden lg:flex overflow-hidden whitespace-nowrap">
-                <div className="inline-block animate-marquee">
-                    <p>🎉 ติดตั้งระแนงไวนิลเว้นร่อง ตั้งแต่วันนี้ – 30 มิ.ย. 2568 จาก 1,900 ลดเหลือ 1,750 บาท/ตร.ม.* 🎊</p>
-                </div>
-            </div>
-        <div className="lg:hidden overflow-hidden whitespace-nowrap">
-                <div className="inline-block animate-marquee">
-                    <p>🎉 ติดตั้งระแนงไวนิลเว้นร่อง ตั้งแต่วันนี้ – 30 มิ.ย. 2568 จาก 1,900 ลดเหลือ 1,750 บาท/ตร.ม.* 🎊</p>
-                </div>
-        </div>  
-        
-        <p className='hidden lg:flex'>* เงื่อนไขเป็นไปตามบริษัทกำหนด</p>
-    </div>
-    <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-50 font-[family-name:var(--font-noto-sans)]" onClose={closeModal}>
+    {showPopup && (
+        <Transition appear show={showPopup} as={Fragment}>
+                <Dialog as="div" className="relative z-50 font-[family-name:var(--font-noto-sans)]" onClose={handleClosePopup}>
                   <Transition.Child
                     as={Fragment}
                     enter="ease-out duration-300"
@@ -86,14 +74,14 @@ const HeadAds = () => {
                               rel="noopener noreferrer"
                               type="button"
                               className="btn-primary-line"
-                              onClick={closeModal}
+                              onClick={handleClosePopup}
                             >
                               เพิ่มเพื่อนในไลน์
                             </Link>
                             <button
                               type="button"
                               className="btn-primary-static"
-                              onClick={closeModal}
+                              onClick={handleClosePopup}
                             >
                               ปิด
                             </button>
@@ -104,9 +92,13 @@ const HeadAds = () => {
                   </div>
                 </Dialog>
               </Transition>
+
+    )}
+    
+    
     </>
     
   )
 }
 
-export default HeadAds
+export default JuneAds

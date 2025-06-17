@@ -1,12 +1,12 @@
 'use client'
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Button, Dialog, DialogPanel } from '@headlessui/react'
 import Image from 'next/image';
 import HeadAds from './topAds';
 
   const logo = [
-    '/icon/iconroof-white.svg',
+    '/icon/iconroof-shadow-white.svg',
     '/icon/iconroof.svg',
     '/icon/iconroof-black.svg',
   ]
@@ -15,8 +15,8 @@ import HeadAds from './topAds';
     `btn-primary-static`,
   ]
   const navtext = [
-    `flex font-medium text-white link`,
-    `flex font-medium text-black link`
+    `flex font-medium text-white`,
+    `flex font-medium text-black`
   ]
 
   const NavLink = [
@@ -31,42 +31,56 @@ import HeadAds from './topAds';
 
 function NewNavbar() {    
     //NavCo
-    const [color, setColor ] = useState(false);
+    const [color, setColor ] = useState(true);
     const [isOpen, setIsOpen] = useState(false)    
-    const changeColor = () => {
-        if(window.scrollY >= 10){
-            setColor(true)
-        }else {
-            setColor(false)
-        }        
+    const lastScrollY = useRef(0);
 
+    const changeColor = () => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY <= 0) {
+            // At the top of the page
+            setColor(true);
+        } else if (currentScrollY < lastScrollY.current) {
+            // Scrolling up            
+            setColor(true);
+        } else if (currentScrollY > lastScrollY.current) {
+            // Scrolling down
+            setColor(false);
+        }
+        
+        lastScrollY.current = currentScrollY;
     }
+
     useEffect(() => {
-      window.addEventListener('scroll', changeColor);
-    }) 
+        lastScrollY.current = window.scrollY;
+        window.addEventListener('scroll', changeColor);
+        
+        return () => {
+            window.removeEventListener('scroll', changeColor);
+        };
+    }, []);
     
     return (
         <div>                 
-            <HeadAds />
             <div className="flex flex-col items-center justify-center font-[family-name:var(--font-noto-sans)] text-white">
             
             <div className="flex justify-between flex-col">                    
-                <div className={color ? 'navbar-active top-12' : 'navbar top-12'}>                    
+                <div className={color ? 'navbar top-0 duration-300' : 'navbar -top-16 duration-300'}>                    
                 <div className="flex items-center transition-colors duration-300">
                     <Link className="cursor-pointer" href='/'>
-                        <img className="h-8 object-cover"
-                        src={color ? logo[1] : logo[0]} alt="Iconroof">
-                        </img>
+                        <Image width={415} height={100} className="h-8 w-auto"
+                        src={color ? logo[1] : logo[1]} alt="Iconroof Logo"/>
                     </Link>
                 </div>       
                 {/* Menu Item              */}
-                <div className="items-center hidden space-x-8 lg:flex">
+                <div className="items-center hidden lg:flex space-x-2 bg-white px-1.5 py-0.5 rounded-full shadow-md text-black font-medium">
                     {NavLink.map((index) => (
                     <Link
                     key={index.name}
                     href={index.href}
                     target={index.target}
-                    className={color ? navtext[1] : navtext[0]}>
+                    className={`color ? navtext[1] : navtext[1] px-3 py-0.5 rounded-full outline-transparent hover:bg-neutral-200 duration-300` }>
                     {index.name}
                     </Link>
                     ))}
@@ -95,7 +109,7 @@ function NewNavbar() {
             </div>
 
             <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
-            <div className="fixed inset-0 flex w-screen items-start justify-center backdrop-blur-3xl bg-neutral-200/80 font-[family-name:var(--font-noto-sans)] top-12">
+            <div className="fixed inset-0 flex w-screen items-start justify-center backdrop-blur-3xl bg-neutral-200/80 font-[family-name:var(--font-noto-sans)]">
             <DialogPanel className="flex flex-col w-screen">
                 <div className="flex justify-between items-center py-4 px-5">                
                     <Link className="cursor-pointer" onClick={() => setIsOpen(false)} href='/'>
@@ -120,7 +134,7 @@ function NewNavbar() {
                 {index.name}
                 </Link>
                 ))}
-                </div>                
+                </div>               
             </DialogPanel>
             </div>
             </Dialog>

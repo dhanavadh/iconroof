@@ -62,10 +62,10 @@ const ProductPage = () => {
     </Head>
     <div className="flex flex-col min-h-screen items-start mx-6 md:mx-20 font-[family-name:var(--font-noto-sans)]">      
       
-      <div className="flex flex-col items-center sm:items-start pt-32 mb-4 w-full">
-        <p className="h1">เลือกดูผลิตภัณฑ์ระแนง</p>
-        <ProductListPage />
-      </div>   
+        <div className="flex flex-col items-center sm:items-start pt-24 mb-4 w-full">
+          <p className="text-2xl font-medium lg:text-3xl">เลือกดูผลิตภัณฑ์ระแนง</p>
+          <ProductListPage />
+        </div>  
       {/* <div className='flex flex-col lg:flex-row bg-green-700 rounded-2xl'>
         <div className='lg:hidden flex w-full h-64'>
           <img src='asset/amigo.png' className='w-full h-full object-cover rounded-t-2xl'></img>

@@ -25,7 +25,7 @@ const Slider = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper font-[family-name:var(--font-noto-sans)]"
+        className="mySwiper font-[family-name:var(--font-noto-sans)] rounded-b-2xl"
       >
 
         {/* Parent Please Clone From This */}

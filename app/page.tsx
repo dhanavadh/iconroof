@@ -65,7 +65,9 @@ export default function Home() {
     <Head>
         <title>จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof</title>
     </Head>
-    <Slider />
+    <div className="flex items-center justify-center px-4 md:px-10">
+      <Slider />
+    </div>
     <div className="flex flex-col min-h-screen items-start ml-6 md:ml-20 mr-6 md:mr-20 font-[family-name:var(--font-noto-sans)]">      
       <div className="flex flex-col items-start pt-8 pb-4">
         <p className="h1">โปรโมชั่นในเดือนมิถุนายน</p>

@@ -8,9 +8,9 @@ const AmigoCompare = () => {
         <div className="lg:hidden flex w-full overflow-x-auto bg-red scrollbar-hide">
             <div className="whitespace-nowrap">
                 <ul className='flex'>                    
-                        <li className="mb-10">
+                        <li className="mb-2">
                           {/* In HTML, <a> cannot be a descendant of <a>.This will cause a hydration error. */}
-                            <Link href='/products/amigo' className='grid w-80 items-center mx-2 bg-gray-50 shadow-md rounded-lg duration-300 hover:shadow-xl '>
+                            <Link href='/products/amigo' className='grid w-80 items-center bg-gray-50 shadow-md rounded-2xl duration-300 hover:shadow-xl '>
                                 <div className='flex flex-col p-6 whitespace-normal'>
                                     <div>
                                     <div className="px-4 py-2 lg:px-8 lg:py-4">            
@@ -82,7 +82,7 @@ const AmigoCompare = () => {
                             </Link>
                         </li>
                         <li >
-                            <div className='grid w-80 items-center mx-2 bg-gray-50 shadow-md rounded-lg'>
+                            <div className='grid w-80 items-center mx-2 bg-gray-50 shadow-md rounded-2xl'>
                                 <div className='flex flex-col p-6 whitespace-normal'>
                                     <div>
                                     <div className="px-4 py-2 lg:px-8 lg:py-4">    
@@ -157,16 +157,16 @@ const AmigoCompare = () => {
             </div>
         </div>
       {/* Main Size */}
-      <div className="hidden lg:flex flex-row gap-4 w-full mt-2 pb-10">
+      <div className="hidden lg:flex flex-row gap-4 w-full">
         {/* ระแนงอมิโก */}
-        <Link href='/products/amigo' className="flex flex-row justify-start items-start shadow-md rounded-lg duration-300 hover:shadow-xl bg-gray-50 lg:w-4/6 w-64">
+        <Link href='/products/amigo' className="flex flex-row justify-start items-start shadow-md rounded-2xl duration-300 hover:shadow-xl bg-gray-50 lg:w-4/6 w-64">
           <div className="w-1/2 h-full flex">
             <Image
               src="https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/amigo-1.png"
               alt="AMIGO"
               width={1000}
               height={1000}    
-              className="w-full h-full object-cover lg:rounded-tl-lg lg:rounded-bl-lg"
+              className="w-full h-full object-cover lg:rounded-tl-2xl lg:rounded-bl-2xl"
             />
           </div>
           <div className="px-4 py-2 lg:px-8 lg:py-4">
@@ -236,7 +236,7 @@ const AmigoCompare = () => {
           </div>
         </Link>
         {/* ระแนงธรรมดา */}
-        <div className="flex flex-col lg:flex-row justify-start items-start shadow-md rounded-lg bg-gray-50 lg:w-2/6">                 
+        <div className="flex flex-col lg:flex-row justify-start items-start shadow-md rounded-2xl bg-gray-50 lg:w-2/6">                 
           <div className="px-4 py-2 lg:px-8 lg:py-4">
             <div className="flex">
               <div className='flex justify-start items-center gap-0.5 bg-neutral-700/15 px-[3px] py-[3px] rounded-full w-25'>
