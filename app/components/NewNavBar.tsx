@@ -1,18 +1,20 @@
 'use client'
 import Link from 'next/link';
-import { useState, useEffect, useRef } from 'react';
-import { Button, Dialog, DialogPanel } from '@headlessui/react'
+import { useState, useEffect, useRef, Fragment } from 'react';
+import { Button, Dialog, DialogPanel, Transition } from '@headlessui/react'
 import Image from 'next/image';
 import HeadAds from './topAds';
+import clsx from 'clsx';
 
   const logo = [
-    '/icon/iconroof-shadow-white.svg',
+    '/icon/new_iconroof.svg',
+    '/icon/new_iconroof_orange.svg',
     '/icon/iconroof.svg',
     '/icon/iconroof-black.svg',
   ]
   const btnDec = [
     `btn-primary`,
-    `btn-primary-static`,
+    `btn-primary-static-rounded`,
   ]
   const navtext = [
     `flex font-medium text-white`,
@@ -20,7 +22,6 @@ import HeadAds from './topAds';
   ]
 
   const NavLink = [
-    {name: 'หน้าแรก', href: '/', target: `_self`}, 
     {name: 'สินค้า', href: '/products', target: `_self`},
     {name: 'ผลงาน', href: '/preview', target: `_self`}, 
     {name: 'ช่างทำระแนง', href: '/service', target: `_self`}, 
@@ -38,7 +39,7 @@ function NewNavbar() {
     const changeColor = () => {
         const currentScrollY = window.scrollY;
         
-        if (currentScrollY <= 0) {
+        if (currentScrollY <= 24) {
             // At the top of the page
             setColor(true);
         } else if (currentScrollY < lastScrollY.current) {
@@ -63,32 +64,32 @@ function NewNavbar() {
     
     return (
         <div>                 
-            <div className="flex flex-col items-center justify-center font-[family-name:var(--font-noto-sans)] text-white">
+            <div className="flex flex-col items-center justify-center font-[family-name:var(--font-ibm-plex-sans-thai)]">
             
             <div className="flex justify-between flex-col">                    
-                <div className={color ? 'navbar top-0 duration-300' : 'navbar -top-16 duration-300'}>                    
+                <div className={color ? 'navbar top-0 duration-300' : 'navbar -top-20 duration-300'}>                    
                 <div className="flex items-center transition-colors duration-300">
                     <Link className="cursor-pointer" href='/'>
-                        <Image width={415} height={100} className="h-8 w-auto"
+                        <Image width={218} height={38} className="h-8 w-auto"
                         src={color ? logo[1] : logo[1]} alt="Iconroof Logo"/>
                     </Link>
                 </div>       
                 {/* Menu Item              */}
-                <div className="items-center hidden lg:flex space-x-2 bg-white px-1.5 py-0.5 rounded-full shadow-md text-black font-medium">
+                <div className="items-center hidden lg:flex space-x-8 text-black font-medium">
                     {NavLink.map((index) => (
                     <Link
                     key={index.name}
                     href={index.href}
                     target={index.target}
-                    className={`color ? navtext[1] : navtext[1] px-3 py-0.5 rounded-full outline-transparent hover:bg-neutral-200 duration-300` }>
+                    className={`after:duration-600 ease-out after:block after:h-1 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-amber-500 after:transition-transform after:hover:origin-bottom-left after:hover:scale-x-100` }>
                     {index.name}
                     </Link>
                     ))}
                     
                 </div>
                 {/* LG Button */}
-                <div className="hidden lg:flex items-center">
-                    <Link className={color ? btnDec[1] : btnDec[0]} href='https://line.me/ti/p/@plk2013' target='_blank'>
+                <div className="hidden lg:flex items-center text-black font-medium">
+                    <Link className="btn-primary-static" href='https://line.me/ti/p/@plk2013' target='_blank'>
                     สั่งซื้อสินค้า →
                     </Link>
                 </div>
@@ -96,48 +97,112 @@ function NewNavbar() {
                     
                     <Button
                     type="button"
-                    className={color ? btnDec[1] : btnDec[0]}   
+                    className={color ? btnDec[1] : btnDec[1]}   
                     onClick={() => setIsOpen(true)}                   
                     >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
-                    <path fillRule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
-                    </svg>
+                    <Image width={32} height={32} className="h-8 w-8"
+                    src="icon/notes_orange.svg" alt="Menu Icon"/>
                     </Button>
                 </div>
                 </div>
             </div>
             </div>
 
-            <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
-            <div className="fixed inset-0 flex w-screen items-start justify-center backdrop-blur-3xl bg-neutral-200/80 font-[family-name:var(--font-noto-sans)]">
-            <DialogPanel className="flex flex-col w-screen">
-                <div className="flex justify-between items-center py-4 px-5">                
-                    <Link className="cursor-pointer" onClick={() => setIsOpen(false)} href='/'>
-                        <img className="h-8 object-cover"
-                        src={color ? logo[1] : logo[1]} alt="Iconroof">
-                        </img>
-                    </Link>
-                    
-                    <button onClick={() => setIsOpen(false)} className='btn-primary-static'>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
-                        <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
-                        </svg>
-                    </button>
-                </div>
-                <div className="flex flex-col mt-2 px-5">
-                {NavLink.map((index) => (
-                <Link
-                key={index.name}
-                href={index.href}
-                className='h1 link py-2 px-4'                        
-                onClick={() => setIsOpen(false)}>
-                {index.name}
-                </Link>
-                ))}
-                </div>               
-            </DialogPanel>
-            </div>
-            </Dialog>
+            <Transition appear show={isOpen} as={Fragment}>
+                <Dialog as="div" className="relative z-50 font-[family-name:var(--font-ibm-plex-sans-thai)]" onClose={() => setIsOpen(false)}>
+                  <Transition.Child
+                    as={Fragment}
+                    enter="ease-out duration-500"
+                    enterFrom="opacity-100"
+                    enterTo="opacity-100"
+                    leave="ease-in duration-500"
+                    leaveFrom="opacity-0"
+                    leaveTo="opacity-0"
+                  >
+                    <div className="fixed inset-0 bg-black/50 " />
+                  </Transition.Child>
+        
+                  <div className="fixed inset-0 overflow-y-auto">
+                    <div className="flex min-h-full items-start justify-between">
+                      <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-500"
+                        enterFrom="opacity-100 -translate-y-full"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-500"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-100 -translate-y-full"
+                      >
+                        <Dialog.Panel className="flex flex-col w-full ">                            
+                            <div className='flex w-full justify-between bg-[#E17100] h-[80px] p-4 border-b-2 border-[#C60]'>
+                                <Image
+                                  src={color ? logo[0] : logo[0]}
+                                  alt="Iconroof Logo"
+                                  width={172}
+                                    height={30}
+                                />
+                                <button
+                                    type="button"
+                                    className='h-[48px] w-[48px] btn-primary-static-rounded'
+                                    onClick={() => setIsOpen(false)}
+                                    >
+                                    <Image width={32} height={32} className="h-8 w-8"
+                                    src="icon/close_orange.svg" alt="Menu Icon"/>                            
+                                </button>                        
+                            </div>  
+                            <div className="flex flex-col">
+                                {NavLink.map((index) => (
+                                <Link
+                                key={index.name}
+                                href={index.href}
+                                target={index.target}
+                                className='flex items-center justify-between text-2xl bg-[#E17100] font-medium py-4 px-8 hover:bg-[#CC6600] text-white transition-colors duration-300 border-b-2 border-[#C60]'                        
+                                onClick={() => setIsOpen(false)}>
+                                {index.name}   
+                                    <Image width={32} height={32} className="h-8 w-8"
+                                    src="icon/arrow_right_alt.svg" alt="Menu Icon"/>                               
+                                </Link>
+                                ))}
+                            </div>    
+                            <div className='flex w-full py-4 px-8 justify-between items-center bg-[#fafafa]'>
+                                <div>
+                                    <Image
+                                        src={color ? logo[2] : logo[2]}
+                                        alt="Iconroof Logo"
+                                        width={172}
+                                            height={30}
+                                        className='h-8 w-full'
+                                    />                                    
+                                </div>
+                                <div className='flex items-center space-x-2'>
+                                    <Link href='tel:089-154-3355' target='_blank'>
+                                        <Image width={32} height={32} className="h-6 sm:h-8 w-6 sm:w-8 hover:brightness-90 duration-300"
+                                        src="icon/social/call.svg" alt="Call Icon"/>
+                                    </Link>
+                                    <Link href='https://line.me/ti/p/@plk2013' target='_blank'>
+                                        <Image width={32} height={32} className="h-6 sm:h-8 w-6 sm:w-8 hover:brightness-90 duration-300"
+                                        src="icon/social/line.svg" alt="Line Contact"/>
+                                    </Link>
+                                    <Link href='https://www.facebook.com/PLK2013/' target='_blank'>
+                                        <Image width={32} height={32} className="h-6 sm:h-8 w-6 sm:w-8 hover:brightness-90 duration-300"
+                                        src="icon/social/facebook.svg" alt="Facebook Icon"/>
+                                    </Link>
+                                    <Link href='https://www.youtube.com/@iconroof3391/videos' target='_blank'>
+                                        <Image width={32} height={32} className="h-6 sm:h-8 w-6 sm:w-8 hover:brightness-90 duration-300"
+                                        src="icon/social/youtube.svg" alt="YouTube Icon"/>
+                                    </Link>
+                                </div>
+                            </div>    
+                            <div className='flex flex-col items-start justify-center pt-2 pb-4 px-8 space-y-0 bg-[#fafafa] '>
+                                <p className='text-lg font-medium text-neutral-800'>โชว์รูมไอคอนรูฟ</p>
+                                <p className='text-base text-neutral-600 max-w-96'>หมู่บ้าน คนึงทิพย์ ถนน บางกรวย-ไทรน้อย กาญจนาภิเษก ตำบล บางบัวทอง อำเภอบางบัวทอง นนทบุรี 11110 เปิดทำการ จันทร์ - เสาร์ 8.00-18.00 น.</p>
+                            </div>           
+                        </Dialog.Panel>
+                      </Transition.Child>
+                    </div>
+                  </div>
+                </Dialog>
+              </Transition>
 
             
         </div>
