@@ -9,6 +9,7 @@ import NavBarNormal from "./components/NavBarNormal";
 import JuneAds from "./components/Ads/JuneAds";
 import CookieAlert from "./components/CookieAlert";
 import { IBM_Plex_Sans_Thai } from "next/font/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const ibmPlexSansThai = IBM_Plex_Sans_Thai({
   subsets: ["latin", "thai"],
@@ -41,7 +42,9 @@ export default function RootLayout({
   const pathName = usePathname();
   const header = ["/products", "/redirect", '/products/amigo'].includes(pathName) ? <NewNavbar /> : <NewNavbar />;
   return (
-    <html lang="en">      
+    <html lang="en">   
+       <GoogleTagManager gtmId="GTM-NS8K6LDN" />
+       <GoogleAnalytics gaId="G-SED22GYP0X"/>
       <body
         className={`${ibmPlexSansThai.variable} ${notoSans.variable} ${SarabunRegular.variable} ${SarabunMedium.variable} antialiased`}>  
         {header}          
