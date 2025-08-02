@@ -8,7 +8,13 @@ import { usePathname } from "next/navigation";
 import NavBarNormal from "./components/NavBarNormal";
 import JuneAds from "./components/Ads/JuneAds";
 import CookieAlert from "./components/CookieAlert";
+import { IBM_Plex_Sans_Thai } from "next/font/google";
 
+const ibmPlexSansThai = IBM_Plex_Sans_Thai({
+  subsets: ["latin", "thai"],
+  variable: "--font-ibm-plex-sans-thai",
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
 
 const notoSans = localFont({
   src: "./fonts/NotoSansThai.ttf",
@@ -37,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">      
       <body
-        className={`${notoSans.variable} ${SarabunRegular.variable} ${SarabunMedium.variable} antialiased`}>  
+        className={`${ibmPlexSansThai.variable} ${notoSans.variable} ${SarabunRegular.variable} ${SarabunMedium.variable} antialiased`}>  
         {header}          
         {children}
         <JuneAds />

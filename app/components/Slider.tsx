@@ -1,11 +1,12 @@
 "use client";
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation, Scrollbar } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
 import Link from 'next/link';
 
 const Slider = () => {
@@ -14,9 +15,13 @@ const Slider = () => {
         <Swiper    
         cssMode={true}    
         // navigation={true}
-        pagination={{
-            clickable: true,
-          }}    
+        // pagination={{
+        //     clickable: true,
+        //   }}    
+        scrollbar={{ 
+            draggable: true,
+         }}
+        slidesPerView={1}
         mousewheel={true}
         keyboard={true}    
         centeredSlides={true}
@@ -24,8 +29,8 @@ const Slider = () => {
           delay: 8000,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper font-[family-name:var(--font-noto-sans)] rounded-b-2xl"
+        modules={[Autoplay, Pagination, Navigation, Scrollbar]}
+        className="mySwiper font-[family-name:var(--font-noto-sans)] rounded-md "
       >
 
         {/* Parent Please Clone From This */}
@@ -123,7 +128,7 @@ const Slider = () => {
 
         
 
-        
+        <div className='swiper-pagination'></div>  
 
         
       </Swiper>
