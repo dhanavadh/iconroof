@@ -33,7 +33,7 @@ const AmigoCompare = () => {
                                               height={36}    
                                               className="w-8 h-8"            
                                             />
-                                            <p className="">ระบบอุปกรณ์ติดตั้งครบชุด พร้อมขั้นตอน<a className="font-medium text-[#F5951D]">ทำงานง่ายและรวดเร็ว</a></p>
+                                            <p className="">ระบบอุปกรณ์ติดตั้งครบชุด พร้อมขั้นตอน<span className="font-medium text-[#F5951D]">ทำงานง่ายและรวดเร็ว</span></p>
                                           </div>            
                                           <div className="flex items-center gap-4">
                                             <Image
@@ -43,7 +43,7 @@ const AmigoCompare = () => {
                                               height={36}    
                                               className="w-8 h-8"            
                                             />
-                                            <p className=""><a className="font-medium text-[#F5951D]">งานเรียบร้อยได้มาตรฐาน</a> เว้นร่องเท่ากันเป็นระเบียบสวยงาม</p>
+                                            <p className=""><span className="font-medium text-[#F5951D]">งานเรียบร้อยได้มาตรฐาน</span> เว้นร่องเท่ากันเป็นระเบียบสวยงาม</p>
                                           </div>            
                                           <div className="flex items-center gap-4">
                                             <Image
@@ -53,7 +53,7 @@ const AmigoCompare = () => {
                                               height={36}    
                                               className="w-8 h-8"            
                                             />
-                                            <p className="">ไม่มีปัญหาเรื่องปลวก <a className="font-medium text-[#F5951D]">ไม่ชวมน้ำ ไม่ผุกร่อน</a> ไม่บิดโก่งงอ ไม่ขึ้นรา</p>
+                                            <p className="">ไม่มีปัญหาเรื่องปลวก <span className="font-medium text-[#F5951D]">ไม่ชวมน้ำ ไม่ผุกร่อน</span> ไม่บิดโก่งงอ ไม่ขึ้นรา</p>
                                           </div>            
                                           <div className="flex items-center gap-4">
                                             <Image
@@ -63,7 +63,7 @@ const AmigoCompare = () => {
                                               height={36}    
                                               className="w-8 h-8"            
                                             />
-                                            <p className=""><a className="font-medium text-[#F5951D]">ระบบติดตั้งทันสมัย</a> ใช้อุปกรณ์โครงสร้างคร่าวเหล็กชุบกัลวาไนซ์</p>
+                                            <p className=""><span className="font-medium text-[#F5951D]">ระบบติดตั้งทันสมัย</span> ใช้อุปกรณ์โครงสร้างคร่าวเหล็กชุบกัลวาไนซ์</p>
                                           </div>                                
                                           <div className="flex items-center gap-4">
                                             <Image
@@ -73,7 +73,7 @@ const AmigoCompare = () => {
                                               height={36}    
                                               className="w-8 h-8"            
                                             />
-                                            <p className="">ผลิตจากไวนิลสูตรพิเศษ มีสีในตัว <a className="font-medium text-[#F5951D]">สวยงามยาวนาน</a></p>
+                                            <p className="">ผลิตจากไวนิลสูตรพิเศษ มีสีในตัว <span className="font-medium text-[#F5951D]">สวยงามยาวนาน</span></p>
                                           </div>                                                            
                                         </div>
                                       </div>

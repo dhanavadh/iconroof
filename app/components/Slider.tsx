@@ -43,7 +43,7 @@ const Slider = () => {
                 <Image alt='amigo' width={1920} height={1080} src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/promo-img.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
                 <div className='text-area-padding'>
                     <p className='title-section link'>โปรโมชั่นติดตั้งระแนงไวนิล</p>
-                    <p className='subtitle-section'>ติดตั้งระแนงไวนิลเว้นร่อง <a className='font-medium underline underline-offset-4'>ตั้งแต่วันนี้ – 30 มิ.ย. 2568</a> จาก 1,900 ลดเหลือ 1,750 บาท/ตร.ม. *เงื่อนไขเป็นไปตามบริษัทกำหนด</p>
+                    <p className='subtitle-section'>ติดตั้งระแนงไวนิลเว้นร่อง <span className='font-medium underline underline-offset-4'>ตั้งแต่วันนี้ – 30 มิ.ย. 2568</span> จาก 1,900 ลดเหลือ 1,750 บาท/ตร.ม. *เงื่อนไขเป็นไปตามบริษัทกำหนด</p>
                 </div>
             </Link>
         </SwiperSlide> 

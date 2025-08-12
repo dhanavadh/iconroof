@@ -43,7 +43,7 @@ const AmigoSlider = () => {
                 <div className='flex h-80 flex-col items-start justify-between text-white px-8 py-6'>
                     <div>                    
                         <p className='text-2xl font-medium lg:text-3xl leading-normal'>ติดตั้งระแนงไวนิลเหลือ 1,750 บาท/ตร.ม.*</p>
-                        <p className='text-base mt-2 lg:font-medium overflow-hidden'>ติดตั้งระแนงไวนิลเว้นร่อง <a className='font-medium underline underline-offset-4'>ตั้งแต่วันนี้ – 30 มิ.ย. 2568</a> จาก 1,900 ลดเหลือ 1,750 บาท/ตร.ม. *เงื่อนไขเป็นไปตามบริษัทกำหนด</p>
+                        <p className='text-base mt-2 lg:font-medium overflow-hidden'>ติดตั้งระแนงไวนิลเว้นร่อง <span className='font-medium underline underline-offset-4'>ตั้งแต่วันนี้ – 30 มิ.ย. 2568</span> จาก 1,900 ลดเหลือ 1,750 บาท/ตร.ม. *เงื่อนไขเป็นไปตามบริษัทกำหนด</p>
                     </div>
                     <button onClick={openModal} className='btn-primary-static mb-3'>สั่งซื้อสินค้า</button>
                     
