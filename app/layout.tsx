@@ -5,8 +5,6 @@ import { Analytics } from "@vercel/analytics/react";
 import NewNavbar from "./components/NewNavBar";
 import NewFooter from "./components/NewFooter";
 import { usePathname } from "next/navigation";
-import NavBarNormal from "./components/NavBarNormal";
-import JuneAds from "./components/Ads/JuneAds";
 import CookieAlert from "./components/CookieAlert";
 import { IBM_Plex_Sans_Thai } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
@@ -49,7 +47,6 @@ export default function RootLayout({
         className={`${ibmPlexSansThai.variable} ${notoSans.variable} ${SarabunRegular.variable} ${SarabunMedium.variable} antialiased`}>  
         {header}          
         {children}
-        <JuneAds />
         <CookieAlert />
         <Analytics />
         <NewFooter />
