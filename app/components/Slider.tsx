@@ -39,11 +39,11 @@ const Slider = () => {
         
         <SwiperSlide>
             <Link href='/products' className='slider-core'>             
-                <Image alt='amigo' width={1920} height={1080} src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/promo-img.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
-                <Image alt='amigo' width={1920} height={1080} src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/promo-img.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
+                <Image alt='amigo' width={1920} height={1080} src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/vg-vento.jpg' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
+                <Image alt='amigo' width={1920} height={1080} src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/vg-vento.jpg' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
                 <div className='text-area-padding'>
-                    <p className='title-section link'>โปรโมชั่นติดตั้งระแนงไวนิล</p>
-                    <p className='subtitle-section'>ติดตั้งระแนงไวนิลเว้นร่อง <span className='font-medium underline underline-offset-4'>ตั้งแต่วันนี้ – 30 มิ.ย. 2568</span> จาก 1,900 ลดเหลือ 1,750 บาท/ตร.ม. *เงื่อนไขเป็นไปตามบริษัทกำหนด</p>
+                    <p className='title-section link'>ระแนงไวนิล VG Vento</p>
+                    <p className='subtitle-section'>ติดตั้งได้หลายแบบ ออกแบบเพื่อสภาพอากาศเมืองไทยโดยเฉพาะ</p>
                 </div>
             </Link>
         </SwiperSlide> 

@@ -38,12 +38,12 @@ const AmigoSlider = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper font-[family-name:var(--font-noto-sans)] rounded-2xl space-x-2"
       >
-        <SwiperSlide className='max-w-72 mr-4 bg-orange-500 rounded-2xl max-h-lg'>         
-          <Image alt='amigo' width={512} height={512} src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/promo-june-1.svg' className='flex w-full h-full object-cover rounded-t-2xl'></Image> 
+        <SwiperSlide className='max-w-72 mr-4 bg-blue-950 rounded-2xl max-h-lg'>         
+          <Image alt='amigo' width={512} height={512} src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/vg-vento.jpg' className='flex w-full h-full object-cover rounded-t-2xl'></Image> 
                 <div className='flex h-80 flex-col items-start justify-between text-white px-8 py-6'>
                     <div>                    
-                        <p className='text-2xl font-medium lg:text-3xl leading-normal'>ติดตั้งระแนงไวนิลเหลือ 1,750 บาท/ตร.ม.*</p>
-                        <p className='text-base mt-2 lg:font-medium overflow-hidden'>ติดตั้งระแนงไวนิลเว้นร่อง <span className='font-medium underline underline-offset-4'>ตั้งแต่วันนี้ – 30 มิ.ย. 2568</span> จาก 1,900 ลดเหลือ 1,750 บาท/ตร.ม. *เงื่อนไขเป็นไปตามบริษัทกำหนด</p>
+                        <p className='text-2xl font-medium lg:text-3xl leading-normal'>ระแนงไวนิล VG Vento</p>
+                        <p className='text-base mt-2 lg:font-medium overflow-hidden'>ออกแบบเพื่อสภาพอากาศเมืองไทยโดยเฉพาะ</p>
                     </div>
                     <button onClick={openModal} className='btn-primary-static mb-3'>สั่งซื้อสินค้า</button>
                     
