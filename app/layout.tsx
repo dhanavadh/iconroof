@@ -1,13 +1,9 @@
-"use client"
+import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
-import NewNavbar from "./components/NewNavBar";
-import NewFooter from "./components/NewFooter";
-import { usePathname } from "next/navigation";
-import CookieAlert from "./components/CookieAlert";
 import { IBM_Plex_Sans_Thai } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import "./globals.css";
+import ClientLayout from "./ClientLayout";
 
 const ibmPlexSansThai = IBM_Plex_Sans_Thai({
   subsets: ["latin", "thai"],
@@ -32,24 +28,53 @@ const SarabunMedium = localFont({
   weight: "500",
 });
 
+export const metadata: Metadata = {
+  metadataBase: new URL("https://iconroof.co.th"),
+  title: {
+    template: "%s | Iconroof",
+    default: "จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof",
+  },
+  description: "จำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ ขายปลีก-ส่ง ราคาโรงงาน ทันสมัย แข็งแรง สวยงาม รับประกัน 10 ปี",
+  keywords: [
+    "amigo", "ระแนงบังตา", "ระแนงบังตาไวนิล", "ระแนงบังตาไวนิล AMIGO", "upvc", "Amigo",
+    "scg ระแนงชิด", "ระแนงเว้นร่อง", "ระแนงบานเกล็ด", "ระแนงบังแดด", "ระแนงตกแต่งบ้าน",
+    "ไอคอนรูฟ", "Iconroof", "ไวนิล Amigo"
+  ],
+  openGraph: {
+    title: "จำหน่ายอุปกรณ์ระแนงไวนิล | ไม้ระแนงเฌอร่า-ระแนงไม้เทียม – Iconroof",
+    description: "บริการจำหน่ายและติดตั้งระแนงบังตาไวนิล AMIGO ระแนงชิด ระแนงเว้นร่อง ระแนงบานเกล็ด โดยไอคอนรูฟ",
+    url: "https://iconroof.co.th/",
+    siteName: "Iconroof",
+    images: [
+      {
+        url: "https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/og-img.jpg",
+        width: 1200,
+        height: 630,
+        alt: "iconroof ระแนง",
+      },
+    ],
+    locale: "th_TH",
+    type: "website",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const pathName = usePathname();
-  const header = ["/products", "/redirect", '/products/amigo'].includes(pathName) ? <NewNavbar /> : <NewNavbar />;
   return (
-    <html lang="en">   
-       <GoogleTagManager gtmId="GTM-NS8K6LDN" />
-       <GoogleAnalytics gaId="G-SED22GYP0X"/>
+    <html lang="en">
+      <GoogleTagManager gtmId="GTM-NS8K6LDN" />
+      <GoogleAnalytics gaId="G-SED22GYP0X" />
       <body
-        className={`${ibmPlexSansThai.variable} ${notoSans.variable} ${SarabunRegular.variable} ${SarabunMedium.variable} antialiased`}>  
-        {header}          
-        {children}
-        <CookieAlert />
-        <Analytics />
-        <NewFooter />
+        className={`${ibmPlexSansThai.variable} ${notoSans.variable} ${SarabunRegular.variable} ${SarabunMedium.variable} antialiased`}
+      >
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

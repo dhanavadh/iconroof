@@ -18,7 +18,7 @@ const AmigoCompare = () => {
                                         <div className='flex justify-start items-center gap-0.5 bg-[#F5951D]/15 px-[3px] py-[3px] rounded-full w-20'>
                                             <div className='relative flex items-center justify-center h-[24px]'>
                                                 <span className='absolute inline-flex h-4 w-4 bg-[#F5951D] rounded-full animate-ping z-0'></span>
-                                                <img src="/icon/star_shine_w.svg" className="inline-flex relative h-[24px] bg-[#F5951D] rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
+                                                <Image src="/icon/star_shine_w.svg" width={24} height={24} alt="Recommended" className="inline-flex relative h-[24px] bg-[#F5951D] rounded-full p-0.5 flex-shrink-0 z-10" />                                    
                                             </div>  
                                             <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#F5951D] rounded-[3px] font-medium'>แนะนำ</p>                                
                                         </div> 
@@ -28,7 +28,7 @@ const AmigoCompare = () => {
                                           <div className="flex items-center gap-4">
                                             <Image
                                               src="/icon/timer.svg"
-                                              alt="AMIGO"
+                                              alt="Fast Installation"
                                               width={36}
                                               height={36}    
                                               className="w-8 h-8"            
@@ -38,7 +38,7 @@ const AmigoCompare = () => {
                                           <div className="flex items-center gap-4">
                                             <Image
                                               src="/icon/verified.svg"
-                                              alt="AMIGO"
+                                              alt="Standard Quality"
                                               width={36}
                                               height={36}    
                                               className="w-8 h-8"            
@@ -48,7 +48,7 @@ const AmigoCompare = () => {
                                           <div className="flex items-center gap-4">
                                             <Image
                                               src="/icon/health_and_safety.svg"
-                                              alt="AMIGO"
+                                              alt="Durable"
                                               width={36}
                                               height={36}    
                                               className="w-8 h-8"            
@@ -58,7 +58,7 @@ const AmigoCompare = () => {
                                           <div className="flex items-center gap-4">
                                             <Image
                                               src="/icon/package.svg"
-                                              alt="AMIGO"
+                                              alt="Modern System"
                                               width={36}
                                               height={36}    
                                               className="w-8 h-8"            
@@ -68,7 +68,7 @@ const AmigoCompare = () => {
                                           <div className="flex items-center gap-4">
                                             <Image
                                               src="/icon/star_shine.svg"
-                                              alt="AMIGO"
+                                              alt="Beautiful"
                                               width={36}
                                               height={36}    
                                               className="w-8 h-8"            
@@ -90,7 +90,7 @@ const AmigoCompare = () => {
                                         <div className='flex justify-start items-center gap-0.5 bg-neutral-700/15 px-[3px] py-[3px] rounded-full w-25'>
                                             <div className='relative flex items-center justify-center h-[24px]'>
                                                 <span className='absolute inline-flex h-4 w-4 bg-neutral-700 rounded-full animate-ping z-0'></span>
-                                                <img src="/icon/warning.svg" className="inline-flex relative h-[24px] bg-neutral-700 rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
+                                                <Image src="/icon/warning.svg" width={24} height={24} alt="Not Recommended" className="inline-flex relative h-[24px] bg-neutral-700 rounded-full p-0.5 flex-shrink-0 z-10" />                                    
                                             </div>  
                                             <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-neutral-700 rounded-[3px] font-medium'>ไม่แนะนำ</p>                                
                                         </div> 
@@ -100,7 +100,7 @@ const AmigoCompare = () => {
                                           <div className="flex items-center gap-4">
                                             <Image
                                               src="/icon/timer.svg"
-                                              alt="AMIGO"
+                                              alt="Slow Installation"
                                               width={36}
                                               height={36}    
                                               className="w-8 h-8"            
@@ -110,7 +110,7 @@ const AmigoCompare = () => {
                                           <div className="flex items-center gap-4">
                                             <Image
                                               src="/icon/verified_off.svg"
-                                              alt="AMIGO"
+                                              alt="Inconsistent Quality"
                                               width={36}
                                               height={36}    
                                               className="w-8 h-8"            
@@ -120,7 +120,7 @@ const AmigoCompare = () => {
                                           <div className="flex items-center gap-4">
                                             <Image
                                               src="/icon/hourglass_arrow_down.svg"
-                                              alt="AMIGO"
+                                              alt="Degrades Over Time"
                                               width={36}
                                               height={36}    
                                               className="w-8 h-8"            
@@ -130,7 +130,7 @@ const AmigoCompare = () => {
                                           <div className="flex items-center gap-4">
                                             <Image
                                               src="/icon/bug.svg"
-                                              alt="AMIGO"
+                                              alt="Termite Issues"
                                               width={36}
                                               height={36}    
                                               className="w-8 h-8"            
@@ -140,7 +140,7 @@ const AmigoCompare = () => {
                                           <div className="flex items-center gap-4">
                                             <Image
                                               src="/icon/paint.svg"
-                                              alt="AMIGO"
+                                              alt="Maintenance Required"
                                               width={36}
                                               height={36}    
                                               className="w-8 h-8"            
@@ -163,7 +163,7 @@ const AmigoCompare = () => {
           <div className="w-1/2 h-full flex">
             <Image
               src="https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/asset/amigo-1.png"
-              alt="AMIGO"
+              alt="AMIGO Ceiling System"
               width={1000}
               height={1000}    
               className="w-full h-full object-cover lg:rounded-tl-2xl lg:rounded-bl-2xl"
@@ -175,7 +175,7 @@ const AmigoCompare = () => {
             <div className='flex justify-start items-center gap-0.5 bg-[#F5951D]/15 px-[3px] py-[3px] rounded-full w-20'>
                 <div className='relative flex items-center justify-center h-[24px]'>
                     <span className='absolute inline-flex h-4 w-4 bg-[#F5951D] rounded-full animate-ping z-0'></span>
-                    <img src="/icon/star_shine_w.svg" className="inline-flex relative h-[24px] bg-[#F5951D] rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
+                    <Image src="/icon/star_shine_w.svg" width={24} height={24} alt="Recommended" className="inline-flex relative h-[24px] bg-[#F5951D] rounded-full p-0.5 flex-shrink-0 z-10" />                                    
                 </div>  
                 <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#F5951D] rounded-[3px] font-medium'>แนะนำ</p>                                
             </div> 
@@ -185,7 +185,7 @@ const AmigoCompare = () => {
               <div className="flex items-center gap-4">
                 <Image
                   src="/icon/timer.svg"
-                  alt="AMIGO"
+                  alt="Fast Installation"
                   width={36}
                   height={36}    
                   className="w-8 h-8"            
@@ -195,7 +195,7 @@ const AmigoCompare = () => {
               <div className="flex items-center gap-4">
                 <Image
                   src="/icon/verified.svg"
-                  alt="AMIGO"
+                  alt="Standard Quality"
                   width={36}
                   height={36}    
                   className="w-8 h-8"            
@@ -205,7 +205,7 @@ const AmigoCompare = () => {
               <div className="flex items-center gap-4">
                 <Image
                   src="/icon/health_and_safety.svg"
-                  alt="AMIGO"
+                  alt="Durable"
                   width={36}
                   height={36}    
                   className="w-8 h-8"            
@@ -215,7 +215,7 @@ const AmigoCompare = () => {
               <div className="flex items-center gap-4">
                 <Image
                   src="/icon/package.svg"
-                  alt="AMIGO"
+                  alt="Modern System"
                   width={36}
                   height={36}    
                   className="w-8 h-8"            
@@ -225,7 +225,7 @@ const AmigoCompare = () => {
               <div className="flex items-center gap-4">
                 <Image
                   src="/icon/star_shine.svg"
-                  alt="AMIGO"
+                  alt="Beautiful"
                   width={36}
                   height={36}    
                   className="w-8 h-8"            
@@ -242,7 +242,7 @@ const AmigoCompare = () => {
               <div className='flex justify-start items-center gap-0.5 bg-neutral-700/15 px-[3px] py-[3px] rounded-full w-25'>
                   <div className='relative flex items-center justify-center h-[24px]'>
                       <span className='absolute inline-flex h-4 w-4 bg-neutral-700 rounded-full animate-ping z-0'></span>
-                      <img src="/icon/warning.svg" className="inline-flex relative h-[24px] bg-neutral-700 rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
+                      <Image src="/icon/warning.svg" width={24} height={24} alt="Not Recommended" className="inline-flex relative h-[24px] bg-neutral-700 rounded-full p-0.5 flex-shrink-0 z-10" />                                    
                   </div>  
                   <p className='text-[14px] tracking-tight leading-[12px] px-1 py-[1.5px] text-neutral-700 rounded-[3px] font-medium'>ไม่แนะนำ</p>                                
               </div> 
@@ -252,7 +252,7 @@ const AmigoCompare = () => {
               <div className="flex items-center gap-4">
                 <Image
                   src="/icon/timer.svg"
-                  alt="AMIGO"
+                  alt="Slow Installation"
                   width={36}
                   height={36}    
                   className="w-8 h-8"            
@@ -262,7 +262,7 @@ const AmigoCompare = () => {
               <div className="flex items-center gap-4">
                 <Image
                   src="/icon/verified_off.svg"
-                  alt="AMIGO"
+                  alt="Inconsistent Quality"
                   width={36}
                   height={36}    
                   className="w-8 h-8"            
@@ -272,7 +272,7 @@ const AmigoCompare = () => {
               <div className="flex items-center gap-4">
                 <Image
                   src="/icon/hourglass_arrow_down.svg"
-                  alt="AMIGO"
+                  alt="Degrades Over Time"
                   width={36}
                   height={36}    
                   className="w-8 h-8"            
@@ -282,7 +282,7 @@ const AmigoCompare = () => {
               <div className="flex items-center gap-4">
                 <Image
                   src="/icon/bug.svg"
-                  alt="AMIGO"
+                  alt="Termite Issues"
                   width={36}
                   height={36}    
                   className="w-8 h-8"            
@@ -292,7 +292,7 @@ const AmigoCompare = () => {
               <div className="flex items-center gap-4">
                 <Image
                   src="/icon/paint.svg"
-                  alt="AMIGO"
+                  alt="Maintenance Required"
                   width={36}
                   height={36}    
                   className="w-8 h-8"            

@@ -39,8 +39,15 @@ const Slider = () => {
         
         <SwiperSlide>
             <Link href='/products' className='slider-core'>             
-                <Image alt='amigo' width={1920} height={1080} src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/vg-vento.jpg' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
-                <Image alt='amigo' width={1920} height={1080} src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/vg-vento.jpg' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
+                <Image 
+                    alt='amigo' 
+                    width={1920} 
+                    height={1080} 
+                    src='https://tvss01.iconroof.co.th/e6c6f6e8-e73e-40b1-9f05-5436e5f99137/Ads/vg-vento.jpg' 
+                    className='flex absolute z-[-1] w-full h-full object-cover brightness-50'
+                    priority
+                    sizes="100vw"
+                />
                 <div className='text-area-padding'>
                     <p className='title-section link'>ระแนงไวนิล VG Vento</p>
                     <p className='subtitle-section'>ติดตั้งได้หลายแบบ ออกแบบเพื่อสภาพอากาศเมืองไทยโดยเฉพาะ</p>
@@ -50,8 +57,14 @@ const Slider = () => {
         
         <SwiperSlide>
             <Link href='/products/amigo' className='slider-core'>             
-                <Image alt='amigo' width={1920} height={1080} src='/asset/amigo.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
-                <Image alt='amigo' width={1920} height={1080} src='/asset/amigo.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
+                <Image 
+                    alt='amigo' 
+                    width={1920} 
+                    height={1080} 
+                    src='/asset/amigo.png' 
+                    className='flex absolute z-[-1] w-full h-full object-cover brightness-50'
+                    sizes="100vw"
+                />
                 <div className='text-area-padding'>
                     <p className='title-section link'>ระแนงไวนิล AMIGO</p>
                     <p className='subtitle-section'>ไม้สังเคราะห์ทำจากโพลิเมอร์ชนิดพิเศษทนทานจึงหมดปัญหาเรื่องปลวกและเชื้อราไม่ปิดตัว ไม่บวมน้ำ ทนต่อแสงแดด</p>
@@ -74,8 +87,22 @@ const Slider = () => {
 
         <SwiperSlide>
             <div className='slider-core'>             
-                <Image alt='scg' width={1920} height={1080} src='/asset/scg.png' className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
-                <Image alt='scg' width={1920} height={1080} src='/asset/scg-vertical.png' className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'></Image>
+                <Image 
+                    alt='scg' 
+                    width={1920} 
+                    height={1080} 
+                    src='/asset/scg.png' 
+                    className='hidden lg:flex absolute z-[-1] w-full h-full object-cover brightness-50'
+                    sizes="100vw"
+                />
+                <Image 
+                    alt='scg' 
+                    width={1920} 
+                    height={1080} 
+                    src='/asset/scg-vertical.png' 
+                    className='flex lg:hidden absolute z-[-1] w-full h-full object-cover brightness-50'
+                    sizes="100vw"
+                />
                 <div className='text-area-padding'>
                     <Link href='/products' className='title-section link'>ระแนงบังตาไวนิล SCG BOX SET</Link>
                     <p className='subtitle-section'>สร้างสรรค์ความงามได้หลากหลาย ภายใต้คุณภาพที่เป็นมาตรฐาน</p>
@@ -85,7 +112,14 @@ const Slider = () => {
 
         <SwiperSlide>
             <Link href='/products' className='slider-core'>             
-                <Image alt='greenwood' width={1920} height={1080} src='/asset/greenwood1.png' className='flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>                
+                <Image 
+                    alt='greenwood' 
+                    width={1920} 
+                    height={1080} 
+                    src='/asset/greenwood1.png' 
+                    className='flex absolute z-[-1] w-full h-full object-cover brightness-50'
+                    sizes="100vw"
+                />                
                 <div className='text-area-padding'>
                     <p className='title-section link'>ระแนง GREENWOOD</p>
                     <p className='subtitle-section'>ผลิตภัณฑ์ไม้สังเคราะห์ที่มีส่วนผสมของไม้ธรรมชาติ จึงให้ผิวสัมผัสและภาพลักษณ์เสมือนไม้จริง มากกว่าวัสดุทดแทนไม้ชนิดอื่นๆ</p>
@@ -95,7 +129,14 @@ const Slider = () => {
         
         <SwiperSlide>
             <Link href='/products' className='slider-core'>             
-                <Image alt='roof' width={1920} height={1080} src='/asset/roof-1.png' className='flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>                
+                <Image 
+                    alt='roof' 
+                    width={1920} 
+                    height={1080} 
+                    src='/asset/roof-1.png' 
+                    className='flex absolute z-[-1] w-full h-full object-cover brightness-50'
+                    sizes="100vw"
+                />                
                 <div className='text-area-padding'>
                     <p className='title-section link'>ฝ้าระแนง</p>
                     <p className='subtitle-section'>ฝ้าระแนงลายไม้ wpc ไฟเบอร์ซีเมนต์ ไวนิล Amigo หรือ อะลูมิเนียมลายไม้ก็มีพร้อมให้เลือกสรร</p>
@@ -105,7 +146,14 @@ const Slider = () => {
 
         <SwiperSlide>
             <Link href='/products' className='slider-core'>             
-                <Image alt='service' width={1920} height={1080} src='/asset/project.png' className='flex absolute z-[-1] w-full h-full object-cover brightness-50'></Image>                
+                <Image 
+                    alt='service' 
+                    width={1920} 
+                    height={1080} 
+                    src='/asset/project.png' 
+                    className='flex absolute z-[-1] w-full h-full object-cover brightness-50'
+                    sizes="100vw"
+                />                
                 <div className='text-area-padding'>
                     <p className='title-section link'>ผลงานการติดตั้ง</p>
                     <p className='subtitle-section'>ฝ้าระแนงลายไม้ wpc ไฟเบอร์ซีเมนต์ ไวนิล Amigo หรือ อะลูมิเนียมลายไม้ก็มีพร้อมให้เลือกสรร</p>
