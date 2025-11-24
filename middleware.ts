@@ -41,14 +41,9 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Skip internal paths (_next/static, _next/image, favicon.ico)
+  // Only skip _next/static (handled by assetPrefix) and favicon
+  // We MUST proxy _next/image so Vercel can optimize images
   matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     */
-    '/((?!_next/static|_next/image|favicon.ico).*)',
+    '/((?!_next/static|favicon.ico).*)',
   ],
 }
