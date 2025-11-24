@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
   const COOKIE_NAME = 'ab-test-group'
-  const BETA_URL = 'https://beta.iconroof.co.th'
+  const BETA_URL = 'https://southeastasia-02.iconroof.co.th'
 
   // 1. Get the bucket cookie
   let bucket = request.cookies.get(COOKIE_NAME)?.value
@@ -20,7 +20,7 @@ export function middleware(request: NextRequest) {
     // Create the target URL for the beta site
     const url = request.nextUrl.clone()
     const targetUrl = new URL(url.pathname + url.search, BETA_URL)
-    
+
     // Rewrite the request to the Vercel deployment
     response = NextResponse.rewrite(targetUrl)
   } else {
@@ -41,8 +41,10 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Only skip _next/static (handled by assetPrefix) and favicon
-  // We MUST proxy _next/image so Vercel can optimize images
+  // Match all paths. We will filter what NOT to proxy inside the function or 
+  // allow the proxy to handle everything for the beta user.
+  // Since SvelteKit uses `_app`, avoiding `_next` exclusion is fine.
+  // We only exclude the MAIN app's static assets to avoid breaking the main site.
   matcher: [
     '/((?!_next/static|favicon.ico).*)',
   ],
