@@ -41,7 +41,14 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Run on all paths to ensure assets (_next/static) and API routes 
-  // are correctly proxied for the 'beta' group.
-  matcher: '/:path*',
+  // Skip internal paths (_next/static, _next/image, favicon.ico)
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     */
+    '/((?!_next/static|_next/image|favicon.ico).*)',
+  ],
 }
